@@ -14,6 +14,7 @@ from tool.TextProcessor import TextProcessor
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 class Neo4jLouvainProcessor:
+    #resolution调整louvain的分辨率，数字越大，社区越小。random_state：随机种子 
     def __init__(self, uri, user, password, db_name,ollama_uri,model_name,semantic_threshold=0.4,louvain_params={'resolution': 3.0, 'random_state': 42}):
         self.driver = GraphDatabase.driver(
             uri, 
@@ -37,7 +38,7 @@ class Neo4jLouvainProcessor:
         self.driver.close()
 
     def export_data(self):
-        """导出所有WhWhat节点并生成全连接边（修复索引问题）"""
+        """导出所有WhWhat节点并生成全连接边"""
         logger.info("开始从Neo4j导出数据...")
         
         # 导出WhWhat节点
@@ -76,7 +77,7 @@ class Neo4jLouvainProcessor:
         full_edges['r1_types'] = [[]]*len(full_edges)
         full_edges['r2_types'] = [[]]*len(full_edges)
         
-        # 修复：合并时重置索引
+        # 合并时重置索引，不然会报错
         self.edges_df = pd.concat(
             [existing_edges, full_edges], 
             ignore_index=True
@@ -198,6 +199,7 @@ class Neo4jLouvainProcessor:
         
         # 清理旧数据
         cleanup_cypher = "MATCH (c:Cluster) DETACH DELETE c"
+        
         with self.driver.session(database=self.db_name) as session:
             session.run(cleanup_cypher)
         
