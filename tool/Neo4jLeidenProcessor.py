@@ -48,9 +48,7 @@ class Neo4jLouvainProcessor:
             id(n) AS node_id, 
             COALESCE(n.why, '') AS why_text,
             COALESCE(n.how, '') AS how_text,
-            COALESCE(n.name, '') AS name_text,
-            COALESCE(n.title, '') AS title_text
-
+            COALESCE(n.name, '') AS name_text
         """
         with self.driver.session(database=self.db_name) as session:
             result = session.run(node_query)
@@ -89,24 +87,21 @@ class Neo4jLouvainProcessor:
 
     def calculate_semantic_weights(self):
         """计算全连接语义权重"""
-        logger.info("计算语义相似度（why×2 + how×1 +name×3 + title×4）...")
+        logger.info("计算语义相似度（why×3 + how×1 +name×6）...")
         
         # 合并文本并生成向量
         why_texts = self.nodes_df['why_text'].fillna('').tolist()
         how_texts = self.nodes_df['how_text'].fillna('').tolist()
         name_texts = self.nodes_df['name_text'].fillna('').tolist()  # 新增name
-        title_texts = self.nodes_df['title_text'].fillna('').tolist()  # 新增name
         
         why_embeddings = self.text_processor.get_embeddings(why_texts)
         how_embeddings = self.text_processor.get_embeddings(how_texts)
         name_embeddings = self.text_processor.get_embeddings(name_texts)  # 新增name
-        title_embeddings = self.text_processor.get_embeddings(title_texts)  # 新增name
         
         # 计算相似度矩阵
         why_sim = cosine_similarity(why_embeddings)
         how_sim = cosine_similarity(how_embeddings)
         name_sim = cosine_similarity(name_embeddings)  # 新增name
-        title_sim = cosine_similarity(title_embeddings)  # 新增name
         
         # 创建节点ID到索引的映射
         node_id_to_idx = {nid: idx for idx, nid in enumerate(self.nodes_df['node_id'])}
@@ -114,10 +109,9 @@ class Neo4jLouvainProcessor:
         # 计算语义权重 why:how:name=3:1:6
         self.edges_df['semantic_weight'] = self.edges_df.apply(
             lambda row: (
-                0.2 * why_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] +
+                0.3 * why_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] +
                 0.1 * how_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] +
-                0.4 * name_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] +
-                0.3 * title_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] 
+                0.6 * name_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]]
             ),
             axis=1
         )
@@ -172,8 +166,8 @@ class Neo4jLouvainProcessor:
         mask = self.edges_df['semantic_weight'] >= self.semantic_threshold
         self.edges_df['final_weight'] = 0.0
         self.edges_df.loc[mask, 'final_weight'] = (
-            0.7*self.edges_df['semantic_weight'] + 
-            0.3*self.edges_df['relation_weight']
+            0.8*self.edges_df['semantic_weight'] + 
+            0.2*self.edges_df['relation_weight']
         )
         
         # 过滤无效边
@@ -205,7 +199,7 @@ class Neo4jLouvainProcessor:
         
         # 清理旧数据
         cleanup_cypher = "MATCH (c:Cluster) DETACH DELETE c"
-
+        
         with self.driver.session(database=self.db_name) as session:
             session.run(cleanup_cypher)
         

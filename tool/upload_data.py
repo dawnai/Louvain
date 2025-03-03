@@ -8,7 +8,7 @@ import pandas as pd
 #首先将what、where、when、who、why、how全部从xlsx表格中抽取出来，至于content内容暂时不抽取，如果需要，再作为chunk存储。
 file_path = "../data/5w1h 1000.xlsx"
 df = pd.read_excel(file_path, engine='openpyxl')
-target_columns = ['wh_what','wh_where','wh_when','wh_who','wh_why','wh_how']
+target_columns = ['wh_what','wh_where','wh_when','wh_who','wh_why','wh_how','title']
 extracted_df = df[target_columns].dropna(how='all')
 
 
@@ -41,7 +41,7 @@ class Neo4jConnector:
 
 # 初始化连接（新增database参数）
 conn = Neo4jConnector(
-    uri="bolt://172.20.31.130:7687",
+    uri="bolt://172.20.129.190:7687",
     user="neo4j",
     password="neo4j@openspg",
     database="dawnjiang5w1h"  # 新增数据库名称参数
@@ -60,7 +60,8 @@ def create_constraints():
             "CREATE CONSTRAINT IF NOT EXISTS FOR (n:WhWhat) REQUIRE n.name IS UNIQUE",
             "CREATE CONSTRAINT IF NOT EXISTS FOR (n:WhWhere) REQUIRE n.name IS UNIQUE",
             "CREATE CONSTRAINT IF NOT EXISTS FOR (n:WhWhen) REQUIRE n.name IS UNIQUE",
-            "CREATE CONSTRAINT IF NOT EXISTS FOR (n:WhWho) REQUIRE n.name IS UNIQUE"
+            "CREATE CONSTRAINT IF NOT EXISTS FOR (n:WhWho) REQUIRE n.name IS UNIQUE",
+            "CREATE CONSTRAINT IF NOT EXISTS FOR (n:title) REQUIRE n.name IS UNIQUE"
         ]
         for cql in constraints:
             session.run(cql)
@@ -79,11 +80,13 @@ def import_to_neo4j(tx, row):
     tx.run("""
         MERGE (what:WhWhat {name: $wh_what})
         SET what.why = coalesce($wh_why, what.why),
-            what.how = coalesce($wh_how, what.how)
+            what.how = coalesce($wh_how, what.how),
+            what.title = coalesce($title, what.title)
     """, parameters={
         'wh_what': wh_what,
         'wh_why': str(row['wh_why']).strip() if pd.notna(row['wh_why']) else None,  #将why作为属性传给事件节点
-        'wh_how': str(row['wh_how']).strip() if pd.notna(row['wh_how']) else None   #将how作为属性传给how节点
+        'wh_how': str(row['wh_how']).strip() if pd.notna(row['wh_how']) else None,   #将how作为属性传给how节点
+        'title': str(row['title']).strip() if pd.notna(row['title']) else None   #将how作为属性传给how节点
     })
     
     # 关系处理函数

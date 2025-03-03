@@ -16,12 +16,12 @@ logger = logging.getLogger(__name__)
 if __name__ == "__main__":
     # neo4j数据库配置信息
     config = {
-        "uri": "bolt://172.20.31.130:7687",#neo4j地址
+        "uri": "bolt://172.20.129.190:7687",#neo4j地址
         "user": "neo4j",
         "password": "neo4j@openspg",
         "db_name": "dawnjiang5w1h",#neo4j数据库
         "semantic_threshold": 0.8,  #语义相似度阈值
-        "ollama_uri":'http://172.20.31.130:11434',#ollama地址
+        "ollama_uri":'http://172.20.129.190:11434',#ollama地址
         "model_name":'bge-m3'#模型
     }
 
