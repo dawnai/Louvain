@@ -7,15 +7,19 @@ import networkx as nx
 from community import community_louvain
 from tqdm import tqdm
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import normalize
 from itertools import combinations
 import logging
 from tool.TextProcessor import TextProcessor
+from sklearn.neighbors import NearestNeighbors
+import numpy as np
 # 配置日志
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
 class Neo4jLouvainProcessor:
     #resolution调整louvain的分辨率，数字越大，社区越小。random_state：随机种子 
-    def __init__(self, uri, user, password, db_name,ollama_uri,model_name,semantic_threshold=0.4,louvain_params={'resolution': 3.0, 'random_state': 42}):
+    def __init__(self, uri, user, password, db_name,embedding_uri,embedding_name,semantic_threshold,louvain_params={'resolution': 3.0, 'random_state': 42}):
         self.driver = GraphDatabase.driver(
             uri, 
             auth=(user, password),
@@ -24,9 +28,9 @@ class Neo4jLouvainProcessor:
         )
         self.db_name = db_name
         self.semantic_threshold = semantic_threshold #语义相似度阈值
-        self.ollama_uri= ollama_uri
-        self.model_name= model_name
-        self.text_processor = TextProcessor(self.ollama_uri,self.model_name)
+        self.embedding_uri= embedding_uri
+        self.embedding_name= embedding_name
+        self.text_processor = TextProcessor(self.embedding_uri,self.embedding_name)
         
         self.nodes_df = None
         self.edges_df = None
@@ -36,96 +40,288 @@ class Neo4jLouvainProcessor:
 
     def close(self):
         self.driver.close()
-
-    def export_data(self):
-        """导出所有WhWhat节点并生成全连接边"""
-        logger.info("开始从Neo4j导出数据...")
-        
-        # 导出WhWhat节点
+    def export_nodes(self):
+        """仅导出What节点"""
+        logger.info("开始导出What节点...")
         node_query = """
-        MATCH (n:WhWhat)
+        MATCH (n:What)
         RETURN 
             id(n) AS node_id, 
             COALESCE(n.why, '') AS why_text,
             COALESCE(n.how, '') AS how_text,
             COALESCE(n.name, '') AS name_text,
             COALESCE(n.title, '') AS title_text
-
         """
         with self.driver.session(database=self.db_name) as session:
             result = session.run(node_query)
             self.nodes_df = pd.DataFrame([dict(record) for record in result])
+        logger.info(f"共导出 {len(self.nodes_df)} 个What节点")
+    #使用最近邻近搜索
+    # def find_semantic_pairs(self):
+    #     """优化后的语义相似度计算（带权重归一化）"""
+    #     logger.info(f"开始语义相似度计算（阈值={self.semantic_threshold}）...")
         
-        logger.info(f"共导出 {len(self.nodes_df)} 个WhWhat节点")
+    #     # 定义各字段权重（总和≈1）'why_text', 'how_text', 'name_text', 'title_text'
+    #     field_weights = np.array([0.2, 0.1, 0.4, 0.3])  # 总和1
         
-        # 导出已有的关联关系（通过共同节点）
-        rel_query = """
-        MATCH (a:WhWhat)-[r1]->(common)<-[r2]-(b:WhWhat)
-        WHERE id(a) < id(b)
-        RETURN 
-            id(a) AS source,
-            id(b) AS target,
-            COUNT(DISTINCT common) AS weight,
-            COLLECT(DISTINCT type(r1)) AS r1_types,
-            COLLECT(DISTINCT type(r2)) AS r2_types
-        """
-        with self.driver.session(database=self.db_name) as session:
-            existing_edges = pd.DataFrame([dict(record) for record in session.run(rel_query)])
+    #     # 各字段嵌入生成（优化内存处理）
+    #     embeddings_dict = {}
+    #     for i, field in enumerate(['why_text', 'how_text', 'name_text', 'title_text']):
+    #         texts = self.nodes_df[field].fillna('').tolist()  # 处理空值
+    #         embeddings = self.text_processor.get_embeddings(texts)
+    #         embeddings_dict[field] = normalize(embeddings) * field_weights[i]  # L2归一化后加权
         
-        # 生成全连接边（所有可能的WhWhat节点对）
-        all_pairs = list(combinations(self.nodes_df['node_id'].tolist(), 2))
-        full_edges = pd.DataFrame(all_pairs, columns=['source', 'target'])
-        full_edges['weight'] = 0
-        full_edges['r1_types'] = [[]]*len(full_edges)
-        full_edges['r2_types'] = [[]]*len(full_edges)
+    #     # 合并加权嵌入向量
+    #     weighted_embeddings = sum(embeddings_dict.values())
         
-        # 合并时重置索引，不然会报错
-        self.edges_df = pd.concat(
-            [existing_edges, full_edges], 
-            ignore_index=True
-        ).drop_duplicates(['source', 'target'])
+    #     # 创建节点ID到索引的映射
+    #     self.node_id_to_idx = {
+    #         nid: idx for idx, nid in enumerate(self.nodes_df['node_id'])
+    #     }
         
-        logger.info(f"总边数（含全连接）: {len(self.edges_df)}")
+    #     # 相似度计算（自动归一化到[0,1]）
+    #     nbrs = NearestNeighbors(n_neighbors=30, metric='cosine').fit(weighted_embeddings)
+    #     distances, indices = nbrs.kneighbors(weighted_embeddings)
+        
+    #     # 收集并处理候选对
+    #     seen_pairs = {}
+    #     for idx, (dists, nbrs) in tqdm(enumerate(zip(distances, indices)), desc="处理节点"):
+    #         src_id = self.nodes_df.iloc[idx]['node_id']
+    #         for d, nbr_idx in zip(dists, nbrs):
+    #             if idx == nbr_idx: continue
+    #             similarity = 1 - d  # 自动归一化到[0,1]
+    #             tgt_id = self.nodes_df.iloc[nbr_idx]['node_id']
+    #             pair = tuple(sorted((src_id, tgt_id)))
+                
+    #             # 保留最大相似度
+    #             if pair not in seen_pairs or similarity > seen_pairs[pair]:
+    #                 seen_pairs[pair] = similarity
+        
+    #     # 应用阈值过滤
+    #     self.semantic_pairs = [
+    #         (src, tgt, sim) 
+    #         for (src, tgt), sim in seen_pairs.items() 
+    #         if sim >= self.semantic_threshold
+    #     ]
+        
+    #     logger.info(f"发现 {len(self.semantic_pairs)} 个节点对，相似度≥{self.semantic_threshold}")
 
-    def calculate_semantic_weights(self):
-        """计算全连接语义权重"""
-        logger.info("计算语义相似度（why×2 + how×1 +name×3 + title×4）...")
+    # def find_semantic_pairs(self):
+    #     """基于全量两两比较的语义相似度计算（加权字段相似度）"""
+    #     logger.info(f"开始全量语义相似度计算（阈值={self.semantic_threshold}）...")
         
-        # 合并文本并生成向量
-        why_texts = self.nodes_df['why_text'].fillna('').tolist()
-        how_texts = self.nodes_df['how_text'].fillna('').tolist()
-        name_texts = self.nodes_df['name_text'].fillna('').tolist()  # 新增name
-        title_texts = self.nodes_df['title_text'].fillna('').tolist()  # 新增name
+    #     # 字段权重配置
+    #     field_weights = {
+    #         'why_text': 0.2,
+    #         'how_text': 0.1,
+    #         'name_text': 0.4,
+    #         'title_text': 0.3
+    #     }
         
-        why_embeddings = self.text_processor.get_embeddings(why_texts)
-        how_embeddings = self.text_processor.get_embeddings(how_texts)
-        name_embeddings = self.text_processor.get_embeddings(name_texts)  # 新增name
-        title_embeddings = self.text_processor.get_embeddings(title_texts)  # 新增name
+    #     # 生成各字段的归一化嵌入
+    #     embeddings = {}
+    #     for field in field_weights.keys():
+    #         texts = self.nodes_df[field].fillna('').tolist()
+    #         emb = self.text_processor.get_embeddings(texts)
+    #         emb_normalized = normalize(emb)  # L2归一化
+    #         embeddings[field] = emb_normalized
         
-        # 计算相似度矩阵
-        why_sim = cosine_similarity(why_embeddings)
-        how_sim = cosine_similarity(how_embeddings)
-        name_sim = cosine_similarity(name_embeddings)  # 新增name
-        title_sim = cosine_similarity(title_embeddings)  # 新增name
+    #     # 节点ID与索引映射
+    #     node_ids = self.nodes_df['node_id'].tolist()
+    #     num_nodes = len(node_ids)
+    #     node_id_to_idx = {nid: idx for idx, nid in enumerate(node_ids)}
         
-        # 创建节点ID到索引的映射
+    #     # ==== 核心计算逻辑 ====
+    #     # 预计算总相似度矩阵
+    #     total_sim_matrix = np.zeros((num_nodes, num_nodes))
+        
+    #     # 逐字段累加加权相似度
+    #     for field, weight in field_weights.items():
+    #         emb = embeddings[field]
+    #         # 余弦相似度 = 归一化后的点积
+    #         total_sim_matrix += weight * emb.dot(emb.T)
+        
+    #     # ==== 高效提取符合条件的节点对 ====
+    #     # 使用上三角矩阵避免重复对 (i < j)
+    #     triu_mask = np.triu_indices(num_nodes, k=1)
+    #     sim_values = total_sim_matrix[triu_mask]
+        
+    #     # 应用阈值过滤
+    #     valid_indices = np.where(sim_values >= self.semantic_threshold)[0]
+    #     rows, cols = triu_mask[0][valid_indices], triu_mask[1][valid_indices]
+    #     similarities = sim_values[valid_indices]
+        
+    #     # 转换为节点对
+    #     self.semantic_pairs = [
+    #         (node_ids[i], node_ids[j], float(sim))
+    #         for i, j, sim in zip(rows, cols, similarities)
+    #     ]
+        
+    #     logger.info(f"发现 {len(self.semantic_pairs)} 个节点对，相似度≥{self.semantic_threshold}")
+
+    def find_semantic_pairs(self):
+        """带嵌入预计算和复用的混合方法"""
+        logger.info("启动混合语义计算（嵌入复用版）...")
+        
+        # ===== 嵌入预计算 =====
+        if not hasattr(self, 'cached_embeddings'):
+            logger.info("预计算所有字段嵌入...")
+            
+            # 字段权重配置（与后续计算共用）
+            self.field_weights = {
+                'why_text': 0.4,
+                'how_text': 0.2,
+                'name_text': 0.4
+            }
+            
+            # 预计算并缓存所有字段的归一化嵌入
+            self.cached_embeddings = {}
+            for field in self.field_weights.keys():
+                texts = self.nodes_df[field].fillna('').tolist()
+                raw_emb = self.text_processor.get_embeddings(texts)
+                self.cached_embeddings[field] = normalize(raw_emb)
+                
+                # 内存优化：转换数据类型
+                self.cached_embeddings[field] = self.cached_embeddings[field].astype(
+                    np.float32, copy=False
+                )
+            
+            # 计算综合嵌入（用于最近邻预筛）
+            combined_emb = np.mean(list(self.cached_embeddings.values()), axis=0)
+            self.cached_embeddings['_combined'] = normalize(combined_emb)
+            
+            logger.info(f"嵌入缓存完成，占用内存：{self._get_emb_size_mb()} MB")
+        
+        # ===== 第一阶段：最近邻预筛选 =====
+        logger.info("阶段1：基于综合嵌入的最近邻预筛...")
+        nbrs = NearestNeighbors(
+            n_neighbors=100, 
+            metric='cosine',
+            algorithm='brute'  # 使用预计算嵌入时最优
+        ).fit(self.cached_embeddings['_combined'])
+        
+        # 获取候选对（内存优化版）
+        candidate_pairs = self._find_candidate_pairs(nbrs)
+        
+        # ===== 第二阶段：加权多字段精确计算 =====
+        logger.info("阶段2：复用缓存的字段嵌入进行精确计算...")
+        self.semantic_pairs = self._calculate_weighted_sims(candidate_pairs)
+        
+        logger.info(f"最终获得 {len(self.semantic_pairs)} 个有效对")
+
+    def _find_candidate_pairs(self, nbrs):
+        """高效生成候选对（修复版）"""
+        # 获取节点ID数组
+        node_ids = self.nodes_df['node_id'].values
+        
+        # 获取最近邻结果（需传入待查询数据）
+        distances, indices = nbrs.kneighbors(self.cached_embeddings['_combined'])
+        
+        candidate_pairs = set()
+        
+        for i in range(len(indices)):
+            src_id = node_ids[i]
+            
+            # 遍历每个节点的邻居（跳过自己）
+            for d, j in zip(distances[i], indices[i]):
+                if i == j:  # 排除自身
+                    continue
+                
+                # 转换距离到相似度：cos_sim = 1 - cosine_distance
+                if (1 - d) < (self.semantic_threshold * 0.8):  # 动态预筛选阈值
+                    continue
+                
+                tgt_id = node_ids[j]
+                # 使用排序元组去重
+                pair = tuple(sorted((src_id, tgt_id)))
+                candidate_pairs.add(pair)
+        
+        return candidate_pairs
+
+
+    def _calculate_weighted_sims(self, candidate_pairs):
+        """复用缓存的嵌入计算加权相似度"""
+        id_to_idx = {nid: idx for idx, nid in enumerate(self.nodes_df['node_id'])}
+        valid_pairs = []
+        
+        for (a, b) in candidate_pairs:
+            idx_a = id_to_idx[a]
+            idx_b = id_to_idx[b]
+            
+            total_sim = 0.0
+            for field, weight in self.field_weights.items():
+                emb = self.cached_embeddings[field]
+                total_sim += weight * emb[idx_a].dot(emb[idx_b])
+            
+            if total_sim >= self.semantic_threshold:
+                valid_pairs.append((a, b, round(total_sim, 4)))
+        
+        # 按相似度降序排序
+        return sorted(valid_pairs, key=lambda x: -x[2])
+
+    def _get_emb_size_mb(self):
+        """计算嵌入缓存的内存占用量"""
+        total = 0
+        for emb in self.cached_embeddings.values():
+            total += emb.nbytes
+        return f"{total / (1024**2):.1f}"
+
+    def fetch_relations(self, batch_size=1000):
+            """批量获取关联边"""
+            logger.info("开始查询关联边...")
+            
+            # 分批次处理节点对
+            all_pairs = list(self.semantic_pairs)
+            relation_edges = []
+            
+            for i in tqdm(range(0, len(all_pairs), batch_size)):
+                batch = all_pairs[i:i+batch_size]
+                
+                cypher = """
+                UNWIND $pairs AS pair
+                MATCH (a)-[r1]->(common)<-[r2]-(b) 
+                WHERE id(a) = pair[0] AND id(b) = pair[1]
+                RETURN 
+                    id(a) AS source,
+                    id(b) AS target,
+                    COUNT(DISTINCT common) AS weight,
+                    COLLECT(DISTINCT type(r1)) AS r1_types,
+                    COLLECT(DISTINCT type(r2)) AS r2_types
+                """
+                with self.driver.session(database=self.db_name) as session:
+                    result = session.run(cypher, {"pairs": batch})
+                    relation_edges.extend([dict(record) for record in result])
+            
+            self.edges_df = pd.DataFrame(relation_edges)
+            logger.info(f"获取到 {len(self.edges_df)} 条关联边")
+
+    def calculate_weights(self):
+        """权重计算优化"""
+        logger.info("计算权重")
+        
+        if self.edges_df.empty:
+            return
+        # 创建节点对到相似度的映射
+        semantic_similarity_dict = {(src, tgt): sim for src, tgt, sim in self.semantic_pairs}
+        
+        # 语义权重缓存
         node_id_to_idx = {nid: idx for idx, nid in enumerate(self.nodes_df['node_id'])}
+        # combined_texts = self.nodes_df['combined'].values
         
-        # 计算语义权重 why:how:name=3:1:6
-        self.edges_df['semantic_weight'] = self.edges_df.apply(
-            lambda row: (
-                0.2 * why_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] +
-                0.1 * how_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] +
-                0.4 * name_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] +
-                0.3 * title_sim[node_id_to_idx[row['source']], node_id_to_idx[row['target']]] 
-            ),
-            axis=1
-        )
-
-    def calculate_relation_weights(self):
-        """使用加权平均计算关系权重"""
-        logger.info("计算关系权重（加权平均）...")
+        # 使用生成器计算相似度
+        def similarity_generator():
+            for _, row in self.edges_df.iterrows():
+                src_id = row['source']
+                tgt_id = row['target']
+                yield semantic_similarity_dict.get((src_id, tgt_id), 0.0)
         
+        self.edges_df['semantic_weight'] = list(tqdm(
+        similarity_generator(), 
+        total=len(self.edges_df),
+        desc="语义权重计算"
+    ))
+        
+        # 关系权重处理
         relation_weights = {
             "地点": 0.1,
             "参与者": 0.7,
@@ -133,64 +329,41 @@ class Neo4jLouvainProcessor:
             "_DEFAULT": 0.0
         }
         
-        # 计算加权平均
-        self.edges_df['raw_relation_weight'] = self.edges_df.apply(
-            lambda row: (
-                # 计算关系类型权重的平均值
-                sum(
-                    relation_weights.get(rt, relation_weights["_DEFAULT"]) 
-                    for rt in row['r1_types'] + row['r2_types']
-                ) / max(len(row['r1_types'] + row['r2_types']), 1)  # 防止除零
-            ) * row['weight'],  # 乘以边的原始权重
-            axis=1
+        def calc_relation_weight(row):
+            types = row['r1_types'] + row['r2_types']
+            if not types:
+                return 0.0
+            total = sum(relation_weights.get(t, 0.0) for t in types)
+            return total / len(types)
+        
+        self.edges_df['relation_weight'] = self.edges_df.apply(
+            calc_relation_weight, axis=1
         )
         
-        # 归一化到 [0,1]
-        min_w = self.edges_df['raw_relation_weight'].min()
-        max_w = self.edges_df['raw_relation_weight'].max()
+        # 综合权重
+        self.edges_df['final_weight'] = (
+            0.7 * self.edges_df['semantic_weight'] +
+            0.3 * self.edges_df['relation_weight']
+        )
         
-        if max_w == min_w:
-            self.edges_df['relation_weight'] = 0.5  # 全同值处理
-        else:
-            self.edges_df['relation_weight'] = (
-                (self.edges_df['raw_relation_weight'] - min_w) / 
-                (max_w - min_w)
-            )
-        
-        # 清理中间列
-        self.edges_df.drop(columns=['raw_relation_weight'], inplace=True)
-        
-        # 分析结果
-        logger.info("加权平均后的关系权重统计:\n%s", 
-                self.edges_df['relation_weight'].describe())
+        logger.info("权重计算完成")
 
     def build_graph(self):
-        """构建融合权重的图"""
-        logger.info("构建加权图...")
+        """内存优化的图构建"""
+        logger.info("构建稀疏图...")
         
-        # 应用阈值过滤 语义权重：关系权重=7:3
-        mask = self.edges_df['semantic_weight'] >= self.semantic_threshold
-        self.edges_df['final_weight'] = 0.0
-        self.edges_df.loc[mask, 'final_weight'] = (
-            0.7*self.edges_df['semantic_weight'] + 
-            0.3*self.edges_df['relation_weight']
-        )
-        
-        # 过滤无效边
-        self.edges_df = self.edges_df[self.edges_df['final_weight'] > 0]
-        logger.info(f"有效边数: {len(self.edges_df)}")
-        
-        # 构建图
-        self.G = nx.from_pandas_edgelist(
-            self.edges_df,
-            source='source',
-            target='target',
-            edge_attr='final_weight',
-            create_using=nx.Graph()
-        )
-        
-        # 添加孤立节点
+        # 使用生成器逐步添加边
+        self.G = nx.Graph()
         self.G.add_nodes_from(self.nodes_df['node_id'].tolist())
+        
+        for _, row in tqdm(self.edges_df.iterrows(), total=len(self.edges_df)):
+            self.G.add_edge(
+                row['source'], 
+                row['target'],
+                weight=row['final_weight']
+            )
+        
+        logger.info(f"最终图结构建立完毕")
 
     def detect_communities(self):
         """执行Louvain社区发现"""
@@ -227,7 +400,7 @@ class Neo4jLouvainProcessor:
             cypher = """
             CREATE (c:Cluster {community_id: $com_id})
             WITH c
-            MATCH (n:WhWhat {community: $com_id})
+            MATCH (n:What {community: $com_id})
             MERGE (n)-[:BELONGS_TO]->(c)
             """
             with self.driver.session(database=self.db_name) as session:
@@ -240,7 +413,7 @@ class Neo4jLouvainProcessor:
         # 社区规模统计
         community_size = self.nodes_df['community'].value_counts()
         logger.info(f"社区规模分布:\n{community_size.describe()}")
-        
         # 边权重分析
         logger.info(f"语义权重统计:\n{self.edges_df['semantic_weight'].describe()}")
+        logger.info(f"关系权重统计:\n{self.edges_df['relation_weight'].describe()}")
         logger.info(f"最终权重统计:\n{self.edges_df['final_weight'].describe()}")

@@ -16,24 +16,24 @@ logger = logging.getLogger(__name__)
 if __name__ == "__main__":
     # neo4j数据库配置信息
     config = {
-        "uri": "bolt://172.20.129.190:7687",#neo4j地址
+        "uri": "bolt://172.20.196.206:7687",#neo4j地址
         "user": "neo4j",
         "password": "neo4j@openspg",
-        "db_name": "dawnjiang5w1h",#neo4j数据库
+        "db_name": "cache",#neo4j数据库
         "semantic_threshold": 0.8,  #语义相似度阈值
-        "ollama_uri":'http://172.20.129.190:11434',#ollama地址
-        "model_name":'bge-m3'#模型
+        "embedding_uri":'https://embedding.jnu.cn/v1',#ollama地址http://172.20.71.112:11434 暨大：https://embedding.jnu.cn/v1
+        "embedding_name":'bge-m3'#模型
     }
 
     processor = Neo4jLouvainProcessor(**config)
 
     try:
         # Step 1: 数据导出
-        processor.export_data()
-        
-        # Step 2: 权重计算
-        processor.calculate_semantic_weights()
-        processor.calculate_relation_weights()
+        processor.export_nodes()
+        processor.find_semantic_pairs()
+        processor.fetch_relations()
+        processor.calculate_weights()
+
         
         # Step 3: 构建图
         processor.build_graph()

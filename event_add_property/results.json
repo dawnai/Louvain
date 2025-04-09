@@ -1,0 +1,1849 @@
+[
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1290",
+            "properties": {
+                "community_id": 379
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "签署协议建立国防从业者论坛，举行2+2会议，提供高速巡逻船和建设巡逻舰",
+                    "name": "日本与印度尼西亚加强国防合作，包括技术转让和设备合作",
+                    "why": "加强区域安全合作,应对中国在南海的领土争端和军事活动",
+                    "community": 379,
+                    "title": "Japan And Indonesia Increase Defence Cooperation – OpEd",
+                    "news_id": 1500
+                },
+                "related": [
+                    {
+                        "organization": "印度尼西亚政府"
+                    },
+                    {
+                        "Where": "雅加达"
+                    },
+                    {
+                        "Where": "博格宫"
+                    },
+                    {
+                        "Who": "佐藤洋子"
+                    },
+                    {
+                        "Who": "安瓦尔·易卜拉欣"
+                    },
+                    {
+                        "Who": "普拉博沃·苏比安托"
+                    },
+                    {
+                        "organization": "日本政府"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "When": "2025-01-11"
+                    },
+                    {
+                        "organization": "日本国际协力机构(JICA)"
+                    },
+                    {
+                        "organization": "三菱造船公司"
+                    },
+                    {
+                        "Who": "石破茂"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "通过联合开发军舰，增强两国在南海和东海的防御能力",
+                    "name": "日本和印度尼西亚联合开发军舰的背景和意义",
+                    "why": "印度尼西亚提升自身国防能力,日本加强与东南亚国家的安全合作",
+                    "community": 379,
+                    "title": "Japan, Indonesia plan a joint warship amid China tensions at sea",
+                    "news_id": 303
+                },
+                "related": [
+                    {
+                        "Where": "雅加达"
+                    },
+                    {
+                        "organization": "印度尼西亚政府"
+                    },
+                    {
+                        "Who": "Prabowo Subianto"
+                    },
+                    {
+                        "When": "2025-01-11"
+                    },
+                    {
+                        "Who": "Gen Nakatani"
+                    },
+                    {
+                        "organization": "日本政府"
+                    },
+                    {
+                        "Where": "东京"
+                    },
+                    {
+                        "Who": "Shigeru Ishiba"
+                    },
+                    {
+                        "Who": "Sjafrie Sjamsoeddin"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "通过联合开发军舰，加强两国在国防领域的合作",
+                    "name": "日本和印度尼西亚计划联合开发一艘军舰",
+                    "why": "加强区域安全合作,回应中国在南海和东海的领土争端",
+                    "community": 379,
+                    "title": "Japan, Indonesia plan a joint warship amid China tensions at sea",
+                    "news_id": 303
+                },
+                "related": [
+                    {
+                        "Who": "Prabowo Subianto"
+                    },
+                    {
+                        "Who": "Gen Nakatani"
+                    },
+                    {
+                        "Who": "Shigeru Ishiba"
+                    },
+                    {
+                        "When": "2025-01-11"
+                    },
+                    {
+                        "Who": "Sjafrie Sjamsoeddin"
+                    },
+                    {
+                        "organization": "印度尼西亚政府"
+                    },
+                    {
+                        "organization": "日本政府"
+                    },
+                    {
+                        "Where": "雅加达"
+                    },
+                    {
+                        "Where": "东京"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "日本与印度尼西亚加强国防合作，包括技术转让和设备合作，联合开发军舰",
+            "when": "2025-01-11",
+            "where": "雅加达,博格宫,东京",
+            "why": "加强区域安全合作,应对中国在南海和东海的领土争端",
+            "who": "佐藤洋子,安瓦尔·易卜拉欣,普拉博沃·苏比安托,石破茂,Prabowo Subianto,Gen Nakatani,Shigeru Ishiba,Sjafrie Sjamsoeddin",
+            "how": "签署协议建立国防从业者论坛，举行2+2会议，提供高速巡逻船和建设巡逻舰，通过联合开发军舰，增强两国在南海和东海的防御能力",
+            "organization": "印度尼西亚政府,日本政府,日本国际协力机构(JICA),三菱造船公司",
+            "type": "02.03.01-R-M-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1308",
+            "properties": {
+                "community_id": 162
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队部署84米和97米长的船只，施压中国船只远离Zambales海岸",
+                    "name": "菲律宾海岸警卫队部署船只应对中国海岸警卫船",
+                    "why": "保护菲律宾领海安全,应对中国海岸警卫船的靠近",
+                    "community": 162,
+                    "title": "Philippines alarmed by Chinese ships moving closer to shore",
+                    "news_id": 504
+                },
+                "related": [
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
+                    },
+                    {
+                        "Where": "Zambales省"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "BRP Teresa Magbanua将继续在三描礼士海岸部署",
+                    "name": "菲律宾海岸警卫队旗舰BRP Teresa Magbanua将继续在三描礼士海岸部署，以阻止中国海岸警卫队的非法存在",
+                    "why": "阻止中国海岸警卫队在该地区的非法存在",
+                    "community": 162,
+                    "title": "PCG not letting guard down",
+                    "news_id": 327
+                },
+                "related": [
+                    {
+                        "When": "2025-01-11"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "三描礼士"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾海岸警卫队部署船只应对中国海岸警卫船，以保护菲律宾领海安全并阻止中国海岸警卫队的非法存在",
+            "when": "2025-01-14",
+            "where": "Zambales省,三描礼士",
+            "why": "保护菲律宾领海安全,应对中国海岸警卫船的靠近,阻止中国海岸警卫队在该地区的非法存在",
+            "who": "Jay Tarriela",
+            "how": "菲律宾海岸警卫队部署84米和97米长的船只，施压中国船只远离Zambales海岸，BRP Teresa Magbanua旗舰将继续在三描礼士海岸部署",
+            "organization": "菲律宾海岸警卫队,中国海岸警卫队",
+            "type": "05.01.03-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1337",
+            "properties": {
+                "community_id": 57
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "通过外交和经济举措，增强国际影响力",
+                    "name": "中国在国际事务中发挥稳定作用，推动高质量发展",
+                    "why": "应对全球不确定性,维护全球平衡",
+                    "community": 57,
+                    "title": "Global South solidarity heralds a multipolar future",
+                    "news_id": 549
+                },
+                "related": [
+                    {
+                        "organization": "中国政府"
+                    },
+                    {
+                        "Who": "中国"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Where": "全球"
+                    },
+                    {
+                        "Who": "习近平"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "实施制裁和关税措施",
+                    "name": "美国试图遏制中国崛起，维持其全球主导地位",
+                    "why": "应对中国日益增长的影响力",
+                    "community": 57,
+                    "title": "Global South Solidarity Sparks A Multipolar Evolution – Analysis",
+                    "news_id": 356
+                },
+                "related": [
+                    {
+                        "Where": "全球"
+                    },
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "When": "2025-01-12"
+                    },
+                    {
+                        "Who": "乔·拜登"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国在国际事务中发挥稳定作用，推动高质量发展；美国试图遏制中国崛起，维持其全球主导地位",
+            "when": "2025-01-14",
+            "where": "全球",
+            "why": "应对全球不确定性,维护全球平衡；应对中国日益增长的影响力",
+            "who": "习近平,乔·拜登",
+            "how": "通过外交和经济举措，增强国际影响力；实施制裁和关税措施",
+            "organization": "中国政府,美国政府",
+            "type": "01.01.03-G-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1352",
+            "properties": {
+                "community_id": 269
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "进行通信演习、飞行操作和反潜战训练",
+                    "name": "加拿大和美国军舰在南海进行联合演习",
+                    "why": "展示两国对自由开放的印太地区的共同承诺,并提高战术互操作性",
+                    "community": 269,
+                    "title": "US, CANADIAN WARSHIPS CONDUCT JOINT DRILLS IN SOUTH CHINA SEA",
+                    "news_id": 370
+                },
+                "related": [
+                    {
+                        "Who": "加拿大海军"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "organization": "美国第七舰队"
+                    },
+                    {
+                        "organization": "加拿大联合行动指挥部"
+                    },
+                    {
+                        "Who": "美国海军"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "进行通信演习、飞行操作和反潜战训练",
+                    "name": "加拿大和美国军舰在南海进行联合演习",
+                    "why": "回应南海紧张局势,展示两国对自由开放的印太地区的承诺",
+                    "community": 269,
+                    "title": "United States/Canada: US, Canadian warships conduct joint drills in South China Sea",
+                    "news_id": 1393
+                },
+                "related": [
+                    {
+                        "When": "2025-01-08"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "organization": "美国第七舰队"
+                    },
+                    {
+                        "Who": "USS Higgins"
+                    },
+                    {
+                        "Who": "HMCS Ottawa"
+                    },
+                    {
+                        "organization": "加拿大联合行动司令部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "加拿大和美国军舰在南海进行联合演习",
+            "when": "2025-01-13",
+            "where": "南海",
+            "why": "展示两国对自由开放的印太地区的共同承诺，并提高战术互操作性，回应南海紧张局势",
+            "who": "USS Higgins, HMCS Ottawa",
+            "how": "进行通信演习、飞行操作和反潜战训练",
+            "organization": "美国第七舰队,加拿大联合行动指挥部,加拿大联合行动司令部",
+            "type": "02.04.01-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1374",
+            "properties": {
+                "community_id": 97
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队船只CCG 5901重返西菲律宾海，菲律宾海岸警卫队船只BRP特里萨·马格巴尼亚号继续进行监视并进行无线电挑战",
+                    "name": "中国最大海岸警卫队船只'怪物'号重返西菲律宾海",
+                    "why": "中国试图通过常态化部署改变该地区的现状",
+                    "community": 97,
+                    "title": "China's 'monster' ship returns to West Philippine Sea",
+                    "news_id": 379
+                },
+                "related": [
+                    {
+                        "Where": "西菲律宾海"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "特里萨·马格巴尼亚号船长"
+                    },
+                    {
+                        "Where": "苏比克湾"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "杰伊·塔里埃拉"
+                    },
+                    {
+                        "When": "2025-01-11"
+                    },
+                    {
+                        "Who": "中国海岸警卫队船长"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队5901号舰重返菲律宾西部海域，菲律宾海岸警卫队BRP Teresa Magbanua号舰继续监测并挑战中国舰船的非法存在",
+                    "name": "中国最大海岸警卫舰'巨兽'号重返菲律宾西部海域",
+                    "why": "中国试图通过常态化部署改变现状,加强对菲律宾专属经济区的控制",
+                    "community": 97,
+                    "title": "China's 'Monster' coast guard ship back in WPS",
+                    "news_id": 378
+                },
+                "related": [
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "菲律宾西部海域"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-11"
+                    },
+                    {
+                        "Who": "杰伊·塔里埃拉"
+                    },
+                    {
+                        "Where": "苏比克湾"
+                    },
+                    {
+                        "Who": "雷·鲍威尔"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国海岸警卫队船只CCG 5901重返菲律宾西部海域，菲律宾海岸警卫队船只BRP特里萨·马格巴尼亚号继续进行监视并进行无线电挑战",
+            "when": "2025-01-11",
+            "where": "西菲律宾海,苏比克湾",
+            "why": "中国试图通过常态化部署改变现状,加强对菲律宾专属经济区的控制",
+            "who": "特里萨·马格巴尼亚号船长,杰伊·塔里埃拉,雷·鲍威尔,中国海岸警卫队船长",
+            "how": "中国海岸警卫队5901号舰重返菲律宾西部海域，菲律宾海岸警卫队BRP Teresa Magbanua号舰继续监测并挑战中国舰船的非法存在",
+            "organization": "中国海岸警卫队,菲律宾海岸警卫队",
+            "type": "04.01.01-N-M-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1379",
+            "properties": {
+                "community_id": 100
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾向中国提出抗议，要求中国停止在菲律宾专属经济区内的非法行动",
+                    "name": "菲律宾抗议中国在南海的升级行动",
+                    "why": "中国在菲律宾专属经济区内的行动,包括海岸警卫队船只和海军直升机的部署,违反了菲律宾和国际法律",
+                    "community": 100,
+                    "title": "Philippines/China: Philippines files protest over Beijing's 'escalatory actions' in South China Sea",
+                    "news_id": 1488
+                },
+                "related": [
+                    {
+                        "organization": "菲律宾国家海洋委员会"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "Where": "马尼拉"
+                    },
+                    {
+                        "When": "2025-01-16"
+                    },
+                    {
+                        "Who": "孙玉洁"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾通过外交渠道向中国提出抗议",
+                    "name": "菲律宾对中国的非法存在和活动提出外交抗议",
+                    "why": "中国船只,包括海岸警卫队的‘巨船’,在菲律宾专属经济区和领海内的非法存在和活动",
+                    "community": 100,
+                    "title": "Protest filed vs China’s moves at WPS",
+                    "news_id": 576
+                },
+                "related": [
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "organization": "菲律宾国家海洋委员会"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Who": "菲律宾国家海洋委员会"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾国家海洋委员会发表声明，要求中国撤回其船只，并强调其行为违反了菲律宾法律和国际法",
+                    "name": "菲律宾国家海洋委员会要求中国撤回在菲律宾专属经济区内的'巨无霸船'",
+                    "why": "回应中国海岸警卫队船只在菲律宾专属经济区内的非法存在和活动",
+                    "community": 100,
+                    "title": "Nat'l Maricreated_at Council to China: Withdraw 'monster ship' from PH EEZ",
+                    "news_id": 523
+                },
+                "related": [
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "中国"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾国家海洋委员会"
+                    },
+                    {
+                        "Who": "Jonathan Malaya"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队部署船只和空中资产，要求中国海警船离开，并对中国政府提出外交抗议",
+                    "name": "菲律宾抗议中国海警船在专属经济区的非法存在和活动",
+                    "why": "中国海警船和民兵在菲律宾专属经济区内的非法存在和活动,违反了菲律宾法律和国际法",
+                    "community": 100,
+                    "title": "PH lodges protest vs China for illegal Coast Guard presence in EEZ",
+                    "news_id": 391
+                },
+                "related": [
+                    {
+                        "organization": "中国海警"
+                    },
+                    {
+                        "Who": "菲律宾国家海洋委员会"
+                    },
+                    {
+                        "Where": "三描礼士省"
+                    },
+                    {
+                        "organization": "中国解放军海军"
+                    },
+                    {
+                        "Who": "中国解放军海军"
+                    },
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "Who": "中国海警"
+                    },
+                    {
+                        "Where": "菲律宾专属经济区"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Where": "巴拉望省"
+                    },
+                    {
+                        "organization": "菲律宾国家海洋委员会"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾国家海洋委员会发表声明抗议，菲律宾海岸警卫队持续挑战中国船只并要求其离开，参议员呼吁加强与友好国家的联盟，前参议员强烈谴责中国的侵略行为",
+                    "name": "菲律宾抗议中国船只和直升机在其专属经济区的非法存在和挑衅行为",
+                    "why": "中国船只和直升机的非法存在和挑衅行为违反了菲律宾和国际法律,特别是《联合国海洋法公约》和2016年仲裁裁决",
+                    "community": 100,
+                    "title": "National maricreated_at text protests illegal presence of China vessels",
+                    "news_id": 526
+                },
+                "related": [
+                    {
+                        "Where": "Panatag Shoal"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Who": "Jinggoy Estrada"
+                    },
+                    {
+                        "Who": "Risa Hontiveros"
+                    },
+                    {
+                        "Who": "Lucas Bersamin"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
+                    },
+                    {
+                        "Who": "Francis Pangilinan"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Where": "Zambales省"
+                    },
+                    {
+                        "organization": "菲律宾国家海洋委员会"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾抗议中国在南海的非法存在和活动，要求中国撤回其船只，并强调其行为违反了菲律宾法律和国际法",
+            "when": "2025-01-13",
+            "where": "马尼拉,菲律宾,三描礼士省,巴拉望省,黄岩岛,扎姆巴莱斯",
+            "why": "中国船只和直升机在菲律宾专属经济区内的非法存在和活动，违反了菲律宾和国际法律，特别是《联合国海洋法公约》和2016年仲裁裁决",
+            "who": "费迪南德·马科斯,孙玉洁,Jonathan Malaya,Jinggoy Estrada,Risa Hontiveros,Lucas Bersamin,Jay Tarriela,Francis Pangilinan",
+            "how": "菲律宾通过外交渠道向中国提出抗议，菲律宾国家海洋委员会发表声明，菲律宾海岸警卫队部署船只和空中资产，要求中国海警船离开，并对中国政府提出外交抗议，参议员呼吁加强与友好国家的联盟，前参议员强烈谴责中国的侵略行为",
+            "organization": "菲律宾国家海洋委员会,中国海岸警卫队,菲律宾海岸警卫队,中国海警,中国解放军海军",
+            "type": "03.02.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1387",
+            "properties": {
+                "community_id": 363
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "印尼将采购BrahMos导弹，提升其国防能力",
+                    "name": "印度与印尼签署4.5亿美元BrahMos导弹采购协议",
+                    "why": "应对中国在南海和西太平洋的扩张和军事威胁",
+                    "community": 363,
+                    "title": "How China is driving up demand for India-made BrahMos",
+                    "news_id": 1498
+                },
+                "related": [
+                    {
+                        "Where": "印度"
+                    },
+                    {
+                        "Who": "莫迪"
+                    },
+                    {
+                        "When": "2025-01-16"
+                    },
+                    {
+                        "Who": "普拉博沃·苏比安托"
+                    },
+                    {
+                        "Where": "印尼"
+                    },
+                    {
+                        "organization": "印度-俄罗斯联合企业BrahMos Aerospace"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "印尼将购买BrahMos导弹，增强其军事威慑能力",
+                    "name": "印尼接近与印度达成4.5亿美元购买BrahMos超音速巡航导弹的协议",
+                    "why": "应对中国在南海的军事行动和对纳土纳海的领土主张",
+                    "community": 363,
+                    "title": "China's assertiveness spurs regional defence modernisation: Indonesia eyes BrahMos Missiles",
+                    "news_id": 388
+                },
+                "related": [
+                    {
+                        "Where": "印尼"
+                    },
+                    {
+                        "Where": "印度"
+                    },
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "Who": "莫迪"
+                    },
+                    {
+                        "Who": "普拉博沃·苏比安托"
+                    },
+                    {
+                        "organization": "印度国防研究与发展组织"
+                    },
+                    {
+                        "organization": "俄罗斯机械制造科研生产联合体"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "印度与印尼签署4.5亿美元的BrahMos导弹采购协议，增强印尼的军事威慑能力",
+            "when": "2025-01-16",
+            "where": "印度,印尼",
+            "why": "应对中国在南海和西太平洋的扩张和军事威胁",
+            "who": "莫迪,普拉博沃·苏比安托",
+            "how": "印尼将采购BrahMos导弹，提升其国防能力",
+            "organization": "印度-俄罗斯联合企业BrahMos Aerospace,印度国防研究与发展组织,俄罗斯机械制造科研生产联合体",
+            "type": "02.05.01-R-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1399",
+            "properties": {
+                "community_id": 120
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "与印尼总统普拉博沃·苏比安托会晤，承诺培训印尼政府官员；与马来西亚总理安瓦尔·易卜拉欣会晤，推进亚洲脱碳化概念",
+                    "name": "日本首相石破茂访问马来西亚和印度尼西亚，推动多层面合作",
+                    "why": "增强日本在亚洲的稳定和繁荣,深化与东盟国家的多层面合作",
+                    "community": 120,
+                    "title": "EDITORIAL; Prime minister's Asian tour; Make efforts for regional development through multilayered cooperation",
+                    "news_id": 395
+                },
+                "related": [
+                    {
+                        "Who": "石破茂"
+                    },
+                    {
+                        "organization": "马来西亚政府"
+                    },
+                    {
+                        "organization": "日本政府"
+                    },
+                    {
+                        "Who": "安瓦尔·易卜拉欣"
+                    },
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "organization": "印度尼西亚政府"
+                    },
+                    {
+                        "Where": "印度尼西亚"
+                    },
+                    {
+                        "Where": "马来西亚"
+                    },
+                    {
+                        "Who": "普拉博沃·苏比安托"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "与印尼总统普拉博沃·苏比安托会面，宣布日本将支持印尼政府官员培训计划；与马来西亚首相安瓦尔·易卜拉欣会面，同意推进亚洲脱碳化项目",
+                    "name": "日本首相石破茂访问马来西亚和印尼，推动区域发展和多层合作",
+                    "why": "展示日本对亚洲稳定和繁荣的承诺,深化多层合作",
+                    "community": 120,
+                    "title": "PM Ishiba's Asian tour: Make efforts for regional development through multilayered",
+                    "news_id": 533
+                },
+                "related": [
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Who": "安瓦尔·易卜拉欣"
+                    },
+                    {
+                        "organization": "马来西亚政府"
+                    },
+                    {
+                        "Who": "石破茂"
+                    },
+                    {
+                        "Where": "马来西亚"
+                    },
+                    {
+                        "Who": "普拉博沃·苏比安托"
+                    },
+                    {
+                        "organization": "印尼政府"
+                    },
+                    {
+                        "Where": "东京"
+                    },
+                    {
+                        "Where": "印尼"
+                    },
+                    {
+                        "organization": "日本政府"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "日本首相石破茂访问马来西亚和印度尼西亚，推动区域发展和多层合作，宣布培训印尼政府官员，推进亚洲脱碳化项目",
+            "when": "2025-01-13",
+            "where": "印度尼西亚,马来西亚",
+            "why": "增强日本在亚洲的稳定和繁荣，深化与东盟国家的多层面合作，展示日本对亚洲稳定和繁荣的承诺",
+            "who": "石破茂,安瓦尔·易卜拉欣,普拉博沃·苏比安托",
+            "how": "与印尼总统普拉博沃·苏比安托会晤，承诺培训印尼政府官员；与马来西亚总理安瓦尔·易卜拉欣会晤，推进亚洲脱碳化概念；与印尼总统会面，宣布日本将支持印尼政府官员培训计划；与马来西亚首相安瓦尔·易卜拉欣会面，同意推进亚洲脱碳化项目",
+            "organization": "日本政府,马来西亚政府,印度尼西亚政府",
+            "type": "03.01.01-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1406",
+            "properties": {
+                "community_id": 319
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国表示其在南海的主权和权益有历史和法律依据，呼吁菲律宾停止恶意指责",
+                    "name": "中国外交部回应菲律宾抗议中国在南海的活动",
+                    "why": "菲律宾抗议中国在南海的非法存在和活动",
+                    "community": 319,
+                    "title": "China: Foreign Ministry Spokesperson Guo Jiakun's Regular Press Conference on January 13, 2025",
+                    "news_id": 1422
+                },
+                "related": [
+                    {
+                        "Who": "郭家琨"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "强调中国在南海的主权和相关权益有充分的历史和法律依据，敦促菲律宾停止恶意炒作",
+                    "name": "中国外交部发言人郭家庆回应菲律宾抗议中国在南海的非法活动",
+                    "why": "维护中国在南海的主权和相关权益",
+                    "community": 319,
+                    "title": "China: Foreign Ministry spokesperson Guo Jiaqing holds regular press conference on January 13",
+                    "news_id": 555
+                },
+                "related": [
+                    {
+                        "organization": "中华人民共和国外交部"
+                    },
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "Who": "郭家庆"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国外交部发言人郭家琨在新闻发布会上表示，中国在南海的活动是合法的，要求菲律宾停止侵权活动",
+                    "name": "中国回应菲律宾的抗议，称其在南海的活动是合法的",
+                    "why": "中国坚持其在南海的主权和权益,菲律宾对中国的南海活动提出抗议",
+                    "community": 319,
+                    "title": "PHILIPPINE OFFICIAL ON CHINESE INCURSIONS: NOT RULING OUT ANOTHER SOUTH CHINA SEA LAW",
+                    "news_id": 1394
+                },
+                "related": [
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Who": "郭家琨"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国外交部回应菲律宾抗议中国在南海的活动，强调中国在南海的主权和相关权益有充分的历史和法律依据，要求菲律宾停止恶意指责和侵权活动",
+            "when": "2025-01-13",
+            "where": "北京",
+            "why": "菲律宾抗议中国在南海的非法存在和活动，中国坚持其在南海的主权和权益",
+            "who": "郭家琨,郭家庆",
+            "how": "中国表示其在南海的主权和权益有历史和法律依据，呼吁菲律宾停止恶意指责和侵权活动",
+            "organization": "中华人民共和国外交部,中国外交部",
+            "type": "03.04.02-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1438",
+            "properties": {
+                "community_id": 160
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾通过媒体表达担忧，并部署海岸警卫队船只施压中国船只远离海岸；中国则表示巡逻合法并警告菲律宾停止挑衅",
+                    "name": "菲律宾对靠近其海岸的中国海岸警卫队巡逻船表示担忧",
+                    "why": "中国在南海的持续巡逻和部署‘巨无霸’海岸警卫船,被视为对中国南海主权主张的强化",
+                    "community": 160,
+                    "title": "Philippines alarmed by Chinese ships moving closer to shore",
+                    "news_id": 504
+                },
+                "related": [
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Who": "Jonathan Malaya"
+                    },
+                    {
+                        "Who": "Guo Jiakun"
+                    },
+                    {
+                        "Where": "中国"
+                    },
+                    {
+                        "organization": "菲律宾国家安全委员会"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾通过媒体表达担忧，并部署海岸警卫队船只施压中国船只远离海岸；中国则表示其巡逻合法且无可指责",
+                    "name": "菲律宾对中国海岸警卫队船只靠近其海岸表示担忧",
+                    "why": "中国在南海的持续军事存在和巡逻,以及最近部署的一艘大型海岸警卫队船只",
+                    "community": 160,
+                    "title": "Philippines alarmed by Chinese coast guard ships moving closer to shore",
+                    "news_id": 512
+                },
+                "related": [
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Who": "Jonathan Malaya"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Where": "中国"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Who": "Guo Jiakun"
+                    },
+                    {
+                        "organization": "菲律宾国家安全委员会"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾对中国海岸警卫队船只靠近其海岸表示担忧，菲律宾通过媒体表达担忧，并部署海岸警卫队船只施压中国船只远离海岸；中国则表示巡逻合法并警告菲律宾停止挑衅",
+            "when": "2025-01-14",
+            "where": "菲律宾,中国",
+            "why": "中国在南海的持续巡逻和部署‘巨无霸’海岸警卫船,被视为对中国南海主权主张的强化",
+            "who": "Jonathan Malaya,Guo Jiakun",
+            "how": "菲律宾通过媒体表达担忧，并部署海岸警卫队船只施压中国船只远离海岸；中国则表示其巡逻合法且无可指责",
+            "organization": "菲律宾国家安全委员会,中国外交部,中国海岸警卫队,菲律宾海岸警卫队",
+            "type": "01.04.03-N-M-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1447",
+            "properties": {
+                "community_id": 170
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队和监视飞机不断要求中国船只撤离",
+                    "name": "菲律宾对中国在南海的侵略行为表示强烈反对",
+                    "why": "中国海岸警卫队船只在菲律宾专属经济区内活动",
+                    "community": 170,
+                    "title": "New mission to protect undersea cables",
+                    "news_id": 1412
+                },
+                "related": [
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "organization": "菲律宾国家安全委员会"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Who": "乔纳森·马拉亚"
+                    },
+                    {
+                        "Who": "杰伊·塔里埃拉"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队和小型监视飞机反复要求中国海岸警卫船撤离菲律宾专属经济区",
+                    "name": "中国在南海的侵略行为加剧，菲律宾警告将采取包括国际诉讼在内的所有选项",
+                    "why": "中国在南海的持续侵略行为,包括派遣大型海岸警卫船进入菲律宾专属经济区",
+                    "community": 170,
+                    "title": "China ‘pushing Philippines to the wall’ with aggression in South China Sea",
+                    "news_id": 591
+                },
+                "related": [
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "Who": "中国官员"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "Jonathan Malaya"
+                    },
+                    {
+                        "organization": "菲律宾国家安全委员会"
+                    },
+                    {
+                        "Where": "南海"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾官员警告中国撤回船只，并表示将采取包括国际诉讼在内的所有措施",
+                    "name": "中国在南海的军事活动加剧，菲律宾警告将采取包括国际诉讼在内的所有措施",
+                    "why": "中国在南海的军事活动加剧,包括派遣大型海岸警卫队船只进入菲律宾专属经济区",
+                    "community": 170,
+                    "title": "China pushing Philippines ‘to the wall’ with sea aggression: Manila",
+                    "news_id": 507
+                },
+                "related": [
+                    {
+                        "Who": "Guo Jiakun"
+                    },
+                    {
+                        "Where": "马尼拉"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "organization": "菲律宾国家安全委员会"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "Who": "Jonathan Malaya"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国在南海的军事活动加剧，菲律宾警告将采取包括国际诉讼在内的所有措施",
+            "when": "2025-01-14",
+            "where": "菲律宾, 南海, 马尼拉",
+            "why": "中国在南海的持续侵略行为,包括派遣大型海岸警卫船进入菲律宾专属经济区",
+            "who": "费迪南德·马科斯, 乔纳森·马拉亚, 杰伊·塔里埃拉, 郭嘉坤",
+            "how": "菲律宾海岸警卫队和小型监视飞机反复要求中国海岸警卫船撤离菲律宾专属经济区，并表示将采取包括国际诉讼在内的所有措施",
+            "organization": "菲律宾海岸警卫队, 菲律宾国家安全委员会, 中国外交部",
+            "type": "03.01.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1448",
+            "properties": {
+                "community_id": 250
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队和小型侦察机反复命令中国海岸警卫队船只撤离",
+                    "name": "菲律宾海岸警卫队和小型侦察机命令中国海岸警卫队船只撤离菲律宾专属经济区",
+                    "why": "中国海岸警卫队船只进入菲律宾专属经济区,距离菲律宾海岸77海里",
+                    "community": 250,
+                    "title": "China pushing Philippines ‘to the wall’ with sea aggression: Manila",
+                    "news_id": 507
+                },
+                "related": [
+                    {
+                        "Who": "Jay Tarriela"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾政府通过外交渠道向中国政府提出抗议",
+                    "name": "菲律宾政府对中国的非法行为提出外交抗议",
+                    "why": "中国海岸警卫队船只在菲律宾专属经济区内的非法存在和活动",
+                    "community": 250,
+                    "title": "Nat'l Maricreated_at Council to China: Withdraw 'monster ship' from PH EEZ",
+                    "news_id": 523
+                },
+                "related": [
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "Who": "菲律宾政府"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾海警船和飞机多次要求中国海警船撤离，强调不会允许中国非法部署正常化",
+                    "name": "菲律宾海警船和飞机要求中国海警船撤离菲律宾专属经济区",
+                    "why": "中国海警船在菲律宾专属经济区内巡逻,菲律宾认为这是非法行为",
+                    "community": 250,
+                    "title": "Philippines threatens legal action after Chinese coast guard ship sails in disputed South China Sea",
+                    "news_id": 592
+                },
+                "related": [
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Where": "南海"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾海岸警卫队和小型侦察机命令中国海岸警卫队船只撤离菲律宾专属经济区，菲律宾政府通过外交渠道向中国政府提出抗议，菲律宾海警船和飞机多次要求中国海警船撤离，强调不会允许中国非法部署正常化",
+            "when": "2025-01-14",
+            "where": "南海,菲律宾",
+            "why": "中国海岸警卫队船只进入菲律宾专属经济区,距离菲律宾海岸77海里，中国海警船在菲律宾专属经济区内巡逻,菲律宾认为这是非法行为",
+            "who": "Jay Tarriela",
+            "how": "菲律宾海岸警卫队和小型侦察机反复命令中国海岸警卫队船只撤离，菲律宾政府通过外交渠道向中国政府提出抗议，菲律宾海警船和飞机多次要求中国海警船撤离，强调不会允许中国非法部署正常化",
+            "organization": "菲律宾海岸警卫队,菲律宾政府,中国海岸警卫队",
+            "type": "01.04.02-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1490",
+            "properties": {
+                "community_id": 217
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国外交部发言人表示反对美国过度伸张国家安全概念，强调国际法和联合国安理会的权威",
+                    "name": "中国反对美国对中企的制裁，强调反对非法单边制裁",
+                    "why": "影响正常经贸往来,美国将中国港口运营商列入制裁名单",
+                    "community": 217,
+                    "title": "Foreign Ministry Spokesperson Guo Jiakun s Regular Press Conference on January 13, 2025",
+                    "news_id": 540
+                },
+                "related": [
+                    {
+                        "Who": "郭家琨"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国反对非法单边制裁和长臂管辖，表示将采取必要措施维护自身权益",
+                    "name": "中国反对美国对中企的制裁",
+                    "why": "扰乱正常经贸交流,美国过度扩大国家安全概念",
+                    "community": 217,
+                    "title": "China: Foreign Ministry Spokesperson Guo Jiakun's Regular Press Conference on January 13, 2025",
+                    "news_id": 1422
+                },
+                "related": [
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Who": "郭家琨"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国反对美国对中企的制裁，强调反对非法单边制裁和长臂管辖，表示将采取必要措施维护自身权益",
+            "when": "2025-01-14",
+            "where": "北京",
+            "why": "美国过度扩大国家安全概念，将中国港口运营商列入制裁名单，影响正常经贸往来和交流",
+            "who": "郭家琨",
+            "how": "中国外交部发言人郭家琨表示反对美国过度伸张国家安全概念，强调国际法和联合国安理会的权威，并表示将采取必要措施维护自身权益",
+            "organization": "中国外交部",
+            "type": "08.01.01-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1505",
+            "properties": {
+                "community_id": 234
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队和监视飞机反复要求中国海岸警卫船撤离菲律宾专属经济区",
+                    "name": "菲律宾海岸警卫队和监视飞机要求中国海岸警卫船撤离菲律宾专属经济区",
+                    "why": "中国海岸警卫船进入菲律宾专属经济区,距离菲律宾海岸线77海里",
+                    "community": 234,
+                    "title": "China ‘pushing Philippines to the wall’ with aggression in South China Sea",
+                    "news_id": 591
+                },
+                "related": [
+                    {
+                        "Who": "中国官员"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Where": "南海"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾抗议并部署两艘最大海岸警卫舰驱逐中国船只，中国称其巡逻合法合理",
+                    "name": "中国在菲律宾专属经济区部署最大海岸警卫舰",
+                    "why": "中国在南中国海的领土主张和对菲律宾渔民的威慑",
+                    "community": 234,
+                    "title": "South China Sea: China deploys 'monster ship' in Philippines maricreated_at zone",
+                    "news_id": 590
+                },
+                "related": [
+                    {
+                        "Who": "郭家坤"
+                    },
+                    {
+                        "Where": "扎姆巴莱斯省"
+                    },
+                    {
+                        "Where": "菲律宾专属经济区"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "菲律宾国家海岸警卫队"
+                    },
+                    {
+                        "Who": "乔纳森·马拉亚"
+                    },
+                    {
+                        "organization": "菲律宾国家海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾海岸警卫队和监视飞机要求中国海岸警卫船撤离菲律宾专属经济区，菲律宾抗议并部署两艘最大海岸警卫舰驱逐中国船只",
+            "when": "2025-01-14",
+            "where": "菲律宾,南海,扎姆巴莱斯省,菲律宾专属经济区",
+            "why": "中国海岸警卫船进入菲律宾专属经济区, 距离菲律宾海岸线77海里，中国在南中国海的领土主张和对菲律宾渔民的威慑",
+            "who": "Jay Tarriela,郭家坤,乔纳森·马拉亚",
+            "how": "菲律宾海岸警卫队和监视飞机反复要求中国海岸警卫船撤离菲律宾专属经济区，菲律宾抗议并部署两艘最大海岸警卫舰驱逐中国船只，中国称其巡逻合法合理",
+            "organization": "菲律宾海岸警卫队,中国海岸警卫队,菲律宾国家海岸警卫队",
+            "type": "02.01.03-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1508",
+            "properties": {
+                "community_id": 272
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾考虑采取措施，包括提起新的国际诉讼，同时继续进行外交抗议",
+                    "name": "菲律宾考虑采取措施应对中国在南海的持续挑衅行为，包括可能提起新的国际诉讼",
+                    "why": "中国持续在菲律宾声称的南海水域进行挑衅活动,包括派遣大型海岸警卫舰",
+                    "community": 272,
+                    "title": "PHILIPPINE OFFICIAL ON CHINESE INCURSIONS: NOT RULING OUT ANOTHER SOUTH CHINA SEA LAW",
+                    "news_id": 1394
+                },
+                "related": [
+                    {
+                        "Where": "马尼拉"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "Who": "郭家琨"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "Who": "乔纳森·马拉亚"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Where": "南海"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾政府考虑采取包括国际诉讼在内的所有选项",
+                    "name": "菲律宾考虑采取新的国际诉讼应对中国的侵略行为",
+                    "why": "中国在南海的持续侵略行为,包括派遣大型海岸警卫船进入菲律宾专属经济区",
+                    "community": 272,
+                    "title": "China ‘pushing Philippines to the wall’ with aggression in South China Sea",
+                    "news_id": 591
+                },
+                "related": [
+                    {
+                        "When": "2025-01-14"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "菲律宾国家安全委员会"
+                    },
+                    {
+                        "Who": "中国官员"
+                    },
+                    {
+                        "Who": "Jonathan Malaya"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾考虑采取措施应对中国在南海的持续挑衅行为，包括可能提起新的国际诉讼",
+            "when": "2025-01-15",
+            "where": "马尼拉, 南海, 菲律宾",
+            "why": "中国在菲律宾声称的南海水域进行持续挑衅行为，包括派遣大型海岸警卫舰和进入菲律宾专属经济区",
+            "who": "费迪南德·马科斯, 郭家琨, 乔纳森·马拉亚, Jonathan Malaya, 中国官员",
+            "how": "菲律宾考虑采取措施，包括提起新的国际诉讼，同时继续进行外交抗议",
+            "organization": "菲律宾政府, 菲律宾国家安全委员会, 中国外交部",
+            "type": "03.04.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1510",
+            "properties": {
+                "community_id": 241
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "多个州的居民被迫转移到避难中心，特别是柔佛州的Kota Tinggi、Kluang和Pontian地区",
+                    "name": "马来西亚多个州因东北季风涌流出现连续暴雨和洪水",
+                    "why": "东北季风涌流带来持续降雨,导致多个州出现洪水",
+                    "community": 241,
+                    "title": "It's wet, wet, wet -- what's behind the rainy weather'",
+                    "news_id": 1366
+                },
+                "related": [
+                    {
+                        "organization": "马来西亚气象局"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Where": "马来西亚"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "多个州出现洪水，近4000人被安置在避难中心",
+                    "name": "马来西亚多个州因东北季风涌动出现持续降雨和洪水",
+                    "why": "东北季风涌动带来的冷空气和雨云导致持续降雨",
+                    "community": 241,
+                    "title": "The Straits created_ats Explains: What caused the prolonged rain in Singapore?",
+                    "news_id": 1372
+                },
+                "related": [
+                    {
+                        "Where": "马来西亚"
+                    },
+                    {
+                        "organization": "马来西亚气象局"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "马来西亚多个州因东北季风涌动出现持续降雨和洪水，多个州的居民被迫转移到避难中心",
+            "when": "2025-01-14",
+            "where": "马来西亚",
+            "why": "东北季风涌动带来的冷空气和雨云导致持续降雨",
+            "who": "",
+            "how": "多个州出现洪水，近4000人被安置在避难中心，特别是柔佛州的Kota Tinggi、Kluang和Pontian地区",
+            "organization": "马来西亚气象局",
+            "type": "06.02.01-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1518",
+            "properties": {
+                "community_id": 282
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国海警船在南海进行巡逻，菲律宾政府对此表示强烈谴责",
+                    "name": "中国海警船在南海巡逻引发菲律宾强烈谴责",
+                    "why": "中国海警船在南海的巡逻活动加剧了菲律宾的担忧,认为这是对菲律宾主权的侵犯",
+                    "community": 282,
+                    "title": "Philippines-China Tensions Escalate in South China Sea",
+                    "news_id": 1399
+                },
+                "related": [
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Who": "中国海警"
+                    },
+                    {
+                        "organization": "中国海警"
+                    },
+                    {
+                        "Who": "菲律宾政府"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾官员警告将采取法律行动，中国官员则表示其巡逻合法并要求菲律宾停止挑衅",
+                    "name": "菲律宾威胁对中国采取法律行动，因中国海警船在南海争议海域巡逻",
+                    "why": "中国海警船在南海争议海域巡逻,引发菲律宾不满,接近菲律宾领海",
+                    "community": 282,
+                    "title": "Philippines threatens legal action after Chinese coast guard ship sails in disputed South China Sea",
+                    "news_id": 592
+                },
+                "related": [
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Who": "Guo Jiakun"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "organization": "菲律宾国家安全委员会"
+                    },
+                    {
+                        "Who": "Jonathan Malaya"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "When": "2025-01-14"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国海警船在南海巡逻引发菲律宾强烈谴责，菲律宾威胁采取法律行动",
+            "when": "2025-01-14",
+            "where": "南海,菲律宾",
+            "why": "中国海警船在南海争议海域巡逻，加剧了菲律宾的担忧，认为这是对菲律宾主权的侵犯",
+            "who": "中国海警,费迪南德·马科斯,Guo Jiakun,Jonathan Malaya",
+            "how": "中国海警船在南海进行巡逻，菲律宾政府对此表示强烈谴责，并威胁将采取法律行动，中国官员则表示其巡逻合法并要求菲律宾停止挑衅",
+            "organization": "中国海警,中国外交部,菲律宾国家安全委员会",
+            "type": "02.01.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1599",
+            "properties": {
+                "community_id": 339
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "Sullivan和Waltz在US Institute of Peace的活动中讨论了中美战略竞争，并强调了印度作为关键伙伴的作用",
+                    "name": "Sullivan和Waltz讨论中美战略竞争及印度的关键作用",
+                    "why": "应对中国的长期挑战,确保美国在战略竞争中保持优势",
+                    "community": 339,
+                    "title": "Sullivan, Waltz agree on role of India in ties",
+                    "news_id": 1516
+                },
+                "related": [
+                    {
+                        "Who": "乔·拜登"
+                    },
+                    {
+                        "Who": "杰克·沙利文"
+                    },
+                    {
+                        "When": "2025-01-16"
+                    },
+                    {
+                        "Who": "斯蒂芬·哈德利"
+                    },
+                    {
+                        "Who": "迈克尔·沃尔茨"
+                    },
+                    {
+                        "Where": "华盛顿特区"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "organization": "美国国家安全委员会"
+                    },
+                    {
+                        "organization": "美国和平研究所"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "Sullivan和Waltz讨论了供应链、台湾防御和加强盟友关系等措施",
+                    "name": "Sullivan和Waltz讨论了中美战略竞争的具体措施",
+                    "why": "确保美国在战略竞争中保持优势",
+                    "community": 339,
+                    "title": "Sullivan, Waltz agree on China as strategic threat, India as ally",
+                    "news_id": 1521
+                },
+                "related": [
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "Who": "迈克尔·沃尔茨"
+                    },
+                    {
+                        "Who": "杰克·沙利文"
+                    },
+                    {
+                        "Where": "华盛顿"
+                    },
+                    {
+                        "When": "2025-01-16"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "Sullivan和Waltz讨论了包括网络安全、供应链、台湾防御和加强盟友关系在内的具体措施",
+                    "name": "Sullivan和Waltz讨论了中美战略竞争中的具体措施",
+                    "why": "确保美国在战略竞争中保持优势,防止对手利用政权过渡期",
+                    "community": 339,
+                    "title": "Sullivan and Waltz agree: China as threat, India as partner",
+                    "news_id": 1437
+                },
+                "related": [
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Where": "华盛顿"
+                    },
+                    {
+                        "Who": "迈克尔·沃尔茨"
+                    },
+                    {
+                        "Who": "乔·拜登"
+                    },
+                    {
+                        "organization": "美国国家安全委员会"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Who": "杰克·沙利文"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "Sullivan和Waltz讨论了中美战略竞争，并强调了印度作为关键伙伴的作用，具体措施包括供应链、台湾防御、网络安全和加强盟友关系",
+            "when": "2025-01-16",
+            "where": "华盛顿,华盛顿特区",
+            "why": "确保美国在战略竞争中保持优势,防止对手利用政权过渡期",
+            "who": "杰克·沙利文,迈克尔·沃尔茨",
+            "how": "Sullivan和Waltz在US Institute of Peace的活动中讨论了中美战略竞争，并强调了印度作为关键伙伴的作用，具体措施包括供应链、台湾防御、网络安全和加强盟友关系",
+            "organization": "美国国家安全委员会,美国和平研究所,美国政府",
+            "type": "01.01.03-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:b9206aa5-e69a-4156-8be0-22ef7401b372:1678",
+            "properties": {
+                "community_id": 72
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "Pete Ricketts在新闻发布会上列举了拜登政府的多项政策失误，包括阿富汗撤军、对伊朗的宽松政策等",
+                    "name": "Pete Ricketts批评拜登政府的外交政策",
+                    "why": "认为拜登政府的政策使美国更加不安全",
+                    "community": 72,
+                    "title": "Ricketts: Marco Rubio \"Will Help President Trump Restore American Strength and Deter Our Adversaries\"; Sen. Pete Ricketts (R-NE) News Release",
+                    "news_id": 1533
+                },
+                "related": [
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Who": "Pete Ricketts"
+                    },
+                    {
+                        "Who": "乔·拜登"
+                    },
+                    {
+                        "organization": "美国参议院"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Where": "华盛顿特区"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "Ricketts在新闻发布会上列举了拜登政府的多项政策失误，包括从阿富汗撤军、对伊朗的政策以及对中国共产党的软弱",
+                    "name": "Pete Ricketts批评拜登政府的外交政策",
+                    "why": "认为拜登政府的外交政策使美国更加不安全",
+                    "community": 72,
+                    "title": "RICKETTS: MARCO RUBIO \"WILL HELP PRESIDENT TRUMP RESTORE AMERICAN STRENGTH AND DETER OUR ADVERSARIES\"",
+                    "news_id": 1526
+                },
+                "related": [
+                    {
+                        "organization": "美国参议院"
+                    },
+                    {
+                        "Where": "华盛顿"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Who": "Pete Ricketts"
+                    },
+                    {
+                        "Who": "Vladimir Putin"
+                    },
+                    {
+                        "Who": "Joe Biden"
+                    },
+                    {
+                        "Who": "Xi Jinping"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "Pete Ricketts批评拜登政府的外交政策，列举了多项政策失误，包括阿富汗撤军、对伊朗的宽松政策以及对中国共产党的软弱",
+            "when": "2025-01-15",
+            "where": "华盛顿特区",
+            "why": "认为拜登政府的外交政策使美国更加不安全",
+            "who": "Pete Ricketts, 乔·拜登, 唐纳德·特朗普, Vladimir Putin, Xi Jinping",
+            "how": "Pete Ricketts在新闻发布会上列举了拜登政府的多项政策失误，包括阿富汗撤军、对伊朗的宽松政策以及对中国共产党的软弱",
+            "organization": "美国参议院",
+            "type": "01.04.01-N-H-B-C"
+        }
+    }
+]
