@@ -19,7 +19,7 @@ if __name__ == "__main__":
         "uri": "bolt://172.20.196.206:7687",#neo4j地址
         "user": "neo4j",
         "password": "neo4j@openspg",
-        "db_name": "cache",#neo4j数据库
+        "db_name": "all",#neo4j数据库
         "semantic_threshold": 0.8,  #语义相似度阈值
         "embedding_uri":'https://embedding.jnu.cn/v1',#ollama地址http://172.20.71.112:11434 暨大：https://embedding.jnu.cn/v1
         "embedding_name":'bge-m3'#模型

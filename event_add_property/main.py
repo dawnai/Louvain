@@ -12,10 +12,10 @@ logger = logging.getLogger(__name__)
 
 # 数据库配置信息
 neo4j_config = {
-    "uri": "bolt://172.20.196.206:7687",
+    "uri": "bolt://172.20.52.33:7687",
     "user": "neo4j",
     "password": "neo4j@openspg",
-    "database": "cache"
+    "database": "all"
 }
 
 # 大模型配置
@@ -44,12 +44,12 @@ event_type = get_thing_type("事件属性.json")
 
 def fetch_cluster_with_what_nodes(tx):
     """
-    查询所有符合条件的集群及其包含的 What 节点 必须包含两个以上的what节点。但是目前没有限制when是否为空的Cluster节点
+    查询所有符合条件的集群及其包含的 What 节点 必须包含两个以上的what节点。限制when是否为空的Cluster节点
     """
     query = """
     MATCH (w:What)-[:BELONGS_TO]->(c:Cluster)
     WITH c, collect(w) AS what_nodes
-    WHERE size(what_nodes) >= 2
+    WHERE size(what_nodes) >= 2 AND c.when IS  NULL
     RETURN c, what_nodes
     """
     result = tx.run(query)

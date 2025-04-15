@@ -1,47 +1,25 @@
 """
-新闻多事件5W1H抽取系统（支持单新闻多事件版）
+新闻5w1h实体处理类
+包含：
+    read_data：读取json文件
+    generate_event_id：生成唯一事件ID
+    process_timestamp：时间对齐
+    clean_entities：实体清洗
+    extract_events：实体抽取
 """
-import logging
+
+
 import json
 import hashlib
-import pandas as pd
 from datetime import datetime
 from openai import OpenAI
-from tqdm import tqdm
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 
-# 日志配置
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-
-# 配置参数
-CONFIG = {
-    "input_json": "./data/waite_to_extrac/1-11.json",
-    "output_files": {
-        "excel": "./data/waite_to_neo4j/xlsx/1-11.xlsx",
-        "json": "./data/waite_to_neo4j/json/1-11.json"
-    },
-    "api": {
-        "key": "sk-d0c3b3fe823c4fcfbe6a56a8a13c946c",
-        "base_url": "https://llm.jnu.cn/v1",
-        "model": "Qwen2.5-72B-Instruct",
-        "retries": 3,
-        "timeout": 30
-    },
-    "processing": {
-        "batch_size": 5,
-        "max_events_per_news": 3,#每条新闻最多抽取多少5w1h
-        "request_interval": 1,
-        "text_truncate_length": 1000#文本截断
-    }
-}
-
-class NewsProcessor:
-    def __init__(self):
+class NewsProcessor():
+    def __init__(self,CONFIG):
         self.client = OpenAI(api_key=CONFIG["api"]["key"], 
                             base_url=CONFIG["api"]["base_url"])
+        self.CONFIG=CONFIG
         
     @staticmethod
     def read_data(file_path):
@@ -53,7 +31,7 @@ class NewsProcessor:
                     raise ValueError("输入数据应为JSON数组")
                 return data
         except Exception as e:
-            logger.error(f"数据读取失败: {str(e)}")
+            print(f"数据读取失败: {str(e)}")
             raise
 
     @staticmethod
@@ -178,17 +156,17 @@ who要么抽取三元组，要么只返回人物名字！确保who中的每一�
         text: {item['text']}
         """
         
-        for attempt in range(CONFIG["api"]["retries"]):
+        for attempt in range(self.CONFIG["api"]["retries"]):
                 try:
                     response = self.client.chat.completions.create(
-                        model=CONFIG["api"]["model"],
+                        model=self.CONFIG["api"]["model"],
                         messages=[
                             {"role": "system", "content": system_prompt},
                             {"role": "user", "content": user_prompt}
                         ],
                         temperature=0.3,
                         response_format={"type": "json_object"},
-                        timeout=CONFIG["api"]["timeout"]
+                        timeout=self.CONFIG["api"]["timeout"]
                     )
                     
                     # 解析响应
@@ -196,15 +174,16 @@ who要么抽取三元组，要么只返回人物名字！确保who中的每一�
                     
                     # 处理不同格式的响应
                     if isinstance(result, list):
-                        return result[:CONFIG["processing"]["max_events_per_news"]]
+                        return result[:self.CONFIG["processing"]["max_events_per_news"]]
                     else:
-                        logger.warning(f"未知响应格式: {type(result)}")
+                        print(f"未知响应格式: {type(result)}")
                         return []             
                 except json.JSONDecodeError:
-                    logger.warning("响应不是有效的JSON")
+                    print("响应不是有效的JSON")
                     return []
                 except Exception as e:
-                    logger.warning(f"第{attempt+1}次尝试失败: {str(e)}")
+                    print(f"第{attempt+1}次尝试失败: {str(e)}")
+                    
                     time.sleep(2**attempt)
             
         return []
@@ -238,82 +217,12 @@ who要么抽取三元组，要么只返回人物名字！确保who中的每一�
                     "who": self.clean_entities(event.get("who", ""), "who"),
                     "where": self.clean_entities(event.get("where", ""), "where"),
                     "organization": self.clean_entities(event.get("organization", ""), "org"),
-                    "text": item["text"][:CONFIG["processing"]["text_truncate_length"]]
+                    "text": item["text"][:self.CONFIG["processing"]["text_truncate_length"]]
                 }
                 processed_events.append(processed_event)
             
             return processed_events
         
         except Exception as e:
-            logger.error(f"处理新闻 {item.get('id')} 失败: {str(e)}")
+            print(f"处理新闻 {item.get('id')} 失败: {str(e)}")
             return []
-
-class DataPipeline:
-    @staticmethod
-    def run_pipeline(news_data):
-        processor = NewsProcessor()
-        results = []
-        
-        with tqdm(total=len(news_data), desc="新闻处理进度") as pbar:
-            with ThreadPoolExecutor(max_workers=CONFIG["processing"]["batch_size"]) as executor:
-                # 批量提交任务（每次提交batch_size个）
-                batches = [news_data[i:i+CONFIG["processing"]["batch_size"]] 
-                          for i in range(0, len(news_data), CONFIG["processing"]["batch_size"])]
-                
-                for batch in batches:
-                    # 提交当前批次任务
-                    futures = [executor.submit(processor.process_news_item, item) for item in batch]
-                    
-                    # 处理当前批次结果
-                    for future in as_completed(futures):
-                        try:
-                            events = future.result()
-                            if events:
-                                results.extend(events)
-                                pbar.update(1)
-                        except Exception as e:
-                            logger.error(f"任务执行异常: {str(e)}")
-                    
-                    # 批次间添加间隔（替代逐个等待）
-                    time.sleep(CONFIG["processing"]["request_interval"])
-        
-        return results
-    @staticmethod
-    def save_results(data):
-        """保存处理结果"""
-        # 保存JSON
-        with open(CONFIG["output_files"]["json"], 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        
-        # 保存Excel
-        df = pd.DataFrame(data)
-        column_order = [
-            'event_id', 'news_id', 'what', 'why', 'how',
-            'who', 'where', 'organization', 'when', 'news_time',
-            'title', 'text'
-        ]
-        df[column_order].to_excel(CONFIG["output_files"]["excel"], index=False)
-        
-        logger.info(f"结果已保存: {len(data)}条事件")
-
-def main():
-    logger.info("启动新闻处理流程")
-    
-    try:
-        # 数据加载
-        raw_data = NewsProcessor.read_data(CONFIG["input_json"])
-        logger.info(f"成功加载 {len(raw_data)} 条新闻数据")
-        
-        # 执行处理
-        processed_data = DataPipeline.run_pipeline(raw_data)
-        logger.info(f"成功处理 {len(processed_data)} 条事件")
-        
-        # 结果保存
-        DataPipeline.save_results(processed_data)
-        
-    except Exception as e:
-        logger.error(f"流程异常终止: {str(e)}")
-        raise
-
-if __name__ == "__main__":
-    main()

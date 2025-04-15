@@ -40,124 +40,38 @@ class Neo4jLouvainProcessor:
 
     def close(self):
         self.driver.close()
-    def export_nodes(self):
-        """仅导出What节点"""
-        logger.info("开始导出What节点...")
-        node_query = """
-        MATCH (n:What)
-        RETURN 
-            id(n) AS node_id, 
-            COALESCE(n.why, '') AS why_text,
-            COALESCE(n.how, '') AS how_text,
-            COALESCE(n.name, '') AS name_text,
-            COALESCE(n.title, '') AS title_text
+    
+    # 判断是all数据库进行louvain还是其他数据库进行louvain
+    def export_nodes(self,all):
+        if all:
+            """仅导出不指向Cluster的What节点"""
+            logger.info("开始不指向Cluster的What节点...")
+            node_query="""
+            MATCH (n:What)
+            WHERE NOT EXISTS((n)-[:BELONGS_TO]->(:Cluster))
+            RETURN 
+                id(n) AS node_id, 
+                COALESCE(n.why, '') AS why_text,
+                COALESCE(n.how, '') AS how_text,
+                COALESCE(n.name, '') AS name_text,
+                COALESCE(n.title, '') AS title_text
         """
+        else:
+            """导出所有What节点"""
+            logger.info("开始导出What节点...")
+            node_query = """
+            MATCH (n:What)
+            RETURN 
+                id(n) AS node_id, 
+                COALESCE(n.why, '') AS why_text,
+                COALESCE(n.how, '') AS how_text,
+                COALESCE(n.name, '') AS name_text,
+                COALESCE(n.title, '') AS title_text
+            """
         with self.driver.session(database=self.db_name) as session:
             result = session.run(node_query)
             self.nodes_df = pd.DataFrame([dict(record) for record in result])
         logger.info(f"共导出 {len(self.nodes_df)} 个What节点")
-    #使用最近邻近搜索
-    # def find_semantic_pairs(self):
-    #     """优化后的语义相似度计算（带权重归一化）"""
-    #     logger.info(f"开始语义相似度计算（阈值={self.semantic_threshold}）...")
-        
-    #     # 定义各字段权重（总和≈1）'why_text', 'how_text', 'name_text', 'title_text'
-    #     field_weights = np.array([0.2, 0.1, 0.4, 0.3])  # 总和1
-        
-    #     # 各字段嵌入生成（优化内存处理）
-    #     embeddings_dict = {}
-    #     for i, field in enumerate(['why_text', 'how_text', 'name_text', 'title_text']):
-    #         texts = self.nodes_df[field].fillna('').tolist()  # 处理空值
-    #         embeddings = self.text_processor.get_embeddings(texts)
-    #         embeddings_dict[field] = normalize(embeddings) * field_weights[i]  # L2归一化后加权
-        
-    #     # 合并加权嵌入向量
-    #     weighted_embeddings = sum(embeddings_dict.values())
-        
-    #     # 创建节点ID到索引的映射
-    #     self.node_id_to_idx = {
-    #         nid: idx for idx, nid in enumerate(self.nodes_df['node_id'])
-    #     }
-        
-    #     # 相似度计算（自动归一化到[0,1]）
-    #     nbrs = NearestNeighbors(n_neighbors=30, metric='cosine').fit(weighted_embeddings)
-    #     distances, indices = nbrs.kneighbors(weighted_embeddings)
-        
-    #     # 收集并处理候选对
-    #     seen_pairs = {}
-    #     for idx, (dists, nbrs) in tqdm(enumerate(zip(distances, indices)), desc="处理节点"):
-    #         src_id = self.nodes_df.iloc[idx]['node_id']
-    #         for d, nbr_idx in zip(dists, nbrs):
-    #             if idx == nbr_idx: continue
-    #             similarity = 1 - d  # 自动归一化到[0,1]
-    #             tgt_id = self.nodes_df.iloc[nbr_idx]['node_id']
-    #             pair = tuple(sorted((src_id, tgt_id)))
-                
-    #             # 保留最大相似度
-    #             if pair not in seen_pairs or similarity > seen_pairs[pair]:
-    #                 seen_pairs[pair] = similarity
-        
-    #     # 应用阈值过滤
-    #     self.semantic_pairs = [
-    #         (src, tgt, sim) 
-    #         for (src, tgt), sim in seen_pairs.items() 
-    #         if sim >= self.semantic_threshold
-    #     ]
-        
-    #     logger.info(f"发现 {len(self.semantic_pairs)} 个节点对，相似度≥{self.semantic_threshold}")
-
-    # def find_semantic_pairs(self):
-    #     """基于全量两两比较的语义相似度计算（加权字段相似度）"""
-    #     logger.info(f"开始全量语义相似度计算（阈值={self.semantic_threshold}）...")
-        
-    #     # 字段权重配置
-    #     field_weights = {
-    #         'why_text': 0.2,
-    #         'how_text': 0.1,
-    #         'name_text': 0.4,
-    #         'title_text': 0.3
-    #     }
-        
-    #     # 生成各字段的归一化嵌入
-    #     embeddings = {}
-    #     for field in field_weights.keys():
-    #         texts = self.nodes_df[field].fillna('').tolist()
-    #         emb = self.text_processor.get_embeddings(texts)
-    #         emb_normalized = normalize(emb)  # L2归一化
-    #         embeddings[field] = emb_normalized
-        
-    #     # 节点ID与索引映射
-    #     node_ids = self.nodes_df['node_id'].tolist()
-    #     num_nodes = len(node_ids)
-    #     node_id_to_idx = {nid: idx for idx, nid in enumerate(node_ids)}
-        
-    #     # ==== 核心计算逻辑 ====
-    #     # 预计算总相似度矩阵
-    #     total_sim_matrix = np.zeros((num_nodes, num_nodes))
-        
-    #     # 逐字段累加加权相似度
-    #     for field, weight in field_weights.items():
-    #         emb = embeddings[field]
-    #         # 余弦相似度 = 归一化后的点积
-    #         total_sim_matrix += weight * emb.dot(emb.T)
-        
-    #     # ==== 高效提取符合条件的节点对 ====
-    #     # 使用上三角矩阵避免重复对 (i < j)
-    #     triu_mask = np.triu_indices(num_nodes, k=1)
-    #     sim_values = total_sim_matrix[triu_mask]
-        
-    #     # 应用阈值过滤
-    #     valid_indices = np.where(sim_values >= self.semantic_threshold)[0]
-    #     rows, cols = triu_mask[0][valid_indices], triu_mask[1][valid_indices]
-    #     similarities = sim_values[valid_indices]
-        
-    #     # 转换为节点对
-    #     self.semantic_pairs = [
-    #         (node_ids[i], node_ids[j], float(sim))
-    #         for i, j, sim in zip(rows, cols, similarities)
-    #     ]
-        
-    #     logger.info(f"发现 {len(self.semantic_pairs)} 个节点对，相似度≥{self.semantic_threshold}")
 
     def find_semantic_pairs(self):
         """带嵌入预计算和复用的混合方法"""

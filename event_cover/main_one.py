@@ -12,7 +12,7 @@ sys.path.append(os.path.dirname(current_dir))
 from tool.TextProcessor import TextProcessor
 
 # 配置Neo4j连接
-NEO4J_URI = "bolt://172.20.196.206:7687"  # 根据实际情况修改
+NEO4J_URI = "bolt://172.20.52.33:7687"  # 根据实际情况修改
 NEO4J_AUTH = ("neo4j", "neo4j@openspg")   # 根据实际情况修改
 
 # 初始化文本处理器
@@ -800,7 +800,14 @@ def main():
             matched_what_ids
         )
         print(f"\n迁移了 {unmatched_migrated} 个未匹配的What节点及其相关节点")
-
+        print("抹除cache数据库")
+        with driver.session(database="cache") as session:
+            query = """
+            MATCH (n)
+            DETACH DELETE n;
+            """
+            result = session.run(query)
+            print(result)
 if __name__ == "__main__":
     main()
 
