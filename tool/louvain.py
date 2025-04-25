@@ -8,34 +8,28 @@
 6、写回neo4j数据库
 """
 import logging
-
+from tool.Neo4jLouvainProcessor import Neo4jLouvainProcessor
 # 配置日志
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-import os
-import sys
-current_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.dirname(current_dir))
-from tool.Neo4jLouvainProcessor import Neo4jLouvainProcessor
 
-
-if __name__ == "__main__":
+def louvain_process(CONFIG,all):
     # neo4j数据库配置信息
     config = {
-        "uri": "bolt://172.20.24.109:7687",#neo4j地址
-        "user": "neo4j",
-        "password": "neo4j@openspg",
-        "db_name": "all",#neo4j数据库
-        "semantic_threshold": 0.8,  #语义相似度阈值
-        "embedding_uri":'https://embedding.jnu.cn/v1',#ollama地址http://172.20.71.112:11434 暨大：https://embedding.jnu.cn/v1
-        "embedding_name":'bge-m3'#模型
+        "uri": CONFIG["neo4j_config"]["uri"],#neo4j地址
+        "user": CONFIG["neo4j_config"]["user"],
+        "password": CONFIG["neo4j_config"]["password"],
+        "db_name": CONFIG["neo4j_config"]["database"],#neo4j数据库
+        "semantic_threshold": CONFIG["config_louvain"]["semantic_threshold"],  #语义相似度阈值
+        "embedding_uri":CONFIG["config_louvain"]["embedding_uri"],#ollama地址http://172.20.71.112:11434 暨大：https://embedding.jnu.cn/v1
+        "embedding_name":CONFIG["config_louvain"]["embedding_name"]#模型
     }
 
     processor = Neo4jLouvainProcessor(**config)
 
     try:
         # Step 1: 数据导出
-        processor.export_nodes(all=True)
+        processor.export_nodes(all)
         processor.find_semantic_pairs()
         processor.fetch_relations()
         processor.calculate_weights()

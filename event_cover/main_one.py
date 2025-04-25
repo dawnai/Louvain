@@ -12,7 +12,7 @@ sys.path.append(os.path.dirname(current_dir))
 from tool.TextProcessor import TextProcessor
 
 # 配置Neo4j连接
-NEO4J_URI = "bolt://172.20.52.33:7687"  # 根据实际情况修改
+NEO4J_URI = "bolt://172.20.24.109:7687"  # 根据实际情况修改
 NEO4J_AUTH = ("neo4j", "neo4j@openspg")   # 根据实际情况修改
 
 # 初始化文本处理器
@@ -176,92 +176,115 @@ def migrate_cluster_with_relations(all_session, cache_session, all_cluster_id: s
 
 
 def migrate_unmatched_clusters(all_session, cache_session, clusters_cache, matched_cache_ids):
-    """迁移未匹配的Cluster节点及其所有What节点和相关节点"""
+    """迁移未匹配的Cluster节点及其所有What节点和相关节点（完整属性修复版）"""
     migrated_count = 0
     
     for cluster in tqdm(clusters_cache, desc="迁移未匹配Cluster节点"):
         if cluster["id"] in matched_cache_ids:
             continue
         
-        # 使用完整属性（原cluster节点所有属性）
-        create_cluster_query = """
-        CREATE (new:Cluster $props)
-        RETURN elementId(new) as new_id
-        """
         try:
-            # 创建新Cluster节点
+            # ========== 关键修复1：确保传递所有Cluster属性 ==========
+            # 深拷贝cluster属性并移除系统字段
+            import copy
+            cluster_props = copy.deepcopy(cluster)
+            for sys_field in ["id", "labels", "elementId", "internal_id"]:
+                cluster_props.pop(sys_field, None)
+            
+            # 创建新Cluster节点（使用=操作符确保所有属性被设置）
+            create_cluster_query = """
+            CREATE (new:Cluster $props)
+            RETURN elementId(new) AS new_id
+            """
             new_cluster_id = all_session.run(
                 create_cluster_query,
-                props=cluster
+                props=cluster_props  # 传递所有用户定义属性
             ).single()["new_id"]
             
-            # 获取所有What节点及其相关节点
+            # ========== 关键修复2：What节点属性完整迁移 ==========
             what_nodes_data = get_related_nodes(cache_session, cluster["id"])
             
-            # 迁移所有What节点及其相关节点
             for what_data in what_nodes_data:
-                # 创建What节点及其到Cluster的关系
+                # 深拷贝属性并保留name
+                what_node = copy.deepcopy(what_data["what"])
+                what_name = what_node.get("name", "")
+                
+                # 确保name包含在最终属性中（如果存在）
+                if "name" in what_data["what"]:
+                    what_node["name"] = what_name  # 重新添加回去
+                
+                rel_data = what_data["rel_to_cluster"]
+                
                 create_what_query = f"""
                 MATCH (c:Cluster) WHERE elementId(c) = $cluster_id
-                MERGE (w:What {{name: $what_name}})
-                ON CREATE SET w += $props
-                MERGE (w)-[r:{what_data["rel_to_cluster"]["type"]}]->(c)
+                MERGE (w:What {{name: $name}})
+                ON CREATE SET w = $props
+                ON MATCH SET w += $props
+                MERGE (w)-[r:{rel_data["type"]}]->(c)
                 ON CREATE SET r = $rel_props
-                RETURN elementId(w) as what_id
+                RETURN elementId(w) AS what_id
                 """
+                
                 what_id = all_session.run(
                     create_what_query,
                     cluster_id=new_cluster_id,
-                    what_name=what_data["what"].get("name", ""),
-                    props=what_data["what"],
-                    rel_props=what_data["rel_to_cluster"]["props"]
+                    name=what_name,
+                    props=what_node,  # 现在包含完整属性
+                    rel_props=rel_data["props"]
                 ).single()["what_id"]
                 
-                # 创建该What节点指向的所有相关节点
+                # ========== 关键修复3：关联节点优化处理 ==========
                 for related_node in what_data["related_nodes"]:
-                    node_labels = related_node["labels"]
-                    node_props = related_node["props"]
-                    rel_type = related_node["rel_type"]
-                    rel_props = related_node["rel_props"]
+                    # 准备节点属性（深拷贝避免修改原始数据）
+                    node_props = copy.deepcopy(related_node["props"])
+                    labels = ":".join(related_node["labels"])
                     
-                    # 获取唯一标识属性
-                    unique_props = []
-                    if "name" in node_props:
-                        unique_props.append(("name", node_props["name"]))
-                    elif "id" in node_props:
-                        unique_props.append(("id", node_props["id"]))
-                    else:
-                        unique_props = [(k, v) for k, v in node_props.items() if v is not None]
-                    
+                    # 动态生成最优MERGE条件
                     merge_conditions = []
                     params = {}
-                    for i, (key, value) in enumerate(unique_props):
-                        merge_conditions.append(f"{key}: $unique_val_{i}")
-                        params[f"unique_val_{i}"] = value
                     
+                    # 优先使用标准唯一标识字段
+                    for uid_field in ["name", "id", "uuid", "key"]:
+                        if uid_field in node_props:
+                            merge_conditions.append(f"{uid_field}: ${uid_field}")
+                            params[uid_field] = node_props.pop(uid_field)
+                            break
+                    else:
+                        # 无标准ID时使用所有非空属性
+                        non_null_props = {k:v for k,v in node_props.items() if v is not None}
+                        merge_conditions.extend(f"{k}: ${k}" for k in non_null_props)
+                        params.update(non_null_props)
+                    
+                    # 执行节点创建（使用=初始化所有属性）
                     create_node_query = f"""
                     MATCH (w:What) WHERE elementId(w) = $what_id
-                    MERGE (n:{':'.join(node_labels)} {{{', '.join(merge_conditions)}}})
-                    ON CREATE SET n += $props
+                    MERGE (n:{labels} {{ {', '.join(merge_conditions)} }})
+                    ON CREATE SET n = $props
                     ON MATCH SET n += $props
-                    MERGE (w)-[r:{rel_type}]->(n)
+                    MERGE (w)-[r:{related_node["rel_type"]}]->(n)
                     ON CREATE SET r = $rel_props
                     ON MATCH SET r += $rel_props
                     """
+                    
                     all_session.run(
                         create_node_query,
                         what_id=what_id,
                         props=node_props,
-                        rel_props=rel_props,
+                        rel_props=related_node["rel_props"],
                         **params
                     )
             
             migrated_count += 1
-            print(f"成功迁移未匹配Cluster {cluster['id']} 到all数据库，新ID: {new_cluster_id}")
-        
+            print(f"✅ 成功迁移Cluster {cluster['id']} -> 新ID: {new_cluster_id}")
+            
         except Exception as e:
-            print(f"迁移未匹配Cluster {cluster['id']} 失败: {str(e)}")
-            # 可以选择在这里添加回滚逻辑，删除已创建的部分节点
+            print(f"❌ 迁移失败 Cluster {cluster['id']}: {str(e)}")
+            # 完整回滚：删除整个Cluster子树
+            if 'new_cluster_id' in locals():
+                all_session.run(
+                    "MATCH (c:Cluster) WHERE elementId(c) = $id DETACH DELETE c",
+                    id=new_cluster_id
+                )
     
     return migrated_count
 
@@ -331,77 +354,7 @@ def get_orphan_what_nodes(database: str) -> List[Dict]:
             result = session.run(query)
             return [{"id": record["id"], "name": record["name"], "properties": record["properties"]} 
                     for record in result]
-
-def match_orphan_whats_to_clusters(all_session, cache_session):
-    """匹配没有指向Cluster的What节点到all数据库中的Cluster节点"""
-    print("\n开始匹配孤立的What节点到Cluster节点...")
-    
-    # 1. 获取cache中没有指向Cluster的What节点
-    print("从cache数据库获取孤立的What节点...")
-    orphan_whats = get_orphan_what_nodes("cache")
-    if not orphan_whats:
-        print("cache数据库中没有孤立的What节点")
-        return
-    
-    print(f"找到 {len(orphan_whats)} 个孤立的What节点")
-    
-    # 2. 获取all数据库中所有Cluster的what属性
-    print("从all数据库获取Cluster节点的what属性...")
-    get_cluster_whats_query = """
-    MATCH (c:Cluster)
-    WHERE c.what IS NOT NULL
-    RETURN elementId(c) AS cluster_id, c.what AS what_text
-    """
-    cluster_whats = all_session.run(get_cluster_whats_query)
-    cluster_whats = [(record["cluster_id"], record["what_text"]) for record in cluster_whats]
-    
-    if not cluster_whats:
-        print("all数据库中没有找到带有what属性的Cluster节点")
-        return
-    
-    print(f"找到 {len(cluster_whats)} 个带有what属性的Cluster节点")
-    
-    # 3. 准备文本数据用于嵌入计算
-    what_texts = [what["name"] for what in orphan_whats]
-    cluster_texts = [text for _, text in cluster_whats]
-    
-    # 4. 计算嵌入向量
-    print("计算What节点和Cluster节点的嵌入向量...")
-    what_embeddings = processor.get_embeddings(what_texts)
-    cluster_embeddings = processor.get_embeddings(cluster_texts)
-    
-    # 5. 计算相似度矩阵
-    print("计算相似度矩阵...")
-    similarity_matrix = cosine_similarity(what_embeddings, cluster_embeddings)
-    
-    # 6. 找出相似度>0.85的匹配对
-    threshold = 0.85
-    matches = []
-    for i in range(len(orphan_whats)):
-        for j in range(len(cluster_whats)):
-            sim = similarity_matrix[i][j]
-            if sim > threshold:
-                matches.append({
-                    "what_id": orphan_whats[i]["id"],
-                    "what_name": orphan_whats[i]["name"],
-                    "cluster_id": cluster_whats[j][0],
-                    "cluster_what": cluster_whats[j][1],
-                    "similarity": sim
-                })
-    
-    # 7. 输出匹配结果
-    if not matches:
-        print("没有找到相似度>0.85的匹配对")
-        return
-    
-    print(f"\n找到 {len(matches)} 对匹配的What节点和Cluster节点:")
-    for match in sorted(matches, key=lambda x: x["similarity"], reverse=True):
-        print(f"What节点(ID: {match['what_id']}, 名称: {match['what_name']})")
-        print(f"匹配到Cluster节点(ID: {match['cluster_id']}, what属性: {match['cluster_what']})")
-        print(f"相似度: {match['similarity']:.4f}\n")
-    
-    return matches
-        
+      
 
 def get_what_node_with_relations(cache_session, what_id: str) -> Dict:
     """从cache数据库获取What节点及其所有相关节点"""
@@ -644,7 +597,7 @@ def migrate_unmatched_what_nodes(all_session, cache_session, matched_what_ids: s
             # 获取What节点及其相关节点
             what_data = get_what_node_with_relations(cache_session, what["id"])
             if not what_data or not what_data["what"]:
-                print(f"警告: 无法获取What节点 {what['id']} 的详细信息")
+                # print(f"警告: 无法获取What节点 {what['id']} 的详细信息")
                 continue
             
             # 在all数据库中创建What节点(不关联到Cluster)
@@ -661,7 +614,7 @@ def migrate_unmatched_what_nodes(all_session, cache_session, matched_what_ids: s
             )
             
             new_what_id = result.single()["new_what_id"]
-            print(f"成功创建未关联的What节点 {new_what_id}")
+            # print(f"成功创建未关联的What节点 {new_what_id}")
             
             # 迁移相关节点
             for related_node in what_data["related_nodes"]:
@@ -701,7 +654,7 @@ def migrate_unmatched_what_nodes(all_session, cache_session, matched_what_ids: s
                     rel_props=rel_props,
                     **params
                 )
-                print(f"成功创建相关节点 {node_labels} 并关联到What节点 {new_what_id}")
+                # print(f"成功创建相关节点 {node_labels} 并关联到What节点 {new_what_id}")
             
             migrated_count += 1
         
@@ -745,6 +698,22 @@ def main():
     with driver.session(database="all") as all_session, \
          driver.session(database="cache") as cache_session:
         
+         # 匹配并迁移高相似度What节点
+        high_sim_migrated, matched_what_ids = match_and_migrate_high_similarity_whats(
+            all_session,
+            cache_session,
+            threshold=0.95
+        )
+        print(f"\n迁移了 {high_sim_migrated} 个高相似度What节点及其相关节点")
+        
+        #迁移未匹配的What节点
+        unmatched_migrated = migrate_unmatched_what_nodes(
+            all_session,
+            cache_session,
+            matched_what_ids
+        )
+        
+        #开始迁移匹配上的Cluster
         for pair in similar_pairs:
             cluster_all, cluster_cache, combined_sim, why_sim, what_sim = pair
             
@@ -754,8 +723,8 @@ def main():
             
             # 迁移Cluster及其相关节点
             new_cluster_id = migrate_cluster_with_relations(
-                all_session, 
-                cache_session,
+                all_session, #all数据集链接
+                cache_session,#cache数据集链接
                 cluster_all["id"],
                 cluster_cache["id"]
             )
@@ -766,7 +735,7 @@ def main():
             else:
                 print(f"迁移Cluster {cluster_cache['id']} 失败")
         
-        # 迁移相似节点后的新增逻辑
+        
         # 收集已匹配的cache集群ID
         matched_cache_ids = {pair[1]["id"] for pair in similar_pairs}
         
@@ -782,32 +751,15 @@ def main():
         print(f"迁移了 {unmatched_migrated} 个未匹配Cluster节点")
         print(f"总迁移节点数: {migrated_count + unmatched_migrated}/{len(clusters_cache)}")
         
-        # # 调用新功能匹配孤立的What节点
-        # match_orphan_whats_to_clusters(all_session, cache_session)
-        
-         # 新增功能：匹配并迁移高相似度What节点
-        high_sim_migrated, matched_what_ids = match_and_migrate_high_similarity_whats(
-            all_session,
-            cache_session,
-            threshold=0.95
-        )
-        print(f"\n迁移了 {high_sim_migrated} 个高相似度What节点及其相关节点")
-        
-        # 新增功能：迁移未匹配的What节点
-        unmatched_migrated = migrate_unmatched_what_nodes(
-            all_session,
-            cache_session,
-            matched_what_ids
-        )
-        print(f"\n迁移了 {unmatched_migrated} 个未匹配的What节点及其相关节点")
-        print("抹除cache数据库")
-        with driver.session(database="cache") as session:
-            query = """
-            MATCH (n)
-            DETACH DELETE n;
-            """
-            result = session.run(query)
-            print(result)
+        # print(f"\n迁移了 {unmatched_migrated} 个未匹配的What节点及其相关节点")
+        # print("抹除cache数据库")
+        # with driver.session(database="cache") as session:
+        #     query = """
+        #     MATCH (n)
+        #     DETACH DELETE n;
+        #     """
+        #     result = session.run(query)
+        #     print(result)
 if __name__ == "__main__":
     main()
 

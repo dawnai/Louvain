@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 if __name__ == "__main__":
     # neo4j数据库配置信息
     config = {
-        "uri": "bolt://172.20.196.206:7687",#neo4j地址
+        "uri": "bolt://172.20.24.109:7687",#neo4j地址
         "user": "neo4j",
         "password": "neo4j@openspg",
         "db_name": "all",#neo4j数据库
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     try:
         # Step 1: 数据导出
-        processor.export_nodes()
+        processor.export_nodes(all=False)
         processor.find_semantic_pairs()
         processor.fetch_relations()
         processor.calculate_weights()

@@ -1,23 +1,6 @@
-"""
-优化提取逻辑，即使title重复也能存入neo4j数据库。
-将表格数据中的what、where、when、who、why、how提取出来，并且通过逗号拆分who和where，分别作为节点存入。
-存储进neo4j数据库中。
-"""
 from neo4j import GraphDatabase
 import pandas as pd
 from tqdm import tqdm
-
-# ================= 配置部分 =================
-file_path = "./data/waite_to_neo4j/xlsx/1-5.xlsx"
-target_columns = ['what', 'where', 'when', 'who', 'why', 'how', 'title','organization','news_id']
-
-neo4j_config = {
-    "uri": "bolt://172.20.24.109:7687",
-    "user": "neo4j",
-    "password": "neo4j@openspg",
-    "database": "all"
-}
-# ===========================================
 
 class Neo4jConnector:
     def __init__(self, config):
@@ -31,10 +14,10 @@ class Neo4jConnector:
     def close(self):
         self.driver.close()
 
-def data_preprocessing(file_path):
+def data_preprocessing(CONFIG):
     """数据预处理（不基于name+title去重）"""
-    df = pd.read_excel(file_path, engine='openpyxl')
-    extracted = df[target_columns].copy()
+    df = pd.read_excel(CONFIG['output_files']['excel'], engine='openpyxl')
+    extracted = df[CONFIG['target_columns']].copy()
     
     # 仅过滤空值（不再去重）
     extracted = extracted.dropna(subset=['what'], how='any')  # 过滤掉what为空的数据
@@ -175,10 +158,9 @@ def import_batch(tx, batch):
             print(f"\n错误行: {row.to_dict()}\n错误详情: {str(e)}")
             continue
 
-if __name__ == "__main__":
-    # 初始化
-    conn = Neo4jConnector(neo4j_config)
-    df_clean = data_preprocessing(file_path)
+def runUpload(CONFIG):
+    conn = Neo4jConnector(CONFIG['neo4j_config'])
+    df_clean = data_preprocessing(CONFIG)
     
     # 约束管理
     remove_old_constraints(conn)

@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 # 数据库配置信息
 neo4j_config = {
-    "uri": "bolt://172.20.52.33:7687",
+    "uri": "bolt://172.20.24.109:7687",
     "user": "neo4j",
     "password": "neo4j@openspg",
     "database": "all"

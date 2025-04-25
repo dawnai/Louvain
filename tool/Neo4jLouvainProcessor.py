@@ -287,16 +287,10 @@ class Neo4jLouvainProcessor:
         logger.info(f"发现 {self.nodes_df['community'].nunique()} 个社区")
 
     def write_results(self, batch_size=1000):
-        """将结果写回Neo4j"""
+        """将结果写回Neo4j，增量更新模式（语法修正版）"""
         logger.info("开始写回结果...")
         
-        # 清理旧数据
-        cleanup_cypher = "MATCH (c:Cluster) DETACH DELETE c"
-
-        with self.driver.session(database=self.db_name) as session:
-            session.run(cleanup_cypher)
-        
-        # 写入社区属性
+        # 写入社区属性（保持不变）
         data = self.nodes_df[['node_id', 'community']].to_dict('records')
         for i in tqdm(range(0, len(data), batch_size), desc="写入社区属性"):
             batch = data[i:i+batch_size]
@@ -308,17 +302,66 @@ class Neo4jLouvainProcessor:
             with self.driver.session(database=self.db_name) as session:
                 session.run(cypher, {'batch': batch})
         
-        # 创建Cluster节点
+        # 获取当前所有社区ID（语法修正）
+        existing_clusters = set()
+        with self.driver.session(database=self.db_name) as session:
+            # 新语法：使用 IS NOT NULL
+            result = session.run("""
+                MATCH (c:Cluster) 
+                WHERE c.community_id IS NOT NULL
+                RETURN c.community_id AS com_id
+                """)
+            existing_clusters = {record["com_id"] for record in result}
+            
+            # 修正遗留Cluster查询语法
+            legacy_clusters = session.run("""
+                MATCH (n)-[:BELONGS_TO]->(c:Cluster)
+                WHERE c.community_id IS NULL AND n.community IS NOT NULL
+                RETURN DISTINCT n.community AS com_id, id(c) AS cluster_id
+                """).data()
+        
+        # 处理遗留Cluster节点（保持不变）
+        if legacy_clusters:
+            with self.driver.session(database=self.db_name) as session:
+                for item in legacy_clusters:
+                    session.run("""
+                        MATCH (c) WHERE id(c) = $cluster_id
+                        SET c.community_id = $com_id
+                        """, {'cluster_id': item['cluster_id'], 'com_id': item['com_id']})
+                    existing_clusters.add(item['com_id'])
+        
+        # 创建或更新Cluster节点（保持不变）
         communities = self.nodes_df['community'].unique()
-        for com_id in tqdm(communities, desc="创建聚类节点"):
-            cypher = """
-            CREATE (c:Cluster {community_id: $com_id})
-            WITH c
-            MATCH (n:What {community: $com_id})
-            MERGE (n)-[:BELONGS_TO]->(c)
-            """
+        for com_id in tqdm(communities, desc="更新聚类节点"):
+            if com_id in existing_clusters:
+                cypher = """
+                MATCH (c:Cluster {community_id: $com_id})
+                WITH c
+                MATCH (n {community: $com_id})
+                WHERE NOT (n)-[:BELONGS_TO]->(c)
+                MERGE (n)-[:BELONGS_TO]->(c)
+                """
+            else:
+                cypher = """
+                CREATE (c:Cluster {community_id: $com_id})
+                WITH c
+                MATCH (n {community: $com_id})
+                MERGE (n)-[:BELONGS_TO]->(c)
+                """
+            
             with self.driver.session(database=self.db_name) as session:
                 session.run(cypher, {'com_id': com_id})
+        
+        # 清理逻辑保持不变
+        used_clusters = set(communities)
+        unused_clusters = existing_clusters - used_clusters
+        if unused_clusters:
+            with self.driver.session(database=self.db_name) as session:
+                session.run("""
+                UNWIND $unused_clusters AS com_id
+                MATCH (c:Cluster {community_id: com_id})
+                DETACH DELETE c
+                """, {'unused_clusters': list(unused_clusters)})
         
         logger.info("数据写回完成")
 
