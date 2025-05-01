@@ -8,14 +8,14 @@ import pandas as pd
 from tqdm import tqdm
 
 # ================= 配置部分 =================
-file_path = "./data/waite_to_neo4j/xlsx/1-5.xlsx"
+file_path = "./data/waite_to_neo4j/xlsx/1-11.xlsx"
 target_columns = ['what', 'where', 'when', 'who', 'why', 'how', 'title','organization','news_id']
 
 neo4j_config = {
-    "uri": "bolt://172.20.24.109:7687",
+    "uri": "bolt://172.20.45.68:7687",
     "user": "neo4j",
     "password": "neo4j@openspg",
-    "database": "all"
+    "database": "test"
 }
 # ===========================================
 

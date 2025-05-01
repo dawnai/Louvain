@@ -1,1531 +1,1194 @@
 [
     {
         "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:1808",
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5256",
             "properties": {
-                "community_id": 12
+                "community_id": 194
             }
         },
         "related_nodes": [
-            {
-                "what_node": {
-                    "how": "印尼将采购BrahMos导弹，提升其军事威慑能力",
-                    "name": "印尼接近与印度达成4.5亿美元的BrahMos超音速巡航导弹采购协议",
-                    "why": "应对中国在南海的强势行动和在纳土纳海的领土争端",
-                    "title": "China's assertiveness spurs regional defence modernisation: Indonesia eyes BrahMos Missiles",
-                    "community": 12,
-                    "news_id": 388
-                },
-                "related": [
-                    {
-                        "Where": "印尼"
-                    },
-                    {
-                        "Who": "普拉博沃·苏比安托"
-                    },
-                    {
-                        "When": "2025-01-13"
-                    },
-                    {
-                        "organization": "印度国防研究与发展组织"
-                    },
-                    {
-                        "Who": "莫迪"
-                    },
-                    {
-                        "organization": "俄罗斯机械制造科研生产联合体"
-                    },
-                    {
-                        "Where": "印度"
-                    },
-                    {
-                        "Who": "习近平"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "印尼签署4.5亿美元协议，采购印度制造的BrahMos导弹，以增强其国防能力",
-                    "name": "印度与印尼签署4.5亿美元BrahMos导弹采购协议",
-                    "why": "回应中国在南海和西太平洋的扩张行为及军事威胁",
-                    "title": "How China is driving up demand for India-made BrahMos",
-                    "community": 12,
-                    "news_id": 1498
-                },
-                "related": [
-                    {
-                        "Who": "普拉博沃·苏比安托"
-                    },
-                    {
-                        "When": "2025-01-16"
-                    },
-                    {
-                        "Who": "莫迪"
-                    },
-                    {
-                        "Where": "印尼"
-                    },
-                    {
-                        "Where": "印度"
-                    },
-                    {
-                        "organization": "印尼政府"
-                    },
-                    {
-                        "organization": "印度政府"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "印尼签署4.5亿美元协议，采购印度制造的BrahMos导弹，以增强其国防能力",
-            "when": "2025-01-16",
-            "where": "印尼,印度",
-            "why": "回应中国在南海和西太平洋的扩张行为及军事威胁",
-            "who": "普拉博沃·苏比安托,莫迪",
-            "how": "印尼将采购BrahMos导弹，提升其军事威慑能力",
-            "organization": "印尼政府,印度政府,印度国防研究与发展组织,俄罗斯机械制造科研生产联合体",
-            "type": "02.03.01-N-H-B-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:1826",
-            "properties": {
-                "community_id": 30
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "讨论了深化三边合作，强调继续合作的重要性",
-                    "name": "美国总统拜登、日本首相石破茂和菲律宾总统小费迪南德·马科斯举行三边视频会议",
-                    "why": "以及中国在南海的行为,讨论三边安全和经济合作",
-                    "title": "Three parties need to show shared wisdom",
-                    "community": 30,
-                    "news_id": 1396
-                },
-                "related": [
-                    {
-                        "When": "2025-01-15"
-                    },
-                    {
-                        "organization": "日本政府"
-                    },
-                    {
-                        "Who": "乔·拜登"
-                    },
-                    {
-                        "organization": "美国政府"
-                    },
-                    {
-                        "Who": "小费迪南德·马科斯"
-                    },
-                    {
-                        "Where": "线上"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    },
-                    {
-                        "Who": "石破茂"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "合作开发地热能、氢、氨和生物燃料",
-                    "name": "日本和印度尼西亚同意在脱碳能源领域合作",
-                    "why": "推动可持续发展和环境保护",
-                    "title": "Japan And Indonesia Increase Defence Cooperation – OpEd",
-                    "community": 30,
-                    "news_id": 1500
-                },
-                "related": [
-                    {
-                        "Who": "石破茂"
-                    },
-                    {
-                        "organization": "日本政府"
-                    },
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "organization": "印度尼西亚政府"
-                    },
-                    {
-                        "Who": "普拉博沃·苏比安托"
-                    },
-                    {
-                        "Where": "雅加达"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "美国总统拜登、日本首相石破茂和菲律宾总统小费迪南德·马科斯举行三边视频会议，讨论深化三边合作，强调继续合作的重要性，以及中国在南海的行为，讨论三边安全和经济合作",
-            "when": "2025-01-15",
-            "where": "线上",
-            "why": "中国在南海的行为,讨论三边安全和经济合作",
-            "who": "乔·拜登,小费迪南德·马科斯,石破茂",
-            "how": "讨论了深化三边合作，强调继续合作的重要性",
-            "organization": "美国政府,日本政府,菲律宾政府",
-            "type": "01.04.01-N-M-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:1868",
-            "properties": {
-                "community_id": 72
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "中国派遣12,000吨的CCG5901海岸警卫舰到斯卡伯勒礁附近，另一艘CCG3103海岸警卫舰正在前往该区域",
-                    "name": "中国派遣最大海岸警卫舰到斯卡伯勒礁附近",
-                    "why": "中国声称其在争议水域的巡逻和执法活动是合法的,否认侵犯菲律宾的管辖权",
-                    "community": 72,
-                    "title": "CHINA SAYS 'MONSTER' SHIP'S PRESENCE NEAR SCARBOROUGH SHOAL 'FULLY JUSTIFIED'",
-                    "news_id": 147
-                },
-                "related": [
-                    {
-                        "organization": "中国外交部"
-                    },
-                    {
-                        "When": "2025-01-08"
-                    },
-                    {
-                        "Where": "斯卡伯勒礁"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Where": "菲律宾"
-                    },
-                    {
-                        "Who": "特里拉"
-                    },
-                    {
-                        "Who": "丁铎"
-                    },
-                    {
-                        "Who": "郭家坤"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "CCG5901在距菲律宾海岸约90海里的海域活动，另一艘中国海岸警卫舰CCG3103正前往该区域",
-                    "name": "中国派遣最大海岸警卫舰CCG5901至斯卡伯勒礁附近",
-                    "why": "回应菲律宾的管辖权主张,维护中国在该区域的权益",
-                    "community": 72,
-                    "title": "China: China says 'monster' ship's presence near Scarborough Shoal 'fully justified'",
-                    "news_id": 263
-                },
-                "related": [
-                    {
-                        "When": "2025-01-10"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Where": "菲律宾"
-                    },
-                    {
-                        "Who": "郭家坤"
-                    },
-                    {
-                        "Who": "特里埃拉"
-                    },
-                    {
-                        "organization": "中国海岸警卫队"
-                    },
-                    {
-                        "Where": "斯卡伯勒礁"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "中国派遣12,000吨的CCG5901海岸警卫舰到斯卡伯勒礁附近，另一艘CCG3103海岸警卫舰正在前往该区域，回应菲律宾的管辖权主张，维护中国在该区域的权益",
-            "when": "2025-01-08",
-            "where": "斯卡伯勒礁,菲律宾",
-            "why": "中国声称其在争议水域的巡逻和执法活动是合法的，否认侵犯菲律宾的管辖权，同时回应菲律宾的管辖权主张，维护中国在该区域的权益",
-            "who": "特里拉,丁铎,郭家坤,特里埃拉",
-            "how": "中国派遣12,000吨的CCG5901海岸警卫舰到斯卡伯勒礁附近，另一艘CCG3103海岸警卫舰正在前往该区域，CCG5901在距菲律宾海岸约90海里的海域活动",
-            "organization": "中国外交部,菲律宾海岸警卫队,中国海岸警卫队",
-            "type": "05.01.02-N-H-B-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:1880",
-            "properties": {
-                "community_id": 84
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "讨论并同意加强菲律宾国防现代化和计划2025年在日本周边进行联合海军演习",
-                    "name": "拜登与日本和菲律宾领导人在去年四月举行了首次三方峰会",
-                    "why": "针对中国的地区野心加强合作",
-                    "community": 84,
-                    "title": "UPDATE1: Biden to host virtual meeting with Japanese, Philippine leaders",
-                    "news_id": 152
-                },
-                "related": [
-                    {
-                        "Who": "岸田文雄"
-                    },
-                    {
-                        "Who": "乔·拜登"
-                    },
-                    {
-                        "Where": "美国"
-                    },
-                    {
-                        "Who": "费迪南德·马科斯"
-                    },
-                    {
-                        "organization": "白宫"
-                    },
-                    {
-                        "When": "2025-01-08"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "访问罗马和梵蒂冈，进行会面和讨论",
-                    "name": "拜登将前往意大利进行最后一次海外访问",
-                    "why": "与意大利领导人会面,包括总理焦尔吉娅·梅洛尼和教皇方济各",
-                    "community": 84,
-                    "title": "US President Biden to host Jan. 12 online meeting with Philippine President Marcos, Japan PM Ishiba",
-                    "news_id": 272
-                },
-                "related": [
-                    {
-                        "Who": "乔·拜登"
-                    },
-                    {
-                        "When": "2025-01-12"
-                    },
-                    {
-                        "organization": "梵蒂冈"
-                    },
-                    {
-                        "Who": "焦尔吉娅·梅洛尼"
-                    },
-                    {
-                        "Who": "教皇方济各"
-                    },
-                    {
-                        "organization": "意大利政府"
-                    },
-                    {
-                        "Where": "梵蒂冈"
-                    },
-                    {
-                        "organization": "白宫"
-                    },
-                    {
-                        "Where": "罗马"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "拜登与日本和菲律宾领导人在去年四月举行了首次三方峰会，并将前往意大利进行最后一次海外访问，与意大利领导人会面",
-            "when": "2025-01-08",
-            "where": "美国,罗马,梵蒂冈",
-            "why": "针对中国的地区野心加强合作，与意大利领导人会面,包括总理焦尔吉娅·梅洛尼和教皇方济各",
-            "who": "岸田文雄,乔·拜登,费迪南德·马科斯,焦尔吉娅·梅洛尼,教皇方济各",
-            "how": "讨论并同意加强菲律宾国防现代化和计划2025年在日本周边进行联合海军演习，访问罗马和梵蒂冈，进行会面和讨论",
-            "organization": "白宫,梵蒂冈,意大利政府",
-            "type": "01.01.03-N-H-B-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:1938",
-            "properties": {
-                "community_id": 145
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "刘振理会见马来西亚总理、国防部长和国防部队总司令，双方讨论了军事交流、联合训练和联合行动等议题",
-                    "name": "中国解放军联合参谋长刘振理访问马来西亚，双方承诺加强防务合作",
-                    "why": "深化中马军事交流与合作,讨论南海争端等区域安全问题",
-                    "community": 145,
-                    "title": "Top PLA official visits Malaysia to pledge deeper ties",
-                    "news_id": 264
-                },
-                "related": [
-                    {
-                        "organization": "中国人民解放军"
-                    },
-                    {
-                        "Who": "刘振理"
-                    },
-                    {
-                        "Where": "吉隆坡"
-                    },
-                    {
-                        "organization": "马来西亚政府"
-                    },
-                    {
-                        "Who": "穆罕默德·凯莱德·诺丁"
-                    },
-                    {
-                        "Who": "安瓦尔·易卜拉欣"
-                    },
-                    {
-                        "Where": "普特拉贾亚"
-                    },
-                    {
-                        "When": "2025-01-10"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "安瓦尔表示希望两国防务部门和军队加强交流，提升合作水平",
-                    "name": "马来西亚总理安瓦尔·易卜拉欣与刘振理会面，强调中马关系发展",
-                    "why": "加强中马政治和防务合作",
-                    "community": 145,
-                    "title": "Closer defence ties pledged as PLA joint staff chief Liu Zhenli visits Malaysia",
-                    "news_id": 197
-                },
-                "related": [
-                    {
-                        "Where": "普特拉贾亚"
-                    },
-                    {
-                        "Who": "安瓦尔·易卜拉欣"
-                    },
-                    {
-                        "Who": "刘振理"
-                    },
-                    {
-                        "When": "2025-01-09"
-                    },
-                    {
-                        "organization": "马来西亚政府"
-                    },
-                    {
-                        "organization": "中国人民解放军"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "双方举行高层会谈，讨论军事交流、联合训练和联合行动",
-                    "name": "中国解放军联合参谋长刘振理访问马来西亚，双方承诺加强防务合作",
-                    "why": "加强中马防务合作,讨论南海争端管理",
-                    "community": 145,
-                    "title": "Closer defence ties pledged as PLA joint staff chief Liu Zhenli visits Malaysia",
-                    "news_id": 197
-                },
-                "related": [
-                    {
-                        "When": "2025-01-09"
-                    },
-                    {
-                        "organization": "中国人民解放军"
-                    },
-                    {
-                        "Where": "普特拉贾亚"
-                    },
-                    {
-                        "organization": "马来西亚政府"
-                    },
-                    {
-                        "Who": "穆罕默德·凯莱德·诺丁"
-                    },
-                    {
-                        "Who": "安瓦尔·易卜拉欣"
-                    },
-                    {
-                        "Where": "吉隆坡"
-                    },
-                    {
-                        "Who": "刘振理"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "中国解放军联合参谋长刘振理访问马来西亚，双方承诺加强防务合作，讨论了军事交流、联合训练和联合行动等议题",
-            "when": "2025-01-10",
-            "where": "吉隆坡,普特拉贾亚",
-            "why": "深化中马军事交流与合作，讨论南海争端等区域安全问题，加强中马政治和防务合作",
-            "who": "刘振理,穆罕默德·凯莱德·诺丁,安瓦尔·易卜拉欣",
-            "how": "刘振理会见马来西亚总理、国防部长和国防部队总司令，双方讨论了军事交流、联合训练和联合行动等议题，安瓦尔表示希望两国防务部门和军队加强交流，提升合作水平，双方举行高层会谈，讨论军事交流、联合训练和联合行动",
-            "organization": "中国人民解放军,马来西亚政府",
-            "type": "02.01.03-N-H-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:1961",
-            "properties": {
-                "community_id": 169
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "Sullivan提到最近访问印度，Waltz表示印度对他的支持，两人讨论了印度在对华战略中的作用",
-                    "name": "Sullivan和Waltz强调了印度在对华战略中的重要性",
-                    "why": "印度作为关键伙伴,帮助美国应对中国的挑战",
-                    "title": "Sullivan and Waltz agree: China as threat, India as partner",
-                    "community": 169,
-                    "news_id": 1437
-                },
-                "related": [
-                    {
-                        "Where": "华盛顿特区"
-                    },
-                    {
-                        "organization": "美国和平研究所"
-                    },
-                    {
-                        "Who": "乔·拜登"
-                    },
-                    {
-                        "Who": "迈克尔·沃尔茨"
-                    },
-                    {
-                        "Who": "斯蒂芬·哈德利"
-                    },
-                    {
-                        "When": "2025-01-15"
-                    },
-                    {
-                        "organization": "美国政府"
-                    },
-                    {
-                        "Who": "唐纳德·特朗普"
-                    },
-                    {
-                        "Who": "杰克·沙利文"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "Sullivan和Waltz在US Institute of Peace的活动中讨论了中美战略竞争，并强调了印度作为关键伙伴的作用",
-                    "name": "Sullivan和Waltz讨论中美战略竞争及印度的关键作用",
-                    "why": "应对中国的长期挑战,确保美国在战略竞争中保持优势",
-                    "title": "Sullivan, Waltz agree on role of India in ties",
-                    "community": 169,
-                    "news_id": 1516
-                },
-                "related": [
-                    {
-                        "Who": "乔·拜登"
-                    },
-                    {
-                        "Who": "唐纳德·特朗普"
-                    },
-                    {
-                        "Who": "斯蒂芬·哈德利"
-                    },
-                    {
-                        "When": "2025-01-16"
-                    },
-                    {
-                        "organization": "US Institute of Peace"
-                    },
-                    {
-                        "Who": "迈克尔·沃尔茨"
-                    },
-                    {
-                        "Who": "杰克·沙利文"
-                    },
-                    {
-                        "Where": "华盛顿特区"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "Sullivan和Waltz强调了印度在对华战略中的重要性，讨论了中美战略竞争，并强调了印度作为关键伙伴的作用",
-            "when": "2025-01-16",
-            "where": "华盛顿特区",
-            "why": "应对中国的长期挑战，确保美国在战略竞争中保持优势",
-            "who": "杰克·沙利文,迈克尔·沃尔茨,斯蒂芬·哈德利,乔·拜登,唐纳德·特朗普",
-            "how": "Sullivan和Waltz在US Institute of Peace的活动中讨论了中美战略竞争，并强调了印度作为关键伙伴的作用",
-            "organization": "美国和平研究所,美国政府,US Institute of Peace",
-            "type": "01.02.02-N-M-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2015",
-            "properties": {
-                "community_id": 228
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "讨论了定期会晤、港口访问和能力建设等议题，访问了广州海岸警卫队总部并视察了设施和巡逻船",
-                    "name": "中国和印度尼西亚海岸警卫队举行首次高级别会谈，加强海上安全合作",
-                    "why": "共同维护海上安全秩序,妥善处理海上紧急情况,深化务实合作",
-                    "title": "Chinese and Indonesian coastguards boost ties",
-                    "community": 228,
-                    "news_id": 336
-                },
-                "related": [
-                    {
-                        "Who": "伊尔万西"
-                    },
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "Who": "吴胜利"
-                    },
-                    {
-                        "organization": "中国海岸警卫队"
-                    },
-                    {
-                        "Where": "北京"
-                    },
-                    {
-                        "organization": "印度尼西亚海上安全局"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "计划在今年举行部长级会谈，讨论海上安全和联合勘探等议题",
-                    "name": "中国和印度尼西亚将举行部长级会谈，讨论海上安全和联合勘探",
-                    "why": "加强战略互信,推进海上合作",
-                    "title": "Chinese and Indonesian coastguards pledge deeper cooperation after first high-level talks",
-                    "community": 228,
-                    "news_id": 301
-                },
-                "related": [
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "organization": "印度尼西亚海上安全局"
-                    },
-                    {
-                        "organization": "中国海岸警卫队"
-                    },
-                    {
-                        "Who": "普拉博沃·苏比安托"
-                    },
-                    {
-                        "Who": "吴胜利"
-                    },
-                    {
-                        "Where": "北京"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "中国和印度尼西亚海岸警卫队举行首次高级别会谈，讨论了定期会晤、港口访问和能力建设等议题，并计划在今年举行部长级会谈，讨论海上安全和联合勘探等议题",
-            "when": "2025-01-11",
-            "where": "北京",
-            "why": "共同维护海上安全秩序,妥善处理海上紧急情况,深化务实合作,加强战略互信,推进海上合作",
-            "who": "伊尔万西,吴胜利,普拉博沃·苏比安托",
-            "how": "访问了广州海岸警卫队总部并视察了设施和巡逻船，讨论了定期会晤、港口访问和能力建设等议题，计划在今年举行部长级会谈，讨论海上安全和联合勘探等议题",
-            "organization": "中国海岸警卫队,印度尼西亚海上安全局",
-            "type": "03.02.02-N-M-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2017",
-            "properties": {
-                "community_id": 230
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "签署《加强国防合作协定》(EDCA)，允许美军在菲律宾的九个地点部署",
-                    "name": "菲律宾政府扩大美军在菲律宾的军事存在",
-                    "why": "为了应对中国的军事威胁",
-                    "community": 230,
-                    "title": "Philippine politicians worry about 'warmonger' Trump's aggressive foreign policy",
-                    "news_id": 261
-                },
-                "related": [
-                    {
-                        "Where": "菲律宾"
-                    },
-                    {
-                        "Who": "唐纳德·特朗普"
-                    },
-                    {
-                        "organization": "美国政府"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    },
-                    {
-                        "Who": "费尔南多·马科斯"
-                    },
-                    {
-                        "When": "2025-01-10"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "根据EDCA协议，菲律宾政府允许美军在九个地点部署，包括靠近南海和台湾的基地",
-                    "name": "菲律宾政府扩大美军在菲军事存在",
-                    "why": "以应对中国的军事威胁,加强与美国的军事合作",
-                    "title": "warning over u.s. military presence",
-                    "community": 230,
-                    "news_id": 300
-                },
-                "related": [
-                    {
-                        "Where": "菲律宾"
-                    },
-                    {
-                        "Who": "唐纳德·特朗普"
-                    },
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    },
-                    {
-                        "organization": "美国政府"
-                    },
-                    {
-                        "Who": "费迪南德·马科斯"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "菲律宾政府扩大美军在菲律宾的军事存在，签署《加强国防合作协定》(EDCA)，允许美军在菲律宾的九个地点部署，包括靠近南海和台湾的基地",
-            "when": "2025-01-10",
-            "where": "菲律宾",
-            "why": "为了应对中国的军事威胁，加强与美国的军事合作",
-            "who": "唐纳德·特朗普,费迪南德·马科斯,费尔南多·马科斯",
-            "how": "签署《加强国防合作协定》(EDCA)，允许美军在菲律宾的九个地点部署",
-            "organization": "美国政府,菲律宾政府",
-            "type": "02.01.03-N-H-B-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2019",
-            "properties": {
-                "community_id": 232
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "菲律宾政府拨款1.65亿比索用于机场建设，3000万比索用于建设避风港，10亿比索用于南珊岛的避风港设施",
-                    "name": "菲律宾开始在斯普拉特利群岛进行设施升级，包括延长蒂图岛的跑道",
-                    "why": "回应中国在南海的军事压力,提升菲律宾在该地区的军事存在",
-                    "title": "Philippines starts Spratly Islands upgrades after months of tension with China",
-                    "community": 232,
-                    "news_id": 305
-                },
-                "related": [
-                    {
-                        "organization": "南洋理工大学"
-                    },
-                    {
-                        "Who": "科林·科"
-                    },
-                    {
-                        "organization": "越南"
-                    },
-                    {
-                        "Who": "郑志华"
-                    },
-                    {
-                        "Who": "马来西亚"
-                    },
-                    {
-                        "organization": "上海交通大学"
-                    },
-                    {
-                        "Who": "中国"
-                    },
-                    {
-                        "organization": "菲律宾中国研究协会"
-                    },
-                    {
-                        "organization": "马来西亚"
-                    },
-                    {
-                        "Who": "越南"
-                    },
-                    {
-                        "Who": "包一南"
-                    },
-                    {
-                        "organization": "美国"
-                    },
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "organization": "华阳海洋合作与治理研究中心"
-                    },
-                    {
-                        "organization": "中国"
-                    },
-                    {
-                        "Where": "蒂图岛"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    },
-                    {
-                        "Where": "南珊岛"
-                    },
-                    {
-                        "Who": "美国"
-                    },
-                    {
-                        "Who": "卢西奥·布兰科·皮托"
-                    },
-                    {
-                        "Who": "菲律宾政府"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "延长跑道至1.5公里，拨款1.65亿比索",
-                    "name": "菲律宾在蒂图岛延长跑道，以支持F-16战斗机和轻型作战飞机",
-                    "why": "应对中国的压力,提升菲律宾在南海的军事能力",
-                    "title": "Philippines starts Spratly Islands upgrades after months of tension with China",
-                    "community": 232,
-                    "news_id": 305
-                },
-                "related": [
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "organization": "中国"
-                    },
-                    {
-                        "Who": "菲律宾政府"
-                    },
-                    {
-                        "Who": "郑志华"
-                    },
-                    {
-                        "organization": "南洋理工大学"
-                    },
-                    {
-                        "Where": "蒂图岛"
-                    },
-                    {
-                        "Who": "科林·科"
-                    },
-                    {
-                        "organization": "美国"
-                    },
-                    {
-                        "Who": "美国"
-                    },
-                    {
-                        "organization": "上海交通大学"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    },
-                    {
-                        "Who": "中国"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "菲律宾在斯普拉特利群岛的蒂图岛和南珊岛进行设施升级，包括延长跑道和建设避风港，以提升军事存在和应对中国的压力",
-            "when": "2025-01-11",
-            "where": "蒂图岛,南珊岛",
-            "why": "回应中国在南海的军事压力,提升菲律宾在该地区的军事存在",
-            "who": "科林·科,郑志华,包一南,卢西奥·布兰科·皮托,菲律宾政府",
-            "how": "菲律宾政府拨款1.65亿比索用于机场建设，3000万比索用于建设避风港，10亿比索用于南珊岛的避风港设施，延长跑道至1.5公里，以支持F-16战斗机和轻型作战飞机",
-            "organization": "南洋理工大学,越南,上海交通大学,菲律宾中国研究协会,美国,菲律宾海岸警卫队,华阳海洋合作与治理研究中心,中国",
-            "type": "02.03.01-N-M-B-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2021",
-            "properties": {
-                "community_id": 234
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "日本和印度尼西亚将联合开发军舰，首艘军舰预计在日本船厂建造，提升双方的军事和防务能力",
-                    "name": "日本和印度尼西亚的联合军舰项目旨在提升区域安全",
-                    "why": "加强区域安全合作,应对中国在南海和东海的领土争端",
-                    "title": "Japan, Indonesia plan a joint warship amid China tensions at sea",
-                    "community": 234,
-                    "news_id": 303
-                },
-                "related": [
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "Who": "Sjafrie Sjamsoeddin"
-                    },
-                    {
-                        "Who": "Prabowo Subianto"
-                    },
-                    {
-                        "Who": "Shigeru Ishiba"
-                    },
-                    {
-                        "Where": "东京"
-                    },
-                    {
-                        "Where": "雅加达"
-                    },
-                    {
-                        "Who": "Gen Nakatani"
-                    },
-                    {
-                        "organization": "日本政府"
-                    },
-                    {
-                        "organization": "印度尼西亚政府"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "日本和印度尼西亚将联合开发军舰，首艘军舰预计在日本船厂建造",
-                    "name": "日本和印度尼西亚计划联合开发一艘军舰",
-                    "why": "加强区域安全合作,应对中国在南海和东海的领土争端",
-                    "title": "Japan, Indonesia plan a joint warship amid China tensions at sea",
-                    "community": 234,
-                    "news_id": 303
-                },
-                "related": [
-                    {
-                        "Who": "Prabowo Subianto"
-                    },
-                    {
-                        "Where": "雅加达"
-                    },
-                    {
-                        "Where": "东京"
-                    },
-                    {
-                        "organization": "印度尼西亚政府"
-                    },
-                    {
-                        "When": "2025-01-11"
-                    },
-                    {
-                        "Who": "Gen Nakatani"
-                    },
-                    {
-                        "Who": "Sjafrie Sjamsoeddin"
-                    },
-                    {
-                        "organization": "日本政府"
-                    },
-                    {
-                        "Who": "Shigeru Ishiba"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "日本和印度尼西亚计划联合开发一艘军舰，首艘军舰预计在日本船厂建造，旨在提升双方的军事和防务能力，加强区域安全合作，应对中国在南海和东海的领土争端",
-            "when": "2025-01-11",
-            "where": "东京,雅加达",
-            "why": "加强区域安全合作,应对中国在南海和东海的领土争端",
-            "who": "Sjafrie Sjamsoeddin,Prabowo Subianto,Shigeru Ishiba,Gen Nakatani",
-            "how": "日本和印度尼西亚将联合开发军舰，首艘军舰预计在日本船厂建造，提升双方的军事和防务能力",
-            "organization": "日本政府,印度尼西亚政府",
-            "type": "02.03.01-R-H-B-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2054",
-            "properties": {
-                "community_id": 269
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队船只BRP Teresa Magbanua逐步将中国海岸警卫队船只CCG-3304推离扎姆巴莱斯海岸97海里",
-                    "name": "菲律宾海岸警卫队阻止中国海岸警卫队船只靠近扎姆巴莱斯海岸",
-                    "why": "防止中国改变南海现状",
-                    "title": "Why China is deploying its coast guard ships close to Zambales",
-                    "community": 269,
-                    "news_id": 337
-                },
-                "related": [
-                    {
-                        "Who": "杰伊·塔里埃拉"
-                    },
-                    {
-                        "Where": "扎姆巴莱斯"
-                    },
-                    {
-                        "Who": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "中国海岸警卫队"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "When": "2025-01-11"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队的BRP Teresa Magbanua号船逐渐将中国海警船3304号推开，阻止其靠近扎姆巴莱斯海岸",
-                    "name": "菲律宾海岸警卫队阻止中国海警船靠近扎姆巴莱斯海岸",
-                    "why": "防止中国海警船非法进入菲律宾领海并改变现状",
-                    "title": "China emboldened to occupy EEZs of other countries if unchallenged — PCG",
-                    "community": 269,
-                    "news_id": 392
-                },
-                "related": [
-                    {
-                        "Who": "中国海警"
-                    },
-                    {
-                        "Where": "扎姆巴莱斯海岸"
-                    },
-                    {
-                        "Where": "菲律宾专属经济区"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "organization": "中国海警"
-                    },
-                    {
-                        "Who": "杰·特里斯坦·塔里拉"
-                    },
-                    {
-                        "Who": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "When": "2025-01-09"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "菲律宾海岸警卫队阻止中国海岸警卫队船只靠近扎姆巴莱斯海岸",
-            "when": "2025-01-11",
-            "where": "扎姆巴莱斯,菲律宾专属经济区",
-            "why": "防止中国海警船非法进入菲律宾领海并改变现状",
-            "who": "杰伊·塔里埃拉,杰·特里斯坦·塔里拉",
-            "how": "菲律宾海岸警卫队的BRP Teresa Magbanua号船逐渐将中国海警船3304号推开，将其推离扎姆巴莱斯海岸97海里",
-            "organization": "菲律宾海岸警卫队,中国海警",
-            "type": "02.01.01-N-H-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2133",
-            "properties": {
-                "community_id": 354
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队继续进行监视和无线电挑战，确保紧张局势不升级",
-                    "name": "菲律宾海岸警卫队继续监视中国海岸警卫舰",
-                    "why": "确保中国海岸警卫舰的非法存在不被常态化",
-                    "title": "China's 'Monster' coast guard ship back in WPS",
-                    "community": 354,
-                    "news_id": 378
-                },
-                "related": [
-                    {
-                        "Where": "菲律宾西部海域"
-                    },
-                    {
-                        "When": "2025-01-13"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "杰伊·塔里埃拉"
-                    },
-                    {
-                        "Where": "苏比克湾"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队持续监控并公开揭露中国海警船的非法活动，确保国际社会关注",
-                    "name": "菲律宾海岸警卫队持续监控中国海警船活动",
-                    "why": "确保中国海警船的非法活动不被常态化,防止其改变现状",
-                    "title": "China emboldened to occupy EEZs of other countries if unchallenged — PCG",
-                    "community": 354,
-                    "news_id": 392
-                },
-                "related": [
-                    {
-                        "Where": "扎姆巴莱斯海岸"
-                    },
-                    {
-                        "Who": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "杰·特里斯坦·塔里拉"
-                    },
-                    {
-                        "When": "2025-01-13"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Where": "菲律宾专属经济区"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队继续进行无线电挑战，监控中国舰船的非法存在，并确保紧张局势不升级",
-                    "name": "菲律宾海岸警卫队继续监控中国舰船",
-                    "why": "确保中国舰船的非法存在不被常态化",
-                    "title": "China's 'monster' ship returns to West Philippine Sea",
-                    "community": 354,
-                    "news_id": 379
-                },
-                "related": [
-                    {
-                        "When": "2025-01-13"
-                    },
-                    {
-                        "organization": "中国海岸警卫队"
-                    },
-                    {
-                        "Where": "苏比克湾"
-                    },
-                    {
-                        "Who": "特里埃拉"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "中国海岸警卫队"
-                    },
-                    {
-                        "Where": "西菲律宾海"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "菲律宾海岸警卫队继续监视并公开揭露中国海警船在菲律宾专属经济区内的非法活动，确保其不被常态化",
-            "when": "2025-01-13",
-            "where": "菲律宾西部海域,苏比克湾,扎姆巴莱斯海岸,西菲律宾海",
-            "why": "确保中国海警船的非法活动不被常态化，防止其改变现状",
-            "who": "杰伊·塔里埃拉,杰·特里斯坦·塔里拉,特里埃拉,中国海岸警卫队",
-            "how": "菲律宾海岸警卫队继续进行无线电挑战，持续监控并公开揭露中国海警船的非法活动，确保国际社会关注，防止紧张局势升级",
-            "organization": "菲律宾海岸警卫队,中国海岸警卫队",
-            "type": "01.04.01-N-M-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2135",
-            "properties": {
-                "community_id": 356
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "菲律宾海警船和飞机多次要求中国海警船撤离，但未见效果",
-                    "name": "菲律宾海警船和飞机要求中国海警船撤离菲律宾专属经济区",
-                    "why": "中国海警船在菲律宾专属经济区内巡逻,引发菲律宾海警的抗议",
-                    "title": "Philippines threatens legal action after Chinese coast guard ship sails in disputed South China Sea",
-                    "community": 356,
-                    "news_id": 592
-                },
-                "related": [
-                    {
-                        "When": "2025-01-14"
-                    },
-                    {
-                        "Where": "南海"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "Jay Tarriela"
-                    },
-                    {
-                        "Where": "菲律宾"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队部署船只和空中资产，要求中国海警船离开，并对中国的挑衅行为提出抗议",
-                    "name": "菲律宾抗议中国海警船在专属经济区的非法存在和活动",
-                    "why": "中国海警船和民兵在菲律宾专属经济区内的非法存在和活动违反了菲律宾法律和国际法",
-                    "title": "PH lodges protest vs China for illegal Coast Guard presence in EEZ",
-                    "community": 356,
-                    "news_id": 391
-                },
-                "related": [
-                    {
-                        "Who": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Where": "菲律宾专属经济区"
-                    },
-                    {
-                        "When": "2025-01-13"
-                    },
-                    {
-                        "Where": "三描礼士省"
-                    },
-                    {
-                        "Who": "中国解放军海军"
-                    },
-                    {
-                        "organization": "菲律宾国家海洋委员会"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "菲律宾国家海洋委员会"
-                    },
-                    {
-                        "organization": "中国海警"
-                    },
-                    {
-                        "Who": "中国海警"
-                    },
-                    {
-                        "Where": "萨马尔滩"
-                    },
-                    {
-                        "organization": "中国解放军海军"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾国家海洋委员会宣布已向中国提出外交抗议，并誓言加强在西菲律宾海的合法执法和巡逻行动",
-                    "name": "菲律宾政府对中国在西菲律宾海的非法行动提出外交抗议",
-                    "why": "中国海警船和海军直升机在西菲律宾海的非法活动威胁到菲律宾的主权和海洋权益",
-                    "title": "PCG ship monitoring Chinese intruder undeterred by rough seas",
-                    "community": 356,
-                    "news_id": 394
-                },
-                "related": [
-                    {
-                        "organization": "菲律宾外交部 (DFA)"
-                    },
-                    {
-                        "organization": "菲律宾国家海洋委员会 (NMC)"
-                    },
-                    {
-                        "Who": "菲律宾国家海洋委员会 (NMC)"
-                    },
-                    {
-                        "Where": "菲律宾"
-                    },
-                    {
-                        "Who": "中国海警船3304"
-                    },
-                    {
-                        "Who": "中国海警船5901"
-                    },
-                    {
-                        "When": "2025-01-13"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队部署空中和海上资产，要求中国船只离开",
-                    "name": "菲律宾政府对中国的南海行动提出外交抗议",
-                    "why": "中国船只非法进入菲律宾专属经济区",
-                    "title": "Philippines, US, Japan vow to deepen ties in face of Chinese actions at sea",
-                    "community": 356,
-                    "news_id": 597
-                },
-                "related": [
-                    {
-                        "When": "2025-01-14"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Where": "菲律宾"
-                    },
-                    {
-                        "Who": "费迪南德·马科斯"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾国家海洋委员会谴责中国船只和飞机的非法存在和行动",
-                    "name": "菲律宾抗议中国海岸警卫舰的非法存在和行动",
-                    "why": "中国船只在菲律宾专属经济区内的存在和行动被视为非法和挑衅",
-                    "title": "South China Sea: China deploys 'monster ship' in Philippines maricreated_at zone",
-                    "community": 356,
-                    "news_id": 590
-                },
-                "related": [
-                    {
-                        "Who": "乔纳森·马拉亚"
-                    },
-                    {
-                        "When": "2025-01-13"
-                    },
-                    {
-                        "organization": "菲律宾国家海洋委员会"
-                    },
-                    {
-                        "Where": "菲律宾专属经济区"
-                    },
-                    {
-                        "Where": "扎姆巴莱斯省"
-                    },
-                    {
-                        "Who": "郭家坤"
-                    },
-                    {
-                        "organization": "中国海岸警卫队"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "菲律宾抗议中国海警船在菲律宾专属经济区内的非法存在和活动，并要求中国船只离开，菲律宾政府对中国在西菲律宾海的非法行动提出外交抗议，菲律宾国家海洋委员会谴责中国船只和飞机的非法存在和行动。",
-            "when": "2025-01-13",
-            "where": "南海, 菲律宾专属经济区, 三描礼士省, 萨马尔滩, 扎姆巴莱斯省",
-            "why": "中国海警船和民兵在菲律宾专属经济区内的非法存在和活动违反了菲律宾法律和国际法，威胁到菲律宾的主权和海洋权益。",
-            "who": "Jay Tarriela, 费迪南德·马科斯, 乔纳森·马拉亚, 郭家坤",
-            "how": "菲律宾海警船和飞机多次要求中国海警船撤离，但未见效果。菲律宾海岸警卫队部署船只和空中资产，要求中国船只离开，并对中国的挑衅行为提出抗议。菲律宾国家海洋委员会宣布已向中国提出外交抗议，并誓言加强在西菲律宾海的合法执法和巡逻行动。",
-            "organization": "菲律宾海岸警卫队, 菲律宾国家海洋委员会, 中国海警, 中国解放军海军, 菲律宾外交部 (DFA)",
-            "type": "03.01.02-N-H-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2153",
-            "properties": {
-                "community_id": 377
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "中国海警船在菲律宾专属经济区内活动，菲律宾海岸警卫队进行监控并阻止其靠近扎姆巴莱斯海岸",
-                    "name": "中国海警船在菲律宾专属经济区活动",
-                    "why": "中国试图通过常态化部署改变现状,声称对这些水域拥有管辖权",
-                    "title": "China emboldened to occupy EEZs of other countries if unchallenged — PCG",
-                    "community": 377,
-                    "news_id": 392
-                },
-                "related": [
-                    {
-                        "Where": "扎姆巴莱斯海岸"
-                    },
-                    {
-                        "Where": "菲律宾专属经济区"
-                    },
-                    {
-                        "Who": "杰·特里斯坦·塔里拉"
-                    },
-                    {
-                        "Who": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "When": "2025-01-05"
-                    },
-                    {
-                        "Who": "卢卡斯·P·贝萨明"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Who": "中国海警"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    },
-                    {
-                        "organization": "中国海警"
-                    },
-                    {
-                        "Where": "南中国海"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾海岸警卫队和空中资产持续监视",
-                    "name": "菲律宾海岸警卫队和空中资产持续监视中国海岸警卫队最大船只在西菲律宾海的活动",
-                    "why": "监视中国海岸警卫队船只在菲律宾专属经济区的活动",
-                    "community": 377,
-                    "title": "PCG tails China’s ‘monster ship’",
-                    "news_id": 56
-                },
-                "related": [
-                    {
-                        "Who": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "organization": "国家安全委员会"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "When": "2025-01-05"
-                    },
-                    {
-                        "organization": "中国海岸警卫队"
-                    },
-                    {
-                        "Who": "中国海岸警卫队"
-                    },
-                    {
-                        "Where": "西菲律宾海"
-                    }
-                ]
-            },
             {
                 "what_node": {
                     "how": "菲律宾海岸警卫队确认了中国海警船5901号的位置和活动",
                     "name": "菲律宾海岸警卫队确认中国海警船5901号在菲律宾专属经济区内活动",
                     "why": "中国海警船在菲律宾专属经济区内的非法存在和活动",
                     "title": "Nat'l Maricreated_at Council to China: Withdraw 'monster ship' from PH EEZ",
-                    "community": 377,
+                    "community": 194,
                     "news_id": 523
                 },
                 "related": [
                     {
-                        "When": "2025-01-07"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
+                        "Who": "中国海警"
                     },
                     {
                         "organization": "中国海警"
                     },
                     {
-                        "Who": "中国海警"
+                        "Where": "Capones Island附近"
                     },
                     {
                         "Who": "菲律宾海岸警卫队"
                     },
                     {
-                        "Where": "Capones Island附近"
+                        "When": "2025-01-07"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "使用商业卫星图像分析了中国、越南、马来西亚、台湾和菲律宾的填海造岛活动",
+                    "name": "AMTI报告指出南海珊瑚礁破坏情况",
+                    "why": "分析南海填海造岛活动对环境的影响",
+                    "title": "China/Vietnam: China, Vietnam cause most South China Sea reef destruction: research",
+                    "community": 194,
+                    "news_id": 1013
+                },
+                "related": [
+                    {
+                        "Who": "格雷格·波林"
+                    },
+                    {
+                        "organization": "亚洲海事透明倡议(AMTI)"
+                    },
+                    {
+                        "When": "2025-02-03"
+                    },
+                    {
+                        "organization": "国际战略研究中心(CSIS)"
+                    },
+                    {
+                        "Where": "华盛顿"
                     }
                 ]
             }
         ],
         "5w1h_summary": {
-            "what": "中国海警船在菲律宾专属经济区内活动，菲律宾海岸警卫队进行监控并阻止其靠近扎姆巴莱斯海岸",
-            "when": "2025-01-05",
-            "where": "扎姆巴莱斯海岸,菲律宾专属经济区,南中国海,西菲律宾海,Capones Island附近",
-            "why": "中国试图通过常态化部署改变现状,声称对这些水域拥有管辖权",
-            "who": "杰·特里斯坦·塔里拉,卢卡斯·P·贝萨明,中国海警,菲律宾海岸警卫队",
-            "how": "中国海警船在菲律宾专属经济区内活动，菲律宾海岸警卫队进行监控并阻止其靠近扎姆巴莱斯海岸；菲律宾海岸警卫队和空中资产持续监视中国海岸警卫队最大船只在西菲律宾海的活动；菲律宾海岸警卫队确认了中国海警船5901号的位置和活动",
-            "organization": "中国海警,菲律宾海岸警卫队,菲律宾政府,国家安全委员会",
-            "type": "04.01.01-N-H-D-C"
+            "what": "菲律宾海岸警卫队确认中国海警船5901号在菲律宾专属经济区内活动，AMTI报告指出南海珊瑚礁破坏情况",
+            "when": "2025-01-07",
+            "where": "Capones Island附近,华盛顿",
+            "why": "中国海警船在菲律宾专属经济区内的非法存在和活动，分析南海填海造岛活动对环境的影响",
+            "who": "中国海警,菲律宾海岸警卫队,格雷格·波林",
+            "how": "菲律宾海岸警卫队确认了中国海警船5901号的位置和活动，使用商业卫星图像分析了中国、越南、马来西亚、台湾和菲律宾的填海造岛活动",
+            "organization": "中国海警,菲律宾海岸警卫队,亚洲海事透明倡议(AMTI),国际战略研究中心(CSIS)",
+            "type": "03.02.02-R-H-D-C"
         }
     },
     {
         "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2582",
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5358",
             "properties": {
-                "community_id": 420
+                "community_id": 569
             }
         },
         "related_nodes": [
             {
                 "what_node": {
-                    "how": "菲律宾通过媒体表达担忧，并部署海岸警卫队船只以施压中国船只远离海岸",
-                    "name": "菲律宾对靠近其海岸线的中国海岸警卫队巡逻表示担忧",
-                    "why": "中国在南海的持续军事存在和对菲律宾海岸的接近,引发菲律宾的担忧",
-                    "title": "Philippines says alarmed by Chinese ships moving closer to shore",
-                    "community": 420,
-                    "news_id": 515
+                    "how": "中国在台湾周围和南海新堡垒岛屿的军事活动增加，美国派遣联合海军力量应对",
+                    "name": "中国在南海的军事活动加剧",
+                    "why": "中国试图利用美国当前的弱点,特朗普的关税政策加剧了中国经济下滑",
+                    "title": "Retrospective on first year back",
+                    "community": 569,
+                    "news_id": 1671
                 },
                 "related": [
                     {
-                        "Who": "中国海岸警卫队"
+                        "Where": "南海"
                     },
                     {
-                        "When": "2025-01-14"
+                        "When": "2025-01-18"
                     },
                     {
-                        "Where": "中国南海"
+                        "organization": "中国政府"
+                    },
+                    {
+                        "Where": "台湾"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "organization": "美国政府"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国在南海和台湾附近加强军事活动，美国派遣联合菲律宾海军力量进行回应",
+                    "name": "中国在南海采取军事行动",
+                    "why": "中国试图通过军事行动转移国内矛盾,特朗普政府的关税政策加剧了中国经济下滑",
+                    "title": "A 'retrospective' on Trump's first year back in job",
+                    "community": 569,
+                    "news_id": 1540
+                },
+                "related": [
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Where": "台湾"
+                    },
+                    {
+                        "When": "2025-01-01"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "organization": "中国政府"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国在南海和台湾附近加强军事活动，美国派遣联合菲律宾海军力量进行回应",
+            "when": "2025-01-01",
+            "where": "南海,台湾",
+            "why": "中国试图通过军事行动转移国内矛盾，特朗普政府的关税政策加剧了中国经济下滑",
+            "who": "习近平,唐纳德·特朗普",
+            "how": "中国在南海和台湾附近加强军事活动，美国派遣联合菲律宾海军力量进行回应",
+            "organization": "中国政府,美国政府,菲律宾政府",
+            "type": "02.01.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5399",
+            "properties": {
+                "community_id": 373
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队通过无线电挑战和跟踪中国船只，美国海军进行联合演习以示支持",
+                    "name": "菲律宾海岸警卫队继续监视中国巨型海岸警卫船在菲律宾专属经济区的活动",
+                    "why": "回应中国海岸警卫船在菲律宾专属经济区内的非法活动",
+                    "title": "Satellite Photo Captures US Ally's Standoff With China's 'Monster Ship'",
+                    "community": 373,
+                    "news_id": 1728
+                },
+                "related": [
+                    {
+                        "When": "2025-01-20"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "菲律宾专属经济区"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
                     },
                     {
                         "organization": "菲律宾海岸警卫队"
                     },
                     {
-                        "organization": "菲律宾国家安全委员会"
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "Ferdinand Marcos Jr."
+                    },
+                    {
+                        "Where": "Zambales"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队派出飞机和船只进行识别和挑战，但中国船只未予回应",
+                    "name": "菲律宾海岸警卫队发布视频显示中国海岸警卫队船只在菲律宾专属经济区内停留",
+                    "why": "中国船只在菲律宾专属经济区内非法停留,菲律宾海岸警卫队试图阻止其常态化部署",
+                    "title": "PHILIPPINES SAYS IT WON'T LET CHINA NORMALIZE 'ILLEGAL' SHIP DEPLOYMENTS IN EEZ",
+                    "community": 373,
+                    "news_id": 1028
+                },
+                "related": [
+                    {
+                        "Who": "菲律宾政府"
+                    },
+                    {
+                        "When": "2025-02-03"
                     },
                     {
                         "Who": "菲律宾海岸警卫队"
                     },
                     {
-                        "Who": "Jonathan Malaya"
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "吕宋岛西部"
+                    },
+                    {
+                        "Where": "斯卡伯勒礁"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "中国外交部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾海岸警卫队继续监视并挑战中国海岸警卫船在菲律宾专属经济区内的非法活动，美国海军进行联合演习以示支持",
+            "when": "2025-01-20",
+            "where": "菲律宾专属经济区, Zambales, 吕宋岛西部, 斯卡伯勒礁",
+            "why": "回应中国海岸警卫船在菲律宾专属经济区内的非法活动，试图阻止其常态化部署",
+            "who": "Jay Tarriela, Ferdinand Marcos Jr., 菲律宾政府, 中国外交部",
+            "how": "菲律宾海岸警卫队通过无线电挑战和跟踪中国船只，派出飞机和船只进行识别，但中国船只未予回应；美国海军进行联合演习以示支持",
+            "organization": "中国海岸警卫队, 菲律宾海岸警卫队",
+            "type": "02.01.01-R-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5419",
+            "properties": {
+                "community_id": 470
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "韩正与美国副总统当选人J.D. Vance和商界领袖会面，包括伊隆·马斯克",
+                    "name": "中国派遣副总理韩正作为代表出席特朗普的就职典礼",
+                    "why": "中国希望通过派遣韩正来改善与美国的关系,同时避免因关系恶化而使习近平受到批评",
+                    "title": "Vice President Han Zheng, China's representative at Trump's inauguration, is a trusted adviser to Xi",
+                    "community": 470,
+                    "news_id": 1743
+                },
+                "related": [
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Where": "华盛顿"
+                    },
+                    {
+                        "organization": "中华人民共和国政府"
+                    },
+                    {
+                        "Who": "韩正"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "When": "2025-01-20"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "韩正与特朗普团队会面，讨论了贸易、地区稳定和芬太尼等问题",
+                    "name": "中国派遣副总理韩正出席特朗普就职典礼，作为改善中美关系的信号",
+                    "why": "同时避免对习近平的批评,回应特朗普对中国的关税威胁,展示中国愿意改善中美关系",
+                    "title": "VP Han Zheng, China's representative at Trump's inauguration, is a trusted adviser to Xi",
+                    "community": 470,
+                    "news_id": 1837
+                },
+                "related": [
+                    {
+                        "Where": "华盛顿"
+                    },
+                    {
+                        "Who": "韩正"
+                    },
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "organization": "中国政府"
+                    },
+                    {
+                        "When": "2025-01-20"
+                    },
+                    {
+                        "Who": "杰德·万斯"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国派遣副总理韩正作为代表出席特朗普的就职典礼，并与特朗普团队会面，讨论了贸易、地区稳定和芬太尼等问题",
+            "when": "2025-01-20",
+            "where": "华盛顿",
+            "why": "中国希望通过派遣韩正来改善与美国的关系，同时避免因关系恶化而使习近平受到批评，回应特朗普对中国的关税威胁，展示中国愿意改善中美关系",
+            "who": "韩正,唐纳德·特朗普,习近平,杰德·万斯",
+            "how": "韩正与美国副总统当选人J.D. Vance和商界领袖会面，包括伊隆·马斯克，与特朗普团队讨论了贸易、地区稳定和芬太尼等问题",
+            "organization": "中华人民共和国政府,美国政府",
+            "type": "02.01.05-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5458",
+            "properties": {
+                "community_id": 440
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "通过加强巡逻和提高船员警惕性，确保区域安全",
+                    "name": "2024年亚洲水域无海盗事件",
+                    "why": "ReCAAP ISC和亚洲各国政府的共同努力",
+                    "title": "Report: No maricreated_at piracy in Asia in 2024",
+                    "community": 440,
+                    "news_id": 1812
+                },
+                "related": [
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "ReCAAP ISC"
+                    },
+                    {
+                        "Who": "Krishnaswamy Natarajan"
+                    },
+                    {
+                        "When": "2025-01-21"
+                    },
+                    {
+                        "Where": "亚洲"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "通过加强巡逻和提高船员警觉性，成功防止了海盗事件的发生",
+                    "name": "ReCAAP ISC报告2024年亚洲水域无海盗事件",
+                    "why": "ReCAAP ISC和亚洲各国政府的合作及有效措施",
+                    "title": "Philippines: Report: No maricreated_at piracy in Asia in 2024",
+                    "community": 440,
+                    "news_id": 2091
+                },
+                "related": [
+                    {
+                        "Where": "马尼拉"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-24"
+                    },
+                    {
+                        "Who": "Krishnaswamy Natarajan"
+                    },
+                    {
+                        "organization": "ReCAAP ISC"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "2024年亚洲水域无海盗事件",
+            "when": "2025-01-21",
+            "where": "亚洲,马尼拉",
+            "why": "ReCAAP ISC和亚洲各国政府的合作及有效措施",
+            "who": "Krishnaswamy Natarajan,菲律宾海岸警卫队",
+            "how": "通过加强巡逻和提高船员警觉性，确保区域安全",
+            "organization": "ReCAAP ISC,菲律宾海岸警卫队",
+            "type": "07.01.03-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5598",
+            "properties": {
+                "community_id": 626
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国海警船执行危险操作，阻拦菲律宾船只路径；中国海军直升机低空飞行，制造危险湍流，迫使菲律宾船只暂停调查",
+                    "name": "中国海警船和军用直升机骚扰菲律宾政府船只在西菲律宾海进行科学调查",
+                    "why": "中国对菲律宾在西菲律宾海的科学调查活动表示不满,可能与领土争端有关",
+                    "title": "Philippine Vessels on Scientific Mission Harassed by Chinese Ships, Choppers",
+                    "community": 626,
+                    "news_id": 423
+                },
+                "related": [
+                    {
+                        "organization": "中国海警"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
+                    },
+                    {
+                        "Where": "西菲律宾海"
+                    },
+                    {
+                        "organization": "中国海军"
+                    },
+                    {
+                        "Where": "Sandy Cay"
+                    },
+                    {
+                        "When": "2025-01-24"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "5103"
+                    },
+                    {
+                        "Who": "中国海警船4106"
+                    },
+                    {
+                        "Who": "中国海军直升机24"
+                    },
+                    {
+                        "Who": "4202"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队船只对菲律宾渔业局船只进行激进操作，迫使其停止科学考察任务",
+                    "name": "中国船只在南海骚扰菲律宾科学考察船",
+                    "why": "中国对菲律宾的科学考察活动进行干预,中菲在南海存在领土争端",
+                    "title": "Philippines reports harassment by Chinese ships of scientific mission in disputed sea",
+                    "community": 626,
+                    "news_id": 406
+                },
+                "related": [
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "杰·塔里埃拉"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "When": "2025-01-25"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Where": "斯普拉特利群岛"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国海警船和军用直升机对菲律宾政府船只在西菲律宾海和南海进行科学调查时进行骚扰，包括危险操作和低空飞行制造湍流，迫使菲律宾船只暂停调查。",
+            "when": "2025-01-24",
+            "where": "西菲律宾海,南海,斯普拉特利群岛,Sandy Cay",
+            "why": "中国对菲律宾的科学调查活动表示不满，可能与中菲在南海的领土争端有关。",
+            "who": "Jay Tarriela,杰·塔里埃拉,费迪南德·马科斯",
+            "how": "中国海警船执行危险操作，阻拦菲律宾船只路径；中国海军直升机低空飞行，制造危险湍流，迫使菲律宾船只暂停调查；中国海岸警卫队船只对菲律宾渔业局船只进行激进操作，迫使其停止科学考察任务。",
+            "organization": "中国海警,中国海军,中国海岸警卫队,菲律宾海岸警卫队",
+            "type": "05.01.02-R-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5629",
+            "properties": {
+                "community_id": 629
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾暂停了科学调查活动",
+                    "name": "菲律宾因中国海军和海岸警卫队的骚扰暂停在南海的科学调查",
+                    "why": "中国海军和海岸警卫队的危险骚扰行为",
+                    "title": "Philippines stops research survey after Chinese 'harassment' in disputed sea",
+                    "community": 629,
+                    "news_id": 428
+                },
+                "related": [
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "马尼拉"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "Who": "菲律宾政府"
+                    },
+                    {
+                        "When": "2025-01-25"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "中国海军"
+                    },
+                    {
+                        "organization": "中国海军"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾暂停了在南海的科研调查",
+                    "name": "菲律宾暂停在南海的科研调查",
+                    "why": "菲律宾渔业船只在南海遭遇中国海警和海军的危险骚扰和 aggressive 行为",
+                    "title": "Philippines stops research survey in disputed sea amid China’s ‘harassment’",
+                    "community": 629,
+                    "news_id": 426
+                },
+                "related": [
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Who": "中国海警"
+                    },
+                    {
+                        "When": "2025-01-25"
+                    },
+                    {
+                        "organization": "中国海军"
+                    },
+                    {
+                        "Who": "中国海军"
+                    },
+                    {
+                        "organization": "中国海警"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾因中国海军和海岸警卫队的骚扰暂停在南海的科学调查",
+            "when": "2025-01-25",
+            "where": "南海,马尼拉",
+            "why": "中国海军和海岸警卫队的危险骚扰行为",
+            "who": "菲律宾政府,中国海岸警卫队,中国海军,菲律宾海岸警卫队",
+            "how": "菲律宾暂停了在南海的科研调查",
+            "organization": "中国海岸警卫队,中国海军,菲律宾海岸警卫队",
+            "type": "01.04.03-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5709",
+            "properties": {
+                "community_id": 715
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "通过参与“一带一路”项目，推动区域经济合作和互联互通，驳斥西方对“一带一路”的恶意抹黑",
+                    "name": "东盟对“一带一路”倡议的积极态度",
+                    "why": "不选边站队,促进共同发展,追求区域自主战略伙伴关系",
+                    "community": 715,
+                    "title": "Way forward",
+                    "news_id": 662
+                },
+                "related": [
+                    {
+                        "Who": "东盟成员国领导人"
+                    },
+                    {
+                        "Where": "东南亚"
+                    },
+                    {
+                        "When": "2025-01-27"
+                    },
+                    {
+                        "Who": "中国领导人"
+                    },
+                    {
+                        "organization": "中国"
+                    },
+                    {
+                        "organization": "东盟"
+                    },
+                    {
+                        "Who": "赵太阁"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队船只BRP Cabra成功阻止了中国海岸警卫队船只CCG 3103靠近扎姆巴莱斯海岸，保持185.2公里的距离",
+                    "name": "菲律宾海岸警卫队阻止中国船只靠近扎姆巴莱斯海岸",
+                    "why": "维护菲律宾主权权利,防止中国船只侵犯菲律宾专属经济区",
+                    "title": "Smaller Philippine Coast Guard ship keeps China vessel from Zambales coast",
+                    "community": 715,
+                    "news_id": 698
+                },
+                "related": [
+                    {
+                        "When": "2025-02-06"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "扎姆巴莱斯"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-28"
+                    },
+                    {
+                        "Who": "CCG 3103"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "CCG 5901"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "东盟对“一带一路”倡议的积极态度, 菲律宾海岸警卫队阻止中国船只靠近扎姆巴莱斯海岸",
+            "when": "2025-01-27",
+            "where": "东南亚, 扎姆巴莱斯",
+            "why": "不选边站队,促进共同发展,追求区域自主战略伙伴关系, 维护菲律宾主权权利,防止中国船只侵犯菲律宾专属经济区",
+            "who": "东盟成员国领导人, 中国领导人, 赵太阁, 费迪南德·马科斯, CCG 3103, 菲律宾海岸警卫队",
+            "how": "通过参与“一带一路”项目，推动区域经济合作和互联互通，驳斥西方对“一带一路”的恶意抹黑, 菲律宾海岸警卫队船只BRP Cabra成功阻止了中国海岸警卫队船只CCG 3103靠近扎姆巴莱斯海岸，保持185.2公里的距离",
+            "organization": "中国, 东盟, 中国海岸警卫队, 菲律宾海岸警卫队",
+            "type": "03.03.03-N-H-D-C, 04.02.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5752",
+            "properties": {
+                "community_id": 758
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "卢比奥强调美国对盟友的承诺，并表示将推进符合美国利益的中美关系；王毅要求美国谨慎处理台湾问题，重申一个中国原则",
+                    "name": "美国国务卿马可·卢比奥与中国外长王毅通话，表达对台湾和南海问题的严重关切",
+                    "why": "以及美国对盟友的承诺,回应中国在台湾和南海的强制性行动",
+                    "title": "Rubio expresses \"concerns\" to Chinese foreign minister about Taiwan and the South China Sea",
+                    "community": 758,
+                    "news_id": 2073
+                },
+                "related": [
+                    {
+                        "Where": "华盛顿"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "organization": "美国国务院"
+                    },
+                    {
+                        "Who": "王毅"
+                    },
+                    {
+                        "Who": "谭美·布鲁斯"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Who": "马可·卢比奥"
+                    },
+                    {
+                        "When": "2025-01-24"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "鲁比奥在通话中强调美国对盟友的承诺，并对中国的胁迫行动表示严重关切",
+                    "name": "美国国务卿马可·鲁比奥与中方外交官王毅通话，表达对台湾和南海局势的严重关切",
+                    "why": "回应中国对台湾的军事压力及在南海的行动",
+                    "title": "Taiwan denounced that at least six spy balloons of the Chinese regime flew over the island in the last 24 hours.",
+                    "community": 758,
+                    "news_id": 1285
+                },
+                "related": [
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Where": "中国"
+                    },
+                    {
+                        "organization": "美国国务院"
+                    },
+                    {
+                        "When": "2025-02-07"
+                    },
+                    {
+                        "Where": "美国"
+                    },
+                    {
+                        "Who": "马可·鲁比奥"
+                    },
+                    {
+                        "Who": "王毅"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "美国国务卿马可·卢比奥与中国外长王毅通话，表达对台湾和南海问题的严重关切",
+            "when": "2025-01-24",
+            "where": "华盛顿,北京",
+            "why": "回应中国对台湾的军事压力及在南海的行动",
+            "who": "马可·卢比奥,王毅",
+            "how": "卢比奥强调美国对盟友的承诺，并表示将推进符合美国利益的中美关系；王毅要求美国谨慎处理台湾问题，重申一个中国原则",
+            "organization": "美国国务院,中国外交部",
+            "type": "03.04.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5758",
+            "properties": {
+                "community_id": 1080
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾国家调查局、司法部和武装部队联合调查，邓远庆使用先进设备进行非法监视和间谍活动",
+                    "name": "菲律宾逮捕涉嫌为中国从事间谍活动的人员",
+                    "why": "涉嫌为中国绘制美国可访问的军事基地地图",
+                    "title": "Arrest of alleged Chinese spy in the Philippines opens new episode of friction",
+                    "community": 1080,
+                    "news_id": 2080
+                },
+                "related": [
+                    {
+                        "Who": "菲律宾司法部"
+                    },
+                    {
+                        "Who": "菲律宾武装部队"
+                    },
+                    {
+                        "organization": "菲律宾调查局"
+                    },
+                    {
+                        "Who": "邓元庆"
+                    },
+                    {
+                        "Who": "菲律宾外交部"
+                    },
+                    {
+                        "Who": "菲律宾调查局"
+                    },
+                    {
+                        "organization": "菲律宾外交部"
+                    },
+                    {
+                        "Who": "罗伊·文森特·特立尼达"
+                    },
+                    {
+                        "When": "2025-01-24"
+                    },
+                    {
+                        "Who": "毛宁"
+                    },
+                    {
+                        "organization": "中国解放军科学技术大学"
+                    },
+                    {
+                        "Who": "罗密欧·布劳纳"
+                    },
+                    {
+                        "organization": "菲律宾武装部队"
+                    },
+                    {
+                        "Where": "马尼拉"
+                    },
+                    {
+                        "organization": "菲律宾司法部"
+                    },
+                    {
+                        "Who": "特鲁多"
+                    },
+                    {
+                        "Who": "邓远庆"
+                    },
+                    {
+                        "organization": "菲律宾国家调查局"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "邓远庆及两名菲律宾合作者被指控绘制美军可访问的军事基地地图",
+                    "name": "菲律宾逮捕一名涉嫌间谍活动的中国公民及两名菲律宾合作者",
+                    "why": "涉嫌绘制美军可访问的军事基地地图",
+                    "title": "Philippines arrests five more Chinese nationals for alleged spying; PHILIPPINES CHINA",
+                    "community": 1080,
+                    "news_id": 803
+                },
+                "related": [
+                    {
+                        "When": "2025-01-13"
+                    },
+                    {
+                        "organization": "菲律宾国家调查局"
+                    },
+                    {
+                        "Who": "邓远庆"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Who": "两名菲律宾合作者"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾逮捕涉嫌为中国从事间谍活动的人员及两名菲律宾合作者",
+            "when": "2025-01-24",
+            "where": "马尼拉,菲律宾",
+            "why": "涉嫌为中国绘制美国可访问的军事基地地图",
+            "who": "邓远庆,罗伊·文森特·特立尼达,罗密欧·布劳纳,两名菲律宾合作者",
+            "how": "菲律宾国家调查局、司法部和武装部队联合调查，邓远庆使用先进设备进行非法监视和间谍活动，邓远庆及两名菲律宾合作者被指控绘制美军可访问的军事基地地图",
+            "organization": "菲律宾国家调查局,菲律宾司法部,菲律宾武装部队,菲律宾外交部,中国解放军科学技术大学",
+            "type": "01.06.02-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5826",
+            "properties": {
+                "community_id": 1183
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾国防部在采购监测报告中宣布购买12架FA-50轻型战斗机，价值400亿比索（约6.83亿美元）",
+                    "name": "菲律宾决定增加FA-50轻型战斗机机队，购买12架新飞机",
+                    "why": "增强菲律宾空军的作战能力,应对中国在南海的持续压力",
+                    "title": "Philippines to increase FA-50 fighter fleet, among moves analysts say complicate planning in Beijing",
+                    "community": 1183,
+                    "news_id": 1911
+                },
+                "related": [
+                    {
+                        "Where": "悉尼"
+                    },
+                    {
+                        "Who": "菲律宾国防部长"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "organization": "韩国航空工业公司(KAI)"
+                    },
+                    {
+                        "Who": "马尔科姆·戴维斯"
+                    },
+                    {
+                        "Who": "约翰·布拉斯兰德"
+                    },
+                    {
+                        "When": "2025-01-22"
+                    },
+                    {
+                        "organization": "菲律宾国防部"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "计划购买12架FA-50战斗机，总价约400亿菲律宾比索（约6.9亿美元）",
+                    "name": "菲律宾考虑购买12架韩国FA-50战斗机",
+                    "why": "加强菲律宾空军现代化,应对中国在南海的威胁",
+                    "title": "Will closer Philippine-South Korea military ties make China 'insecure'?",
+                    "community": 1183,
+                    "news_id": 1322
+                },
+                "related": [
+                    {
+                        "organization": "菲律宾国防部"
+                    },
+                    {
+                        "Who": "吉尔伯托·特奥多罗"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "When": "2025-01-01"
+                    },
+                    {
+                        "Who": "恩里克·马纳洛"
+                    },
+                    {
+                        "organization": "韩国航空航天工业公司"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "考虑购买12架FA-50 Fighting Eagle Block 20，预计交易金额为400亿菲律宾比索，计划在年中完成",
+                    "name": "菲律宾考虑购买更多韩国FA-50战斗机",
+                    "why": "增强菲律宾空军现代化,应对中国在南海的威胁",
+                    "title": "Philippines may buy more Korean jets",
+                    "community": 1183,
+                    "news_id": 1360
+                },
+                "related": [
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "韩国航空航天工业公司"
+                    },
+                    {
+                        "Who": "马可·鲁比奥"
+                    },
+                    {
+                        "organization": "菲律宾国防部"
+                    },
+                    {
+                        "Where": "韩国"
+                    },
+                    {
+                        "Who": "罗德里戈·杜特尔特"
+                    },
+                    {
+                        "When": "2025-02-09"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾决定增加FA-50轻型战斗机机队，购买12架新飞机，总价约400亿菲律宾比索（约6.83亿美元）",
+            "when": "2025-01-22",
+            "where": "菲律宾",
+            "why": "增强菲律宾空军的作战能力,应对中国在南海的持续压力",
+            "who": "菲律宾国防部长,马尔科姆·戴维斯,约翰·布拉斯兰德,吉尔伯托·特奥多罗,恩里克·马纳洛,费迪南德·马科斯,马可·鲁比奥,罗德里戈·杜特尔特",
+            "how": "菲律宾国防部在采购监测报告中宣布购买12架FA-50轻型战斗机，价值400亿比索（约6.83亿美元）",
+            "organization": "韩国航空工业公司(KAI),菲律宾国防部,韩国航空航天工业公司",
+            "type": "02.04.01-N-M-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5918",
+            "properties": {
+                "community_id": 980
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "进行物流活动和与八国军事领导人的联合演习",
+                    "name": "法国航空母舰打击群访问印尼",
+                    "why": "加强法国在印太地区的安全合作",
+                    "title": "Indonesia And France Strengthen Defense Ties",
+                    "community": 980,
+                    "news_id": 952
+                },
+                "related": [
+                    {
+                        "Where": "龙目岛"
+                    },
+                    {
+                        "organization": "法国海军"
+                    },
+                    {
+                        "When": "2025-02-01"
+                    },
+                    {
+                        "Who": "查尔斯·戴高乐号航空母舰指挥官"
+                    },
+                    {
+                        "Where": "巴厘岛"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "法国航母查尔斯·戴高乐号在印尼多个地点进行活动，并与多国军舰进行联合演习",
+                    "name": "法国航母打击群访问印尼并进行联合演习",
+                    "why": "展示法国对印太地区安全的承诺",
+                    "title": "Indonesian and French defense ministers agree to deepen cooperation to maintain regional stability",
+                    "community": 980,
+                    "news_id": 902
+                },
+                "related": [
+                    {
+                        "When": "2025-01-31"
+                    },
+                    {
+                        "Where": "马六甲海峡"
+                    },
+                    {
+                        "Where": "巴厘岛"
+                    },
+                    {
+                        "Where": "巽他海峡"
+                    },
+                    {
+                        "organization": "法国海军"
+                    },
+                    {
+                        "Where": "龙目岛"
+                    },
+                    {
+                        "Who": "Sébastien Lecornu"
+                    },
+                    {
+                        "Where": "龙目海峡"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "法国航空母舰打击群访问印尼并进行联合演习",
+            "when": "2025-02-01",
+            "where": "龙目岛,巴厘岛,马六甲海峡,巽他海峡,龙目海峡",
+            "why": "加强法国在印太地区的安全合作，展示法国对印太地区安全的承诺",
+            "who": "查尔斯·戴高乐号航空母舰指挥官,Sébastien Lecornu",
+            "how": "进行物流活动和与八国军事领导人的联合演习，法国航母查尔斯·戴高乐号在印尼多个地点进行活动，并与多国军舰进行联合演习",
+            "organization": "法国海军",
+            "type": "02.03.01-R-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:5933",
+            "properties": {
+                "community_id": 950
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队使用远程声波装置（LRAD）发出高分贝声音，对菲律宾船员造成严重不适",
+                    "name": "中国使用远程声波装置对抗菲律宾海军，加剧南海争端",
+                    "why": "以及中国在南海的灰色地带战术,回应菲律宾在争议海域的活动",
+                    "title": "China/Philippines: With acoustic blast, China ups aggression in disputed waters: Philippine Navy",
+                    "community": 950,
+                    "news_id": 914
+                },
+                "related": [
+                    {
+                        "Who": "切斯特·卡巴尔扎"
+                    },
+                    {
+                        "Where": "苏比克湾"
+                    },
+                    {
+                        "When": "2025-01-28"
+                    },
+                    {
+                        "Who": "罗伊·文森特·特立尼达"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Where": "南中国海"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海军"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队使用声波炮骚扰菲律宾海岸警卫队船只BRP Cabra，迫使其远离中国船只",
+                    "name": "中国海岸警卫队使用声波炮骚扰菲律宾船只",
+                    "why": "中国在南海争议水域内加强对菲律宾的灰色地带战术",
+                    "title": "Expert wants US to arm Philippines with sound cannons to fight China's gray-zone tactics",
+                    "community": 950,
+                    "news_id": 1077
+                },
+                "related": [
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-25"
                     },
                     {
                         "Where": "菲律宾"
@@ -1534,269 +1197,138 @@
                         "organization": "中国海岸警卫队"
                     },
                     {
-                        "Who": "Jay Tarriela"
+                        "Who": "中国海岸警卫队"
                     },
                     {
-                        "Who": "菲律宾国家安全委员会"
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "帕特里西奥·阿比纳莱斯"
+                    },
+                    {
+                        "Who": "菲律宾海军"
+                    },
+                    {
+                        "Where": "Capones Island"
+                    },
+                    {
+                        "Who": "布拉登·艾伦比"
+                    },
+                    {
+                        "organization": "菲律宾海军"
+                    },
+                    {
+                        "Where": "Zambales"
                     }
                 ]
             },
             {
                 "what_node": {
-                    "how": "菲律宾海岸警卫队和小型监视飞机反复要求中国海岸警卫队船只撤离菲律宾专属经济区，菲律宾政府考虑采取包括国际诉讼在内的所有选项",
-                    "name": "中国在南海的行动加剧了菲律宾的紧张局势",
-                    "why": "中国在南海的持续侵略行为,包括派遣大型海岸警卫队船只接近菲律宾领海",
-                    "title": "China ‘pushing Philippines to the wall’ with aggression in South China Sea",
-                    "community": 420,
-                    "news_id": 591
+                    "how": "中国海岸警卫队使用远程声波设备（LRAD）对菲律宾海岸警卫队船只发出高分贝声音，造成严重不适",
+                    "name": "中国使用远程声波设备对抗菲律宾海军在南海的行动",
+                    "why": "以及中国在该地区的利益扩张,回应菲律宾在南海的活动",
+                    "title": "WITH ACOUSTIC BLAST, CHINA UPS AGGRESSION IN DISPUTED WATERS: PHILIPPINE NAVY",
+                    "community": 950,
+                    "news_id": 773
                 },
                 "related": [
                     {
-                        "organization": "菲律宾海岸警卫队"
+                        "Who": "罗伊·文森特·特立尼达"
                     },
                     {
-                        "Who": "Commodore Jay Tarriela"
+                        "Who": "切斯特·卡巴尔扎"
                     },
                     {
-                        "Who": "Jonathan Malaya"
+                        "organization": "中国海岸警卫队"
                     },
                     {
                         "Where": "南海"
                     },
                     {
-                        "organization": "菲律宾国家安全委员会"
+                        "organization": "菲律宾海军"
                     },
                     {
-                        "Who": "费迪南德·马科斯"
+                        "Who": "中国海岸警卫队"
                     },
                     {
-                        "Where": "菲律宾"
+                        "Where": "菲律宾北部"
                     },
                     {
-                        "When": "2025-01-14"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾官员警告将采取所有选项，包括可能提起新的国际诉讼，菲律宾海岸警卫队多次要求中国船只离开其专属经济区",
-                    "name": "菲律宾对中国的南海行动表示担忧并警告将采取所有选项",
-                    "why": "中国在南海的持续侵略行为,包括在斯卡伯勒礁巡逻和接近菲律宾海岸",
-                    "title": "\"Chinese Ships' Presence Unacceptable\": Philippines Keeps 'All Options' Open To Counter China's 'Scare Tactics' In Sea",
-                    "community": 420,
-                    "news_id": 1406
-                },
-                "related": [
-                    {
-                        "Who": "费迪南德·马科斯"
-                    },
-                    {
-                        "When": "2025-01-15"
-                    },
-                    {
-                        "Where": "南海"
-                    },
-                    {
-                        "organization": "菲律宾国家安全委员会"
-                    },
-                    {
-                        "Who": "Commodore Jay Tarriela"
-                    },
-                    {
-                        "Who": "Jonathan Malaya"
-                    },
-                    {
-                        "organization": "菲律宾海岸警卫队"
-                    },
-                    {
-                        "Where": "马尼拉"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "菲律宾政府表示不会屈服于中国的恐吓，并加强了对非法存在的挑战",
-                    "name": "菲律宾对中国的侵略行为表示强烈不满",
-                    "why": "中国在南海的持续侵略行为,包括派遣大型海岸警卫队船只接近菲律宾领海",
-                    "title": "China ‘pushing Philippines to the wall’ with aggression in South China Sea",
-                    "community": 420,
-                    "news_id": 591
-                },
-                "related": [
-                    {
-                        "When": "2025-01-14"
-                    },
-                    {
-                        "Who": "费迪南德·马科斯"
-                    },
-                    {
-                        "Where": "菲律宾"
-                    },
-                    {
-                        "organization": "菲律宾国家安全委员会"
-                    },
-                    {
-                        "Who": "Jonathan Malaya"
+                        "When": "2025-01-28"
                     }
                 ]
             }
         ],
         "5w1h_summary": {
-            "what": "菲律宾对中国在南海的持续军事存在和接近菲律宾海岸的行为表示强烈担忧，并采取多种措施应对，包括部署海岸警卫队船只、反复要求中国船只撤离菲律宾专属经济区，并考虑采取包括国际诉讼在内的所有选项。",
-            "when": "2025-01-14",
-            "where": "中国南海,菲律宾,马尼拉",
-            "why": "中国在南海的持续侵略行为，包括派遣大型海岸警卫队船只接近菲律宾领海，引发菲律宾的担忧。",
-            "who": "费迪南德·马科斯,Commodore Jay Tarriela,Jonathan Malaya",
-            "how": "菲律宾通过媒体表达担忧，并部署海岸警卫队船只以施压中国船只远离海岸。菲律宾海岸警卫队和小型监视飞机反复要求中国海岸警卫队船只撤离菲律宾专属经济区，菲律宾政府考虑采取包括国际诉讼在内的所有选项。菲律宾官员警告将采取所有选项，包括可能提起新的国际诉讼，菲律宾海岸警卫队多次要求中国船只离开其专属经济区。菲律宾政府表示不会屈服于中国的恐吓，并加强了对非法存在的挑战。",
-            "organization": "菲律宾海岸警卫队,菲律宾国家安全委员会,中国海岸警卫队",
-            "type": "01.04.02-N-H-D-C"
+            "what": "中国海岸警卫队使用远程声波装置（LRAD）对菲律宾海岸警卫队船只发出高分贝声音，迫使其远离中国船只，加剧南海争端",
+            "when": "2025-01-28",
+            "where": "苏比克湾,南中国海,菲律宾,菲律宾北部,南海,Capones Island,扎姆巴莱斯",
+            "why": "中国在南海争议水域内加强对菲律宾的灰色地带战术，回应菲律宾在争议海域的活动，以及中国在该地区的利益扩张",
+            "who": "切斯特·卡巴尔扎,罗伊·文森特·特立尼达,帕特里西奥·阿比纳莱斯,布拉登·艾伦比",
+            "how": "中国海岸警卫队使用远程声波装置（LRAD）发出高分贝声音，对菲律宾船员造成严重不适，迫使其远离中国船只",
+            "organization": "中国海岸警卫队,菲律宾海岸警卫队,菲律宾海军",
+            "type": "02.01.02-N-H-B-C"
         }
     },
     {
         "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2593",
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6059",
             "properties": {
-                "community_id": 431
+                "community_id": 1083
             }
         },
         "related_nodes": [
             {
                 "what_node": {
-                    "how": "中国外交部发言人郭家群重申中国在南海的主权和相关权利，并呼吁菲律宾停止挑衅",
-                    "name": "中国外交部发言人郭家群回应菲律宾对中国南海巡逻船的指责",
-                    "why": "增加侵略行为,菲律宾称中国在南海部署巡逻船",
-                    "title": "China: Foreign Ministry spokesperson Guo Jiaqing holds regular press conference on January 14, 2025",
-                    "community": 431,
-                    "news_id": 521
+                    "how": "马科斯提出，如果中国停止在南海的侵略行为，菲律宾将考虑召回Typhon导弹系统",
+                    "name": "菲律宾总统马科斯回应中国对美国部署Typhon导弹系统的批评",
+                    "why": "中国对菲律宾部署美国Typhon导弹系统的批评以及在南海的持续侵略行为",
+                    "title": "Marcos to China: Stop aggressive acts, I'll return US missile system",
+                    "community": 1083,
+                    "news_id": 801
                 },
                 "related": [
                     {
-                        "Who": "郭家群"
-                    },
-                    {
-                        "Where": "北京"
-                    },
-                    {
-                        "Who": "菲律宾国家安全委员会发言人"
-                    },
-                    {
-                        "organization": "中华人民共和国外交部"
-                    },
-                    {
-                        "When": "2025-01-14"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "郭家琨重申中国在南海的主权和相关权利，并警告菲律宾停止一切侵犯挑衅行为",
-                    "name": "中国外交部发言人郭家琨对菲律宾国家安全委员会发言人关于中国在南海部署海岸警卫队的评论",
-                    "why": "菲律宾认为中国在南海的行动是增加‘侵略’",
-                    "title": "Foreign Ministry Spokesperson Guo Jiakun's Regular Press Conference on January 14, 2025",
-                    "community": 431,
-                    "news_id": 527
-                },
-                "related": [
-                    {
-                        "Who": "菲律宾国家安全委员会发言人"
-                    },
-                    {
-                        "Where": "南海"
-                    },
-                    {
-                        "When": "2025-01-14"
-                    },
-                    {
-                        "Who": "郭家琨"
-                    },
-                    {
-                        "organization": "菲律宾国家安全委员会"
-                    },
-                    {
-                        "Where": "北京"
-                    },
-                    {
-                        "organization": "中华人民共和国政府"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "中国外交部发言人郭家群和郭家琨回应菲律宾对中国南海巡逻船的指责，重申中国在南海的主权和相关权利，并警告菲律宾停止一切侵犯挑衅行为",
-            "when": "2025-01-14",
-            "where": "北京,南海",
-            "why": "菲律宾认为中国在南海的行动是增加‘侵略’",
-            "who": "郭家群,郭家琨,菲律宾国家安全委员会发言人",
-            "how": "中国外交部发言人郭家群和郭家琨重申中国在南海的主权和相关权利，并警告菲律宾停止一切侵犯挑衅行为",
-            "organization": "中华人民共和国外交部,菲律宾国家安全委员会,中华人民共和国政府",
-            "type": "03.04.01-N-H-B-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2638",
-            "properties": {
-                "community_id": 476
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "讨论了中国在南海的行为，并同意继续协调行动",
-                    "name": "美国、日本和菲律宾讨论中国在南海的‘危险和非法行为’并承诺加强合作",
-                    "why": "回应中国在南海的执法活动",
-                    "title": "Three parties need to show shared wisdom",
-                    "community": 476,
-                    "news_id": 1396
-                },
-                "related": [
-                    {
-                        "Who": "小费迪南德·马科斯"
-                    },
-                    {
-                        "organization": "菲律宾政府"
-                    },
-                    {
-                        "organization": "日本政府"
-                    },
-                    {
-                        "organization": "美国政府"
-                    },
-                    {
-                        "When": "2025-01-15"
-                    },
-                    {
-                        "Who": "乔·拜登"
-                    },
-                    {
-                        "Who": "石破茂"
-                    },
-                    {
-                        "Where": "线上"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "通过增强经济、安全和技术合作，以及在印太地区的协调",
-                    "name": "菲律宾、美国、日本承诺加强三边合作以应对中国在南海的行动",
-                    "why": "回应中国在南海的侵略行为和非法活动",
-                    "title": "Philippines, US, Japan vow to deepen ties in face of Chinese actions at sea",
-                    "community": 476,
-                    "news_id": 597
-                },
-                "related": [
-                    {
-                        "Where": "菲律宾"
+                        "Who": "习近平"
                     },
                     {
                         "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "Where": "宿务"
+                    },
+                    {
+                        "organization": "中国政府"
                     },
                     {
                         "Who": "唐纳德·特朗普"
                     },
                     {
-                        "When": "2025-01-14"
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "When": "2025-01-30"
+                    },
+                    {
+                        "organization": "美国政府"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "马科斯提出，如果中国停止在南海的侵略行为，菲律宾将考虑撤回Typhon导弹系统",
+                    "name": "菲律宾总统马科斯回应中国对美国在菲部署Typhon导弹系统的批评",
+                    "why": "回应中国对菲律宾部署美国Typhon导弹系统的批评和反对",
+                    "title": "China/United States: Philippines: Marcos to China: Stop aggressive acts, I'll return US missile system",
+                    "community": 1083,
+                    "news_id": 1015
+                },
+                "related": [
+                    {
+                        "Who": "菲律宾国防部"
+                    },
+                    {
+                        "When": "2025-02-03"
                     },
                     {
                         "organization": "菲律宾政府"
@@ -1805,213 +1337,736 @@
                         "organization": "美国政府"
                     },
                     {
-                        "Who": "石破茂"
+                        "Who": "费迪南德·马科斯"
                     },
                     {
-                        "Where": "美国"
+                        "Where": "宿务"
                     },
                     {
-                        "Where": "日本"
+                        "Who": "习近平"
                     },
                     {
-                        "Who": "乔·拜登"
-                    },
-                    {
-                        "organization": "日本政府"
+                        "Who": "美国国防部"
                     }
                 ]
             }
         ],
         "5w1h_summary": {
-            "what": "美国、日本和菲律宾讨论中国在南海的行为，并承诺加强三边合作以应对中国的行动",
-            "when": "2025-01-15",
-            "where": "线上,菲律宾,美国,日本",
-            "why": "回应中国在南海的侵略行为和非法活动",
-            "who": "小费迪南德·马科斯,乔·拜登,石破茂,费迪南德·马科斯,唐纳德·特朗普",
-            "how": "通过增强经济、安全和技术合作，以及在印太地区的协调",
-            "organization": "菲律宾政府,日本政府,美国政府",
-            "type": "02.02.03-N-H-D-C"
+            "what": "菲律宾总统马科斯回应中国对美国在菲律宾部署Typhon导弹系统的批评，提出如果中国停止在南海的侵略行为，菲律宾将考虑撤回Typhon导弹系统",
+            "when": "2025-01-30",
+            "where": "宿务",
+            "why": "中国对菲律宾部署美国Typhon导弹系统的批评以及在南海的持续侵略行为",
+            "who": "费迪南德·马科斯,习近平,唐纳德·特朗普",
+            "how": "马科斯提出，如果中国停止在南海的侵略行为，菲律宾将考虑撤回Typhon导弹系统",
+            "organization": "中国政府,菲律宾政府,美国政府",
+            "type": "02.02.01-N-H-D-C"
         }
     },
     {
         "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2665",
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6069",
             "properties": {
-                "community_id": 503
+                "community_id": 1294
             }
         },
         "related_nodes": [
             {
                 "what_node": {
-                    "how": "日本承诺继续提供援助以增强菲律宾的海上安全和安全能力，双方同意加强与美国的三边合作",
-                    "name": "日本和菲律宾加强安全合作以应对中国在关键海上贸易路线的行动",
-                    "why": "以及对美国可能减少亚洲安全承诺的担忧,回应中国在南海和东海的行动",
-                    "title": "Japan, Philippines vow to boost security ties over China concern",
-                    "community": 503,
-                    "news_id": 1397
+                    "how": "普拉博沃决定加入金砖国家，印尼成为正式成员",
+                    "name": "印尼加入金砖国家经济集团",
+                    "why": "提升印尼的经济利益和国际地位",
+                    "title": "Indonesian President Prabowo reaffirms 'intuitive, solo player' foreign policy image",
+                    "community": 1294,
+                    "news_id": 1022
                 },
                 "related": [
                     {
-                        "Who": "费迪南德·马科斯"
+                        "organization": "印尼外交部"
                     },
                     {
-                        "organization": "日本外务省"
+                        "Where": "俄罗斯"
                     },
                     {
-                        "organization": "美国政府"
+                        "Who": "苏吉奥诺"
                     },
                     {
-                        "Who": "卡玛拉·哈里斯"
+                        "Who": "普拉博沃·苏比安托"
                     },
                     {
-                        "organization": "菲律宾外交部"
+                        "organization": "金砖国家"
                     },
-                    {
-                        "When": "2025-01-15"
-                    },
-                    {
-                        "Who": "竹下义弘"
-                    },
-                    {
-                        "Where": "马尼拉"
-                    },
-                    {
-                        "Who": "唐纳德·特朗普"
-                    },
-                    {
-                        "Who": "恩里克·马纳洛"
-                    }
-                ]
-            },
-            {
-                "what_node": {
-                    "how": "马科斯表达了对美菲关系的乐观态度，并强调了双方的紧密合作",
-                    "name": "菲律宾总统费迪南德·马科斯与美国副总统卡玛拉·哈里斯通话，表达对美菲关系的乐观态度",
-                    "why": "确保美菲关系在特朗普政府下保持强劲和动态",
-                    "title": "Japan, Philippines vow to boost security ties over China concern",
-                    "community": 503,
-                    "news_id": 1397
-                },
-                "related": [
-                    {
-                        "Who": "费迪南德·马科斯"
-                    },
-                    {
-                        "organization": "菲律宾总统府"
-                    },
-                    {
-                        "When": "2025-01-15"
-                    },
-                    {
-                        "Where": "马尼拉"
-                    },
-                    {
-                        "organization": "美国政府"
-                    },
-                    {
-                        "Who": "卡玛拉·哈里斯"
-                    }
-                ]
-            }
-        ],
-        "5w1h_summary": {
-            "what": "日本和菲律宾加强安全合作以应对中国在关键海上贸易路线的行动，同时菲律宾总统费迪南德·马科斯与美国副总统卡玛拉·哈里斯通话，表达对美菲关系的乐观态度",
-            "when": "2025-01-15",
-            "where": "马尼拉",
-            "why": "回应中国在南海和东海的行动以及对美国可能减少亚洲安全承诺的担忧，确保美菲关系在特朗普政府下保持强劲和动态",
-            "who": "费迪南德·马科斯,卡玛拉·哈里斯,竹下义弘,恩里克·马纳洛,唐纳德·特朗普",
-            "how": "日本承诺继续提供援助以增强菲律宾的海上安全和安全能力，双方同意加强与美国的三边合作，马科斯表达了对美菲关系的乐观态度，并强调了双方的紧密合作",
-            "organization": "日本外务省,美国政府,菲律宾外交部,菲律宾总统府",
-            "type": "01.03.04-N-H-D-C"
-        }
-    },
-    {
-        "cluster": {
-            "elementId": "4:978001b7-c688-4f77-b726-5ca107d2c9c0:2792",
-            "properties": {
-                "community_id": 630
-            }
-        },
-        "related_nodes": [
-            {
-                "what_node": {
-                    "how": "警方将无人机移交给军方进行进一步调查",
-                    "name": "菲律宾警方将疑似中国水下无人机移交给军方调查",
-                    "why": "无人机的发现引发对国家安全和领土完整的担忧",
-                    "community": 630,
-                    "title": "Philippine Senate urged to investigate suspected Chinese submersible drone",
-                    "news_id": 84
-                },
-                "related": [
                     {
                         "When": "2025-01-03"
                     },
                     {
-                        "Who": "菲律宾国家警察"
+                        "organization": "印尼政府"
                     },
                     {
-                        "Who": "泽尔西斯·A·特立尼达"
-                    },
-                    {
-                        "organization": "菲律宾武装部队"
-                    },
-                    {
-                        "Where": "马尼拉"
+                        "Where": "雅加达"
                     }
                 ]
             },
             {
                 "what_node": {
-                    "how": "参议员提交决议，要求参议院调查无人机的来源及其是否违反菲律宾法律",
-                    "name": "菲律宾参议员提交决议，要求调查疑似中国水下无人机",
-                    "why": "无人机的发现引发对国家安全和领土完整的担忧",
-                    "community": 630,
-                    "title": "Philippine Senate urged to investigate suspected Chinese submersible drone",
-                    "news_id": 84
+                    "how": "普拉博沃感谢印度对印尼加入金砖国家的支持",
+                    "name": "印尼加入金砖国家",
+                    "why": "增强国际影响力和经济合作",
+                    "title": "Indonesia eyes India's BrahMos missiles in major defence boost amid China tensions",
+                    "community": 1294,
+                    "news_id": 815
                 },
                 "related": [
                     {
-                        "organization": "菲律宾参议院"
+                        "When": "2025-01-30"
                     },
                     {
-                        "Who": "弗朗西斯·N·托伦蒂诺"
+                        "organization": "金砖国家"
                     },
                     {
-                        "Who": "费迪南德·R·马科斯"
+                        "Who": "莫迪"
                     },
                     {
-                        "Who": "吉尔贝托·G·C·特奥多罗"
+                        "Where": "印度"
                     },
                     {
-                        "Where": "马尼拉"
-                    },
-                    {
-                        "Where": "圣帕斯夸尔"
-                    },
-                    {
-                        "Who": "中国驻马尼拉大使馆"
-                    },
-                    {
-                        "When": "2025-01-07"
-                    },
-                    {
-                        "organization": "菲律宾武装部队"
-                    },
-                    {
-                        "organization": "菲律宾国家警察"
+                        "Who": "普拉博沃·苏比安托"
                     }
                 ]
             }
         ],
         "5w1h_summary": {
-            "what": "菲律宾警方将疑似中国水下无人机移交给军方调查，参议员提交决议，要求调查无人机的来源及其是否违反菲律宾法律",
+            "what": "印尼加入金砖国家经济集团，成为正式成员",
             "when": "2025-01-03",
-            "where": "马尼拉,圣帕斯夸尔",
-            "why": "无人机的发现引发对国家安全和领土完整的担忧",
-            "who": "泽尔西斯·A·特立尼达,弗朗西斯·N·托伦蒂诺,费迪南德·R·马科斯,吉尔贝托·G·C·特奥多罗",
-            "how": "警方将无人机移交给军方进行进一步调查，参议员提交决议，要求参议院调查无人机的来源及其是否违反菲律宾法律",
-            "organization": "菲律宾国家警察,菲律宾武装部队,菲律宾参议院",
-            "type": "01.04.04-N-H-B-C"
+            "where": "俄罗斯,雅加达,印度",
+            "why": "提升印尼的经济利益和国际地位，增强国际影响力和经济合作",
+            "who": "普拉博沃·苏比安托,苏吉奥诺,莫迪",
+            "how": "普拉博沃决定加入金砖国家，并感谢印度的支持",
+            "organization": "印尼外交部,金砖国家,印尼政府",
+            "type": "03.02.02-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6076",
+            "properties": {
+                "community_id": 1104
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队指控中国海岸警卫队船只CCG 3103在扎姆巴莱斯附近使用远程声波装置威胁其船只",
+                    "name": "菲律宾海岸警卫队指控中国船只使用远程声波装置",
+                    "why": "中国船只涉嫌使用远程声波装置威胁菲律宾船只",
+                    "title": "Smaller Philippine Coast Guard ship keeps China vessel from Zambales coast",
+                    "community": 1104,
+                    "news_id": 698
+                },
+                "related": [
+                    {
+                        "Where": "扎姆巴莱斯"
+                    },
+                    {
+                        "Who": "CCG 3103"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-28"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国使用远程声波装置（LRAD）对菲律宾船只进行骚扰，产生高分贝声音",
+                    "name": "中国使用远程声波装置骚扰菲律宾船只",
+                    "why": "中国试图通过骚扰手段对菲律宾船只施加压力",
+                    "title": "PCG thwarts anew China ship's advance to Zambales",
+                    "community": 1104,
+                    "news_id": 699
+                },
+                "related": [
+                    {
+                        "When": "2025-01-28"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Where": "西菲律宾海"
+                    },
+                    {
+                        "Who": "Jay Tarriela"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国海岸警卫队船只CCG 3103在扎姆巴莱斯附近使用远程声波装置威胁菲律宾海岸警卫队船只，并在西菲律宾海进行骚扰活动",
+            "when": "2025-01-28",
+            "where": "扎姆巴莱斯,西菲律宾海",
+            "why": "中国试图通过骚扰手段对菲律宾船只施加压力",
+            "who": "CCG 3103, Jay Tarriela",
+            "how": "中国海岸警卫队船只CCG 3103使用远程声波装置（LRAD）对菲律宾船只进行骚扰，产生高分贝声音",
+            "organization": "中国海岸警卫队,菲律宾海岸警卫队",
+            "type": "02.01.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6114",
+            "properties": {
+                "community_id": 1142
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "四国联合进行海上军事演习",
+                    "name": "美国、菲律宾、澳大利亚和日本在南海举行联合海上演习",
+                    "why": "回应中国在南海的活动,展示军事力量",
+                    "title": "Is Squad the new 'monster' Philippines is turning to in South China Sea?",
+                    "community": 1142,
+                    "news_id": 1273
+                },
+                "related": [
+                    {
+                        "Who": "美国"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Who": "日本"
+                    },
+                    {
+                        "organization": "澳大利亚政府"
+                    },
+                    {
+                        "When": "2025-02-07"
+                    },
+                    {
+                        "Who": "菲律宾"
+                    },
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "organization": "日本政府"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "Who": "澳大利亚"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "四国海军在菲律宾专属经济区内进行联合军事演习，增强联合作战能力",
+                    "name": "美国、日本、澳大利亚和菲律宾在南海进行联合海军演习",
+                    "why": "回应中国在南海的领土主张和军事活动",
+                    "title": "China Anger Over US Naval Drills: 'Illegal Claims'",
+                    "community": 1142,
+                    "news_id": 1217
+                },
+                "related": [
+                    {
+                        "When": "2025-02-05"
+                    },
+                    {
+                        "Who": "迈克尔·沃斯杰"
+                    },
+                    {
+                        "organization": "美国第七舰队"
+                    },
+                    {
+                        "Who": "日本政府"
+                    },
+                    {
+                        "Where": "菲律宾专属经济区"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Who": "菲律宾政府"
+                    },
+                    {
+                        "Who": "澳大利亚政府"
+                    },
+                    {
+                        "Who": "天俊利"
+                    },
+                    {
+                        "organization": "中国南方战区司令部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "美国、菲律宾、澳大利亚和日本在南海和菲律宾专属经济区内举行联合海上和海军演习，增强联合作战能力",
+            "when": "2025-02-07",
+            "where": "南海,菲律宾专属经济区",
+            "why": "回应中国在南海的领土主张和军事活动，展示军事力量",
+            "who": "迈克尔·沃斯杰,天俊利",
+            "how": "四国海军在南海和菲律宾专属经济区内进行联合军事演习，增强联合作战能力",
+            "organization": "美国政府,菲律宾政府,澳大利亚政府,日本政府,美国第七舰队,中国南方战区司令部",
+            "type": "02.01.01-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6115",
+            "properties": {
+                "community_id": 1143
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾两架FA-50战斗机和美国两架B1-B轰炸机参与演习，飞越黄岩岛",
+                    "name": "菲律宾和美国在南海举行联合空中巡逻演习",
+                    "why": "加强两国军事合作,回应中国在南海的活动",
+                    "title": "Philippines, US Hold Joint Air Patrol Exercises Over South China Sea",
+                    "community": 1143,
+                    "news_id": 1063
+                },
+                "related": [
+                    {
+                        "Where": "西菲律宾海"
+                    },
+                    {
+                        "When": "2025-02-04"
+                    },
+                    {
+                        "Who": "玛丽亚·康苏埃洛·卡斯蒂略"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "organization": "美国空军"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "中国人民解放军海军"
+                    },
+                    {
+                        "organization": "菲律宾海军"
+                    },
+                    {
+                        "organization": "菲律宾空军"
+                    },
+                    {
+                        "Who": "约翰·珀西·阿尔科斯"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾空军派出3架FA-50飞机，美国空军派出2架B-1轰炸机进行联合演习，包括空中巡逻和拦截训练",
+                    "name": "菲律宾和美国空军在南海进行联合军事演习，首次使用B-1轰炸机",
+                    "why": "回应中国在南海的领土争端,提高两国空军的协同作战能力和空中领域意识",
+                    "title": "U.S. uses B-1 bombers for the first created_at in South China Sea exercises",
+                    "community": 1143,
+                    "news_id": 1156
+                },
+                "related": [
+                    {
+                        "Who": "美国空军"
+                    },
+                    {
+                        "Who": "马克·鲁比奥"
+                    },
+                    {
+                        "When": "2025-02-05"
+                    },
+                    {
+                        "Who": "乔·拜登"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "organization": "菲律宾空军"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Who": "菲律宾空军"
+                    },
+                    {
+                        "organization": "美国空军"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾和美国空军在南海进行联合巡逻",
+                    "name": "菲律宾和美国进行联合空军巡逻",
+                    "why": "加强菲律宾与美国的军事合作,应对中国在南海的活动",
+                    "title": "Will closer Philippine-South Korea military ties make China 'insecure'?",
+                    "community": 1143,
+                    "news_id": 1322
+                },
+                "related": [
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "菲律宾空军"
+                    },
+                    {
+                        "When": "2025-02-07"
+                    },
+                    {
+                        "Who": "吉尔伯托·特奥多罗"
+                    },
+                    {
+                        "Who": "马克·卢比奥"
+                    },
+                    {
+                        "organization": "美国空军"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾FA-50战斗机和美国B-1轰炸机联合巡逻和演习，没有模拟空战或轰炸",
+                    "name": "菲律宾和美国在南海进行联合空中巡逻和演习",
+                    "why": "回应中国在南海的军事活动,增强互操作性,提高空中域意识,支持双边空中目标",
+                    "title": "Philippines/United States: Philippines, US stage joint air patrol, exercise over South China Sea",
+                    "community": 1143,
+                    "news_id": 1272
+                },
+                "related": [
+                    {
+                        "Who": "罗伊·文森特·特立尼达"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Where": "斯卡伯勒礁"
+                    },
+                    {
+                        "When": "2025-02-07"
+                    },
+                    {
+                        "organization": "菲律宾空军"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "organization": "美国太平洋空军"
+                    },
+                    {
+                        "Who": "玛丽亚·康苏埃洛·卡斯特罗"
+                    },
+                    {
+                        "Who": "中国军方发言人"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾和美国在南海进行联合空中巡逻和演习，涉及FA-50战斗机和B-1轰炸机，旨在加强两国军事合作，回应中国在南海的活动",
+            "when": "2025-02-07",
+            "where": "南海,斯卡伯勒礁,西菲律宾海",
+            "why": "加强菲律宾与美国的军事合作,回应中国在南海的活动",
+            "who": "费迪南德·马科斯,玛丽亚·康苏埃洛·卡斯蒂略,约翰·珀西·阿尔科斯,马克·鲁比奥,罗伊·文森特·特立尼达,唐纳德·特朗普,吉尔伯托·特奥多罗,玛丽亚·康苏埃洛·卡斯特罗",
+            "how": "菲律宾FA-50战斗机和美国B-1轰炸机联合巡逻和演习，没有模拟空战或轰炸，飞越黄岩岛，进行空中巡逻和拦截训练",
+            "organization": "美国空军,中国人民解放军海军,菲律宾海军,菲律宾空军,美国太平洋空军",
+            "type": "02.01.04-R-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6188",
+            "properties": {
+                "community_id": 1270
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国军方进行例行巡逻，批评菲律宾组织联合巡逻，称其为非法行为",
+                    "name": "中国军方在南海进行巡逻并批评菲律宾联合巡逻",
+                    "why": "维护国家领土主权和海洋权益",
+                    "title": "BBCM China Watchlist 6 Feb 25",
+                    "community": 1270,
+                    "news_id": 1220
+                },
+                "related": [
+                    {
+                        "Who": "澳大利亚军方"
+                    },
+                    {
+                        "When": "2025-02-05"
+                    },
+                    {
+                        "Who": "美国军方"
+                    },
+                    {
+                        "Who": "菲律宾军方"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Who": "日本军方"
+                    },
+                    {
+                        "Who": "田军利"
+                    },
+                    {
+                        "organization": "中国人民解放军南部战区"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国军方进行例行巡逻，批评菲律宾与美国联合巡逻破坏地区和平稳定",
+                    "name": "中国军方在南海进行巡逻，批评美菲联合巡逻",
+                    "why": "维护中国在南海的领土主权和海洋权益",
+                    "title": "BBCM China Watchlist 5 Feb 25",
+                    "community": 1270,
+                    "news_id": 1164
+                },
+                "related": [
+                    {
+                        "organization": "中国人民解放军"
+                    },
+                    {
+                        "organization": "菲律宾空军"
+                    },
+                    {
+                        "Who": "李建建"
+                    },
+                    {
+                        "organization": "美国空军"
+                    },
+                    {
+                        "Who": "美国空军"
+                    },
+                    {
+                        "When": "2025-02-04"
+                    },
+                    {
+                        "Where": "黄岩岛"
+                    },
+                    {
+                        "Who": "菲律宾空军"
+                    },
+                    {
+                        "Where": "南海"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国军方在南海进行巡逻并批评菲律宾与美国联合巡逻，称其为非法行为并破坏地区和平稳定",
+            "when": "2025-02-04",
+            "where": "南海,黄岩岛",
+            "why": "维护中国在南海的领土主权和海洋权益",
+            "who": "田军利,李建建",
+            "how": "中国军方进行例行巡逻，批评菲律宾与美国联合巡逻破坏地区和平稳定",
+            "organization": "中国人民解放军,中国人民解放军南部战区,菲律宾空军,美国空军",
+            "type": "02.01.01-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6238",
+            "properties": {
+                "community_id": 1289
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "美国在菲律宾部署Typhon导弹系统，并计划进行联合军事演习",
+                    "name": "美国在菲律宾部署Typhon导弹系统，引发中国不满",
+                    "why": "加强菲律宾的防御能力,应对中国在南海的军事活动",
+                    "title": "China/United States: Philippines: Marcos to China: Stop aggressive acts, I'll return US missile system",
+                    "community": 1289,
+                    "news_id": 1015
+                },
+                "related": [
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "Who": "菲律宾国防部"
+                    },
+                    {
+                        "Who": "美国国防部"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "When": "2025-02-03"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾总统提出停止中国在南海的侵略行为，菲律宾将撤回美国的Typhon导弹系统",
+                    "name": "菲律宾总统提出与中国达成协议：停止海上侵略行为以换取美国导弹系统的撤回",
+                    "why": "回应中国在南海的侵略行为和对菲律宾渔民的骚扰",
+                    "title": "Philippines/China: Philippine president offers deal to China: Stop sea aggression and I'll return missiles to US",
+                    "community": 1289,
+                    "news_id": 1019
+                },
+                "related": [
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "Where": "中国"
+                    },
+                    {
+                        "When": "2025-02-03"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Who": "毛宁"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "美国在菲律宾部署Typhon导弹系统，引发中国不满，菲律宾总统提出与中国达成协议：停止海上侵略行为以换取美国导弹系统的撤回",
+            "when": "2025-02-03",
+            "where": "菲律宾,中国",
+            "why": "加强菲律宾的防御能力,应对中国在南海的军事活动,回应中国在南海的侵略行为和对菲律宾渔民的骚扰",
+            "who": "费迪南德·马科斯,毛宁",
+            "how": "美国在菲律宾部署Typhon导弹系统，并计划进行联合军事演习，菲律宾总统提出停止中国在南海的侵略行为，菲律宾将撤回美国的Typhon导弹系统",
+            "organization": "美国政府,菲律宾政府,中国外交部",
+            "type": "02.01.03-N-H-D-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:f0bbc6df-c28d-487e-82ae-feb1f005b09c:6242",
+            "properties": {
+                "community_id": 1306
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队部署了飞机和两艘44米长的船只进行监视",
+                    "name": "菲律宾海岸警卫队发现两艘中国海岸警卫队船只在 Pangasinan 省附近海域",
+                    "why": "中国船只在菲律宾专属经济区内的非法巡逻活动",
+                    "title": "2 Chinese vessels seen off Pangasinan",
+                    "community": 1306,
+                    "news_id": 1035
+                },
+                "related": [
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "Pangasinan"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "When": "2025-02-03"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "菲律宾海岸警卫队派遣Islander飞机确认中国船只的存在，并派遣两艘44米长的船只BRP Cabra和BRP Bagacay前往Bolinao, Pangasinan",
+                    "name": "菲律宾海岸警卫队派遣飞机检查中国船只在南中国海的非法存在",
+                    "why": "回应中国船只在菲律宾专属经济区内的非法巡逻",
+                    "title": "Philippines deploys coast guard plane to check Chinese ships near Pangasinan",
+                    "community": 1306,
+                    "news_id": 1017
+                },
+                "related": [
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "南中国海"
+                    },
+                    {
+                        "Where": "Pangasinan"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "When": "2025-02-02"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾海岸警卫队发现并确认两艘中国海岸警卫队船只在菲律宾专属经济区内的非法巡逻活动，并派遣飞机和船只进行监视和响应。",
+            "when": "2025-02-02",
+            "where": "Pangasinan,南中国海",
+            "why": "中国船只在菲律宾专属经济区内的非法巡逻活动",
+            "who": "菲律宾海岸警卫队,中国海岸警卫队",
+            "how": "菲律宾海岸警卫队部署了飞机和两艘44米长的船只进行监视，并派遣Islander飞机确认中国船只的存在，同时派遣两艘44米长的船只BRP Cabra和BRP Bagacay前往Bolinao, Pangasinan。",
+            "organization": "菲律宾海岸警卫队,中国海岸警卫队",
+            "type": "03.01.01-N-H-D-C"
         }
     }
 ]

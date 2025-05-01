@@ -59,6 +59,15 @@ def create_new_constraints(conn):
         session.run("CREATE CONSTRAINT IF NOT EXISTS FOR (n:organization) REQUIRE n.name IS UNIQUE")
         session.run("CREATE CONSTRAINT IF NOT EXISTS FOR (n:category) REQUIRE n.name IS UNIQUE")
         print("新约束创建完成")
+def clear_all_data(conn):
+    """删除数据库中所有节点和关系"""
+    with conn.driver.session(database=conn.database) as session:
+        # 删除所有节点和关系
+        result = session.run("""
+            MATCH (n)
+            DETACH DELETE n
+        """)
+        print("已删除数据库中所有现有数据")
 
 def import_batch(tx, batch):
     """批量导入函数"""
@@ -160,8 +169,13 @@ def import_batch(tx, batch):
 
 def runUpload(CONFIG):
     conn = Neo4jConnector(CONFIG['neo4j_config'])
+    # 新增：在导入前清空数据库
+    clear_all_data(conn)
+    
     df_clean = data_preprocessing(CONFIG)
     
+
+
     # 约束管理
     remove_old_constraints(conn)
     create_new_constraints(conn)

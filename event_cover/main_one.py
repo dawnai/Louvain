@@ -12,7 +12,7 @@ sys.path.append(os.path.dirname(current_dir))
 from tool.TextProcessor import TextProcessor
 
 # 配置Neo4j连接
-NEO4J_URI = "bolt://172.20.24.109:7687"  # 根据实际情况修改
+NEO4J_URI = "bolt://172.20.25.129:7687"  # 根据实际情况修改
 NEO4J_AUTH = ("neo4j", "neo4j@openspg")   # 根据实际情况修改
 
 # 初始化文本处理器
