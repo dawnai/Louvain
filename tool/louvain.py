@@ -19,7 +19,7 @@ def louvain_process(CONFIG,all):
         "uri": CONFIG["neo4j_config"]["uri"],#neo4j地址
         "user": CONFIG["neo4j_config"]["user"],
         "password": CONFIG["neo4j_config"]["password"],
-        "db_name": CONFIG["neo4j_config"]["database"],#neo4j数据库
+        "db_name": CONFIG["neo4j_config"]["alldatabase"] if all else CONFIG["neo4j_config"]["database"],  # 根据条件选择数据库
         "semantic_threshold": CONFIG["config_louvain"]["semantic_threshold"],  #语义相似度阈值
         "embedding_uri":CONFIG["config_louvain"]["embedding_uri"],#ollama地址http://172.20.71.112:11434 暨大：https://embedding.jnu.cn/v1
         "embedding_name":CONFIG["config_louvain"]["embedding_name"]#模型

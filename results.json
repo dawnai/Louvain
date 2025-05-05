@@ -1,0 +1,1017 @@
+[
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:5468",
+            "properties": {
+                "community_id": 235
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队船只在南海巡逻，并接近菲律宾领海143公里处",
+                    "name": "中国海岸警卫队船只在菲律宾专属经济区内巡逻并接近菲律宾领海",
+                    "why": "中国声称对南海有主权,并试图在该地区加强存在",
+                    "title": "China 'pushing Philippines to the wall' with aggression",
+                    "community": 235,
+                    "news_id": 1405
+                },
+                "related": [
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    },
+                    {
+                        "Where": "南海"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队船只5901号在南海巡逻，靠近菲律宾水域",
+                    "name": "中国海岸警卫队船只在菲律宾南海水域巡逻",
+                    "why": "中国声称对南海拥有主权",
+                    "title": "PHILIPPINE OFFICIAL ON CHINESE INCURSIONS: NOT RULING OUT ANOTHER SOUTH CHINA SEA LAW",
+                    "community": 235,
+                    "news_id": 1394
+                },
+                "related": [
+                    {
+                        "Where": "菲律宾南海"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "郭嘉琨"
+                    },
+                    {
+                        "Where": "吕宋岛西北海岸"
+                    },
+                    {
+                        "When": "2025-01-15"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国海岸警卫队船只在菲律宾专属经济区内巡逻并接近菲律宾领海",
+            "when": "2025-01-15",
+            "where": "南海, 菲律宾, 吕宋岛西北海岸",
+            "why": "中国声称对南海有主权，并试图在该地区加强存在",
+            "who": "中国海岸警卫队, 郭嘉琨",
+            "how": "中国海岸警卫队船只5901号在南海巡逻，靠近菲律宾水域，并接近菲律宾领海143公里处",
+            "organization": "中国海岸警卫队",
+            "type": "02.01.02-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:5600",
+            "properties": {
+                "community_id": 389
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "双方官员举行会谈，讨论合作和缓解紧张局势的途径",
+                    "name": "中菲双边咨询机制会议",
+                    "why": "寻求共同点和合作方式以缓解南海紧张局势",
+                    "title": "China: China holds drills as Philippines, US conduct exercise in South China Sea",
+                    "community": 389,
+                    "news_id": 1894
+                },
+                "related": [
+                    {
+                        "organization": "菲律宾外交部"
+                    },
+                    {
+                        "Where": "未提及具体地点"
+                    },
+                    {
+                        "When": "2025-01-16"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Who": "特蕾莎·拉扎罗"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "举行双边咨询会议，讨论合作方式",
+                    "name": "中菲双边咨询会议",
+                    "why": "寻求共同点,缓解南海紧张局势",
+                    "title": "CHINA HOLDS DRILLS AS PHILIPPINES, US CONDUCT EXERCISE IN SOUTH CHINA SEA",
+                    "community": 389,
+                    "news_id": 1718
+                },
+                "related": [
+                    {
+                        "organization": "菲律宾外交部"
+                    },
+                    {
+                        "Who": "菲律宾外交副部长特蕾莎·拉扎罗"
+                    },
+                    {
+                        "Where": "未具体说明"
+                    },
+                    {
+                        "When": "2025-01-16"
+                    },
+                    {
+                        "Who": "中国外交部官员"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中菲双边咨询机制会议",
+            "when": "2025-01-16",
+            "where": "未具体说明",
+            "why": "寻求共同点和合作方式以缓解南海紧张局势",
+            "who": "特蕾莎·拉扎罗,中国外交部官员",
+            "how": "双方官员举行会谈，讨论合作和缓解紧张局势的途径",
+            "organization": "菲律宾外交部,中国外交部",
+            "type": "03.01.03-双边谈判"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:5830",
+            "properties": {
+                "community_id": 790
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "鲁比奥在电话中向王毅表达了美国的立场，并强调了美国对盟友的承诺",
+                    "name": "美国国务卿马尔科·鲁比奥在与中方通话中明确表示特朗普政府将优先考虑美国利益",
+                    "why": "特朗普政府上台后,美国希望明确其对华政策立场",
+                    "title": "UPDATE2: Top U.S. diplomat makes Trump's approach clear in talks with China",
+                    "community": 790,
+                    "news_id": 2090
+                },
+                "related": [
+                    {
+                        "organization": "美国国务院"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Who": "马尔科·鲁比奥"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "When": "2025-01-24"
+                    },
+                    {
+                        "Who": "王毅"
+                    },
+                    {
+                        "Where": "中国"
+                    },
+                    {
+                        "Where": "美国"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "通过电话通话，强调美国利益优先，表达对台湾和南海问题的关切，承诺维护盟友关系",
+                    "name": "美国国务卿马尔科·鲁比奥与中方通话，强调美国利益优先",
+                    "why": "传达特朗普政府的政策立场,表达对中国的关切",
+                    "title": "UPDATE3: Top U.S. diplomat makes Trump's approach clear in talks with China",
+                    "community": 790,
+                    "news_id": 424
+                },
+                "related": [
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Who": "王毅"
+                    },
+                    {
+                        "Where": "美国"
+                    },
+                    {
+                        "Who": "马尔科·鲁比奥"
+                    },
+                    {
+                        "When": "2025-01-25"
+                    },
+                    {
+                        "organization": "美国国务院"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Where": "中国"
+                    },
+                    {
+                        "organization": "中国外交部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "美国国务卿马尔科·鲁比奥与中方通话，强调美国利益优先，表达对台湾和南海问题的关切，承诺维护盟友关系",
+            "when": "2025-01-24",
+            "where": "中国,美国",
+            "why": "特朗普政府上台后，美国希望明确其对华政策立场，传达特朗普政府的政策立场，表达对中国的关切",
+            "who": "唐纳德·特朗普,马尔科·鲁比奥,王毅,习近平",
+            "how": "通过电话通话，鲁比奥向王毅表达了美国的立场，并强调了美国对盟友的承诺",
+            "organization": "美国国务院,中国外交部",
+            "type": "02.01.02-N-H-B-C"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:5953",
+            "properties": {
+                "community_id": 840
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "通过高级官员互访和对话",
+                    "name": "中国与英国恢复经济和金融对话",
+                    "why": "加强经济合作,缓解中美关系紧张",
+                    "title": "China Seeks Closer Relations With US Allies Amid Trump's Return",
+                    "community": 840,
+                    "news_id": 1909
+                },
+                "related": [
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "When": "2025-01-22"
+                    },
+                    {
+                        "Who": "安东尼奥·科斯塔"
+                    },
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Who": "基尔·斯塔默"
+                    },
+                    {
+                        "organization": "英国政府"
+                    },
+                    {
+                        "Where": "伦敦"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "英国财政大臣访问北京，重启对话",
+                    "name": "中国与英国重启经济和金融对话",
+                    "why": "吸引外国投资,改善经济关系",
+                    "title": "China and US are moving closer as Trump returns to the White House",
+                    "community": 840,
+                    "news_id": 2029
+                },
+                "related": [
+                    {
+                        "When": "2025-01-23"
+                    },
+                    {
+                        "Who": "安东尼奥·科斯塔"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Where": "北京"
+                    },
+                    {
+                        "organization": "英国财政部"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国与英国恢复并重启经济和金融对话",
+            "when": "2025-01-22",
+            "where": "北京,伦敦",
+            "why": "加强经济合作,缓解中美关系紧张,吸引外国投资,改善经济关系",
+            "who": "安东尼奥·科斯塔,习近平,基尔·斯塔默",
+            "how": "通过高级官员互访和对话,英国财政大臣访问北京，重启对话",
+            "organization": "中国外交部,英国政府,英国财政部",
+            "type": "04.02.01-国际经济合作"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:5962",
+            "properties": {
+                "community_id": 821
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "澳大利亚研究指出美国的自由航行行动未能改变中国的立场，反而导致中国更加敌对",
+                    "name": "澳大利亚研究发现美国在南海的自由航行行动无效且可能加剧紧张",
+                    "why": "回应中国在南海的广泛海洋权益主张及美国的自由航行行动",
+                    "title": "US FREEDOM OF NAVIGATION OPERATIONS 'UNSUCCESSFUL,' STUDY SAYS",
+                    "community": 821,
+                    "news_id": 1897
+                },
+                "related": [
+                    {
+                        "When": "2025-01-22"
+                    },
+                    {
+                        "Who": "马克·戴维斯"
+                    },
+                    {
+                        "Who": "Nell Bennett"
+                    },
+                    {
+                        "Who": "特鲁多"
+                    },
+                    {
+                        "organization": "美国国防部"
+                    },
+                    {
+                        "organization": "国际海洋法法庭"
+                    },
+                    {
+                        "Where": "澳大利亚"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Who": "特洛伊·李"
+                    },
+                    {
+                        "organization": "蓝安全项目"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Who": "科林·科"
+                    },
+                    {
+                        "organization": "澳大利亚战略政策研究所"
+                    },
+                    {
+                        "Where": "南海"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "澳大利亚研究人员Nell Bennett在报告中指出，美国的自由航行行动未能改变中国的立场，反而导致中国更加敌对",
+                    "name": "澳大利亚研究发现美国在南海的自由航行行动无效且可能加剧紧张局势",
+                    "why": "回应中国在南海的广泛海洋权益主张及美国试图通过自由航行行动挑战这些主张",
+                    "title": "United States: US freedom of navigation operations 'unsuccessful,' study says",
+                    "community": 821,
+                    "news_id": 2077
+                },
+                "related": [
+                    {
+                        "organization": "中国外交部"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Who": "Nell Bennett"
+                    },
+                    {
+                        "organization": "澳大利亚大学和研究机构"
+                    },
+                    {
+                        "When": "2025-01-24"
+                    },
+                    {
+                        "organization": "美国国防部"
+                    },
+                    {
+                        "Where": "南海"
+                    },
+                    {
+                        "Who": "特鲁多"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "澳大利亚研究发现美国在南海的自由航行行动无效且可能加剧紧张局势",
+            "when": "2025-01-22",
+            "where": "澳大利亚, 南海",
+            "why": "回应中国在南海的广泛海洋权益主张及美国的自由航行行动",
+            "who": "马克·戴维斯, Nell Bennett, 特鲁多, 习近平, 特洛伊·李, 唐纳德·特朗普, 科林·科",
+            "how": "澳大利亚研究指出美国的自由航行行动未能改变中国的立场，反而导致中国更加敌对",
+            "organization": "美国国防部, 国际海洋法法庭, 蓝安全项目, 澳大利亚战略政策研究所, 中国外交部, 澳大利亚大学和研究机构",
+            "type": "02.01.04-国际关系-军事行动-南海-美国-中国"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:6119",
+            "properties": {
+                "community_id": 1108
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国发布的DeepSeek威胁到了美国的创新寡头模式，使得美国在AI领域的垄断地位受到挑战",
+                    "name": "中国通过DeepSeek在AI领域获得对美国的竞争优势",
+                    "why": "中国发布了一款生成式AI,加剧了中美之间的技术竞争,破坏了美国的创新计划",
+                    "title": "DeepSeek: ¿otro Pearl Harbor?, por La Vanguardia",
+                    "community": 1108,
+                    "news_id": 779
+                },
+                "related": [
+                    {
+                        "Who": "拜登"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "Who": "奥巴马"
+                    },
+                    {
+                        "Where": "全球"
+                    },
+                    {
+                        "When": "2025-01-29"
+                    },
+                    {
+                        "organization": "中国政府"
+                    },
+                    {
+                        "Who": "杰克·沙利文"
+                    },
+                    {
+                        "organization": "美国政府"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国发布DeepSeek，美国政府和科技公司感到威胁，可能采取军事行动",
+                    "name": "中国通过DeepSeek在AI领域获得对美国的竞争力",
+                    "why": "DeepSeek的发布破坏了美国的创新计划,威胁到美国的科技领导地位",
+                    "title": "DeepSeek: Another Pearl Harbor? by José María Lassalle",
+                    "community": 1108,
+                    "news_id": 837
+                },
+                "related": [
+                    {
+                        "organization": "中国科技公司"
+                    },
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "Who": "杰克·沙利文"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "When": "2025-01-30"
+                    },
+                    {
+                        "Who": "奥巴马"
+                    },
+                    {
+                        "Who": "拜登"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国发布DeepSeek，加剧中美AI领域技术竞争，威胁美国科技领导地位",
+            "when": "2025-01-29",
+            "where": "全球",
+            "why": "DeepSeek的发布破坏了美国的创新计划，威胁到美国的科技领导地位",
+            "who": "拜登, 唐纳德·特朗普, 奥巴马, 杰克·沙利文",
+            "how": "中国发布的DeepSeek威胁到了美国的创新寡头模式，使得美国在AI领域的垄断地位受到挑战，美国政府和科技公司感到威胁，可能采取军事行动",
+            "organization": "中国政府, 美国政府, 中国科技公司",
+            "type": "08.01.01-国际技术竞争"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:6141",
+            "properties": {
+                "community_id": 970
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队使用远程声波装置（LRAD）对菲律宾船只发出高分贝声音，造成菲律宾船员严重不适",
+                    "name": "中国使用远程声波装置对抗菲律宾海军，增加在南海的侵略行为",
+                    "why": "回应菲律宾船只在争议海域内的活动,强化中国在南海的控制权",
+                    "title": "China/Philippines: With acoustic blast, China ups aggression in disputed waters: Philippine Navy",
+                    "community": 970,
+                    "news_id": 914
+                },
+                "related": [
+                    {
+                        "When": "2025-01-28"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "罗伊·文森特·特立尼达"
+                    },
+                    {
+                        "Where": "菲律宾北部的苏比克湾"
+                    },
+                    {
+                        "Where": "南中国海"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队使用远程声波装置（LRAD）对菲律宾海岸警卫队船只发出高分贝声音，造成严重不适",
+                    "name": "中国在南中国海使用远程声波装置对抗菲律宾海军",
+                    "why": "以及维护中国在南中国海的权益,回应菲律宾在争议海域的活动",
+                    "title": "WITH ACOUSTIC BLAST, CHINA UPS AGGRESSION IN DISPUTED WATERS: PHILIPPINE NAVY",
+                    "community": 970,
+                    "news_id": 773
+                },
+                "related": [
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "When": "2025-01-28"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Where": "南中国海"
+                    },
+                    {
+                        "Who": "罗伊·文森特·特立尼达"
+                    },
+                    {
+                        "organization": "菲律宾海军"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Where": "菲律宾附近"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国海岸警卫队在南中国海使用远程声波装置（LRAD）对抗菲律宾海岸警卫队船只，造成菲律宾船员严重不适",
+            "when": "2025-01-28",
+            "where": "菲律宾北部的苏比克湾,南中国海",
+            "why": "回应菲律宾船只在争议海域的活动,强化中国在南海的控制权",
+            "who": "中国海岸警卫队,菲律宾海岸警卫队,罗伊·文森特·特立尼达",
+            "how": "中国海岸警卫队使用远程声波装置（LRAD）对菲律宾船只发出高分贝声音，造成菲律宾船员严重不适",
+            "organization": "中国海岸警卫队,菲律宾海岸警卫队,菲律宾海军",
+            "type": "02.01.01-军事冲突-常规战争-边境冲突"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:6242",
+            "properties": {
+                "community_id": 1080
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "请求国防部提供机密简报，计划访问巴拿马运河管理局，支持新的美洲自由贸易协定",
+                    "name": "Cantwell讨论了美国在巴拿马运河地区的安全威胁和经济机会",
+                    "why": "中国在巴拿马的投资和设备安装带来的安全威胁,以及美国对巴拿马运河的战略依赖",
+                    "title": "Cantwell Calls for Revitalized US Maricreated_at Strategy to Secure Panama Canal from Foreign Adversaries, Increase Trade and Lower Costs for Americans; Senate Commerce, Science, and Transportation Co",
+                    "community": 1080,
+                    "news_id": 755
+                },
+                "related": [
+                    {
+                        "When": "2025-01-28"
+                    },
+                    {
+                        "organization": "美国国防部"
+                    },
+                    {
+                        "Who": "劳拉·理查森"
+                    },
+                    {
+                        "organization": "美国参议院商业、科学和运输委员会"
+                    },
+                    {
+                        "organization": "巴拿马运河管理局"
+                    },
+                    {
+                        "Who": "玛丽亚·坎特韦尔"
+                    },
+                    {
+                        "Where": "华盛顿特区"
+                    },
+                    {
+                        "organization": "美国海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "请求国防部提供关于外国威胁的机密简报，计划带领代表团访问巴拿马运河管理局，支持新的美洲自由贸易协定",
+                    "name": "Cantwell呼吁加强美国与巴拿马合作，确保巴拿马运河安全，增加贸易并降低美国消费者成本",
+                    "why": "以及美国对巴拿马运河的战略依赖,回应中国在巴拿马的港口和通信技术投资带来的安全威胁",
+                    "title": "Cantwell Calls for Revitalized US Maricreated_at Strategy to Secure Panama Canal from Foreign Adversaries, Increase Trade and Lower Costs for Americans; Senate Commerce, Science, and Transportation Co",
+                    "community": 1080,
+                    "news_id": 755
+                },
+                "related": [
+                    {
+                        "organization": "巴拿马运河管理局"
+                    },
+                    {
+                        "Who": "凯利"
+                    },
+                    {
+                        "Who": "加拉门迪"
+                    },
+                    {
+                        "Who": "卡西迪"
+                    },
+                    {
+                        "Who": "玛丽亚·坎特韦尔"
+                    },
+                    {
+                        "Who": "劳拉·理查森"
+                    },
+                    {
+                        "Where": "华盛顿特区"
+                    },
+                    {
+                        "organization": "美国国防部"
+                    },
+                    {
+                        "organization": "美国海岸警卫队"
+                    },
+                    {
+                        "Who": "杨"
+                    },
+                    {
+                        "organization": "美国参议院商业、科学和运输委员会"
+                    },
+                    {
+                        "When": "2025-01-28"
+                    },
+                    {
+                        "Who": "贝内特"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "玛丽亚·坎特韦尔讨论了美国在巴拿马运河地区的安全威胁和经济机会，呼吁加强美国与巴拿马合作，确保巴拿马运河安全，增加贸易并降低美国消费者成本",
+            "when": "2025-01-28",
+            "where": "华盛顿特区",
+            "why": "中国在巴拿马的投资和设备安装带来的安全威胁，以及美国对巴拿马运河的战略依赖",
+            "who": "玛丽亚·坎特韦尔, 劳拉·理查森, 凯利, 加拉门迪, 卡西迪, 杨, 贝内特",
+            "how": "请求国防部提供关于外国威胁的机密简报，计划带领代表团访问巴拿马运河管理局，支持新的美洲自由贸易协定",
+            "organization": "美国国防部, 美国参议院商业、科学和运输委员会, 巴拿马运河管理局, 美国海岸警卫队",
+            "type": "04.02.01-经济合作"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:6277",
+            "properties": {
+                "community_id": 1337
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "马科斯提出如果中国停止在南海的侵略行为，菲律宾将考虑撤回Typhon导弹系统",
+                    "name": "菲律宾总统马科斯回应中国对美国在菲部署Typhon导弹系统的批评",
+                    "why": "中国对美国在菲律宾部署Typhon导弹系统的批评以及中国在南海的持续军事行动",
+                    "title": "China/United States: Philippines: Marcos to China: Stop aggressive acts, I'll return US missile system",
+                    "community": 1337,
+                    "news_id": 1015
+                },
+                "related": [
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "美国政府"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "Who": "美国总统"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "Where": "宿务"
+                    },
+                    {
+                        "Who": "唐纳德·特朗普"
+                    },
+                    {
+                        "When": "2025-02-03"
+                    },
+                    {
+                        "Who": "菲律宾总统"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "马科斯提出，如果中国停止在南海的侵略行为，菲律宾将考虑撤回导弹系统",
+                    "name": "菲律宾总统马科斯回应中国对美国Typhon导弹系统部署的批评",
+                    "why": "回应中国对菲律宾部署美国Typhon导弹系统的批评",
+                    "title": "Marcos to China: Stop aggressive acts, I'll return US missile system",
+                    "community": 1337,
+                    "news_id": 801
+                },
+                "related": [
+                    {
+                        "Where": "宿务"
+                    },
+                    {
+                        "organization": "中国政府"
+                    },
+                    {
+                        "Who": "费迪南德·马科斯"
+                    },
+                    {
+                        "organization": "菲律宾政府"
+                    },
+                    {
+                        "Who": "习近平"
+                    },
+                    {
+                        "When": "2025-01-30"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "菲律宾总统马科斯回应中国对美国在菲律宾部署Typhon导弹系统的批评，提出如果中国停止在南海的侵略行为，菲律宾将考虑撤回Typhon导弹系统",
+            "when": "2025-02-03",
+            "where": "宿务",
+            "why": "回应中国对菲律宾部署美国Typhon导弹系统的批评以及中国在南海的持续军事行动",
+            "who": "费迪南德·马科斯, 习近平, 美国总统",
+            "how": "马科斯提出，如果中国停止在南海的侵略行为，菲律宾将考虑撤回Typhon导弹系统",
+            "organization": "美国政府, 中国政府, 菲律宾政府",
+            "type": "02.03.02-外交谈判"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:6412",
+            "properties": {
+                "community_id": 1386
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国战斗机飞近并发射了信号弹，菲律宾政府和军方对此表示强烈谴责",
+                    "name": "中国战斗机去年在斯卡伯勒礁对菲律宾飞机进行挑衅",
+                    "why": "中国对菲律宾在该区域的活动表示不满",
+                    "title": "US, Philippine fighter jets patrol disputed South China Sea shoal",
+                    "community": 1386,
+                    "news_id": 1065
+                },
+                "related": [
+                    {
+                        "organization": "中国解放军南方战区"
+                    },
+                    {
+                        "Who": "罗密欧·布劳纳"
+                    },
+                    {
+                        "Where": "斯卡伯勒礁"
+                    },
+                    {
+                        "When": "2025-02-04"
+                    },
+                    {
+                        "organization": "菲律宾空军"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "两架中国空军飞机接近并发射信号弹，菲律宾政府强烈谴责并抗议",
+                    "name": "中国战斗机去年在斯卡伯勒礁向菲律宾飞机发射信号弹",
+                    "why": "中国试图驱离菲律宾飞机,维护其在该区域的控制权",
+                    "title": "US and Philippine fighter aircraft jointly patrol disputed shoal region guarded by China",
+                    "community": 1386,
+                    "news_id": 1081
+                },
+                "related": [
+                    {
+                        "When": "2025-02-04"
+                    },
+                    {
+                        "Who": "罗密欧·布劳纳"
+                    },
+                    {
+                        "organization": "中国人民解放军南部战区"
+                    },
+                    {
+                        "Where": "斯卡伯勒礁"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "中国军机飞近并投掷照明弹，干扰菲律宾军机的巡逻",
+                    "name": "中国军机去年在斯卡伯勒礁附近对菲律宾军机投掷照明弹",
+                    "why": "中国对菲律宾军机在争议区域的巡逻活动表示不满",
+                    "title": "The United States and the Philippines conducted joint maneuvers over an atoll disputed by China in the South Sea.",
+                    "community": 1386,
+                    "news_id": 1084
+                },
+                "related": [
+                    {
+                        "Who": "无"
+                    },
+                    {
+                        "When": "2025-02-04"
+                    },
+                    {
+                        "organization": "中国人民解放军南部战区司令部"
+                    },
+                    {
+                        "Where": "斯卡伯勒礁"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国战斗机在斯卡伯勒礁对菲律宾飞机进行挑衅，发射信号弹和照明弹，干扰菲律宾军机的巡逻",
+            "when": "2025-02-04",
+            "where": "斯卡伯勒礁,菲律宾",
+            "why": "中国对菲律宾在争议区域的活动表示不满，试图驱离菲律宾飞机，维护其在该区域的控制权",
+            "who": "罗密欧·布劳纳",
+            "how": "中国战斗机飞近并发射信号弹和照明弹，菲律宾政府和军方对此表示强烈谴责并抗议",
+            "organization": "中国解放军南方战区,菲律宾空军,中国人民解放军南部战区,中国人民解放军南部战区司令部",
+            "type": "02.02.01-海上军事冲突"
+        }
+    },
+    {
+        "cluster": {
+            "elementId": "4:0ad9d673-709a-4580-a449-77f9d3e341bb:6548",
+            "properties": {
+                "community_id": 947
+            }
+        },
+        "related_nodes": [
+            {
+                "what_node": {
+                    "how": "中国海岸警卫队使用声波大炮对菲律宾海岸警卫队船只BRP Cabra进行骚扰",
+                    "name": "中国海岸警卫队使用声波大炮骚扰菲律宾船只",
+                    "why": "中国在南海争议水域内对菲律宾船只进行骚扰",
+                    "title": "Expert wants US to arm Philippines with sound cannons to fight China's gray-zone tactics",
+                    "community": 947,
+                    "news_id": 1077
+                },
+                "related": [
+                    {
+                        "Where": "菲律宾"
+                    },
+                    {
+                        "When": "2025-01-25"
+                    },
+                    {
+                        "organization": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "Braden Allenby"
+                    },
+                    {
+                        "Where": "Capones Island"
+                    },
+                    {
+                        "Who": "菲律宾海岸警卫队"
+                    },
+                    {
+                        "Who": "Patricio Abinales"
+                    },
+                    {
+                        "Who": "中国海岸警卫队"
+                    },
+                    {
+                        "Who": "罗伊·特立尼达"
+                    },
+                    {
+                        "organization": "菲律宾海岸警卫队"
+                    }
+                ]
+            },
+            {
+                "what_node": {
+                    "how": "Patricio Abinales建议美国向菲律宾提供声波大炮以对抗中国的骚扰行为",
+                    "name": "专家建议美国向菲律宾提供声波大炮以对抗中国",
+                    "why": "中国在南海争议水域内对菲律宾船只进行骚扰",
+                    "title": "Expert wants US to arm Philippines with sound cannons to fight China's gray-zone tactics",
+                    "community": 947,
+                    "news_id": 1077
+                },
+                "related": [
+                    {
+                        "organization": "University of Hawaii's School of Pacific and Asian Studies"
+                    },
+                    {
+                        "organization": "Arizona State University"
+                    },
+                    {
+                        "Where": "美国"
+                    },
+                    {
+                        "When": "2025-02-04"
+                    },
+                    {
+                        "Who": "Braden Allenby"
+                    },
+                    {
+                        "Who": "Patricio Abinales"
+                    },
+                    {
+                        "Where": "菲律宾"
+                    }
+                ]
+            }
+        ],
+        "5w1h_summary": {
+            "what": "中国海岸警卫队使用声波大炮骚扰菲律宾船只，专家建议美国向菲律宾提供声波大炮以对抗中国",
+            "when": "2025-01-25",
+            "where": "菲律宾, Capones Island, 美国",
+            "why": "中国在南海争议水域内对菲律宾船只进行骚扰",
+            "who": "Braden Allenby, Patricio Abinales, 菲律宾海岸警卫队, 中国海岸警卫队, 罗伊·特立尼达",
+            "how": "中国海岸警卫队使用声波大炮对菲律宾海岸警卫队船只BRP Cabra进行骚扰，Patricio Abinales建议美国向菲律宾提供声波大炮以对抗中国的骚扰行为",
+            "organization": "中国海岸警卫队, 菲律宾海岸警卫队, University of Hawaii's School of Pacific and Asian Studies, Arizona State University",
+            "type": "02.01.03-国际军事冲突"
+        }
+    }
+]

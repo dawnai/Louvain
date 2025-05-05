@@ -4,16 +4,17 @@ from openai import OpenAI
 from event_add_property.get_thing_type import get_thing_type
 from tqdm import tqdm
 from multiprocessing import Pool, cpu_count
-import functools
+
 
 class EventProcessor():
-    def __init__(self, CONFIG):
+    def __init__(self, CONFIG, all):
         # 只保存配置，不初始化不可序列化的对象
         self.neo4j_config = CONFIG["neo4j_config"]
         self.api_config = CONFIG["api"]
         self.event_type = get_thing_type("./event_add_property/事件属性.json")
         self.client = None
         self.driver = None
+        self.all = all #判断是在哪个数据库执行
     
     def init_resources(self):
         """初始化资源（在每个子进程中调用）"""
@@ -21,7 +22,7 @@ class EventProcessor():
         self.driver = GraphDatabase.driver(
             self.neo4j_config["uri"],
             auth=(self.neo4j_config["user"], self.neo4j_config["password"]),
-            database=self.neo4j_config["database"]
+            database=self.neo4j_config["alldatabase"] if self.all else self.neo4j_config["database"]
         )
     
     def close_resources(self):
@@ -161,10 +162,10 @@ class EventProcessor():
     @staticmethod
     def process_cluster_task(args):
         """静态方法，用于多进程处理单个集群"""
-        cluster_data, config = args
+        cluster_data, config,all_flag = args
         try:
             # 在每个子进程中创建新的处理器实例
-            processor = EventProcessor(config)
+            processor = EventProcessor(config,all_flag)
             processor.init_resources()
             result = processor.process_and_update_cluster(cluster_data)
             processor.close_resources()
@@ -224,7 +225,7 @@ class EventProcessor():
                 results = list(tqdm(
                     pool.imap(
                         EventProcessor.process_cluster_task,
-                        [(data, config) for data in cluster_data_list]
+                        [(data, config,self.all) for data in cluster_data_list]
                     ),
                     total=len(cluster_data_list),
                     desc="Processing and updating clusters"
@@ -245,6 +246,6 @@ class EventProcessor():
 
 
 # 对外暴露的接口函数
-def event(CONFIG):
+def event(CONFIG,all):
     """执行整个事件处理流程"""
-    EventProcessor(CONFIG).event()
+    EventProcessor(CONFIG,all).event()
