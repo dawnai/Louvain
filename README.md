@@ -1,32 +1,41 @@
 <img src="https://avatars.githubusercontent.com/u/61813006?v=4" style="zoom:50%;" />
 
-# 新闻事件聚类 👋
+# 新闻事件聚类  :newspaper: :newspaper_roll: :wave:
 
 项目逻辑：
 
 **原始新闻文档 ---> 抽取5w1h、organization、category ---> 存入neo4j数据库 --->louvain算法---> 聚类事件属性添加--->当日事件入库**
 
-
-
 ### :hand: 使用：
 
-1、拉取项目：
+:one: 拉取项目：
 
-```
+```:two:
 git clone https://github.com/dawnai/Louvain.git
 ```
 
-2、使用conda创建虚拟环境，推荐python 10环境：
+:two: 使用conda创建虚拟环境，推荐python 10环境：
 
 ```
 conda create -n py10 python=10
 ```
 
-3、运行：
+:three:准备代抽取的新闻，放置在data/waite_to_extrac/文件夹路径下
+
+```
+|-data
+|---waite_to_extrac
+|------news1.json
+|------news2.json
+```
+
+:four:运行：
 
 ```
 python main.py
 ```
+
+运行结束后，可以在neo4j中查看抽取效果。
 
 
 
@@ -89,7 +98,7 @@ CONFIG = {
 }
 ```
 
-
+3、项目采用多线程进行实体抽取和数据处理工作
 
 
 

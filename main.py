@@ -74,11 +74,11 @@ def main():
     # # # ================= 第二步 将5w1h上传至neo4j数据库 =================
     logger.info("开始执行第二步，将当日抽取的5w1h上传至neo4j数据库")
     runUpload(CONFIG)
-    # logger.info("第二步执行完成")
 
     # # # ================= 第三步 执行louvain聚类 =================
     logger.info("开始执行第三步，对cache数据库进行louvain聚类")
     louvain_process(CONFIG,all=False)
+
     # ================= 第四步 执行事件属性添加 =================
     logger.info("开始执行第四步，对cache数据库中进行事件属性添加任务")
     event(CONFIG,all=False)
@@ -111,6 +111,7 @@ def main():
     print(f"匹配并迁移的What节点数: {stats['matched_whats']}")
     print(f"未匹配但迁移的What节点数: {stats['unmatched_whats']}")
     # ================= 第六步 执行收尾工作 =================
+    
     louvain_process(CONFIG,all=True)
     event(CONFIG,all=True)
 
